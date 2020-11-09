@@ -50,15 +50,17 @@ SWEe! is a  **desktop app for CS2103T students to manage their learning progress
    ![Java Version](images/quick-start/javaVersion.png)
 
 
-1. Download the latest `swee.jar` from [here](https://github.com/AY2021S1-CS2103T-T17-2/tp/releases).
+1. Download the latest `swee.jar` from [here](https://github.com/AY2021S1-CS2103T-T17-2/tp/releases).<br>
+
     ![Download Swee Jar](images/quick-start/downloadSweeJar.png)
 
 1. Copy the file to the folder you want to use as the _home folder_ for SWEe!.
 
 1. Double-click the file to start the app. The GUI similar to the image below should appear in a few seconds. Note how the app contains some sample data. <br>
+
     ![Quick Start UI](images/QuickStartUi.png)
     <div style="page-break-after: always;"></div>
-
+<br>
 1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. E.g. typing help and pressing Enter will open the help window.
 
 1. Refer to the [Features](#features) below for details of each command.
