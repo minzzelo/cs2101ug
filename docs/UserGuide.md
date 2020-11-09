@@ -156,7 +156,7 @@ by specifying its file path.
 **Step 1**: In this case, we will use one of the add commands above as an example.
 To add a flashcard, type the command `add q/What does OOP stand for? a/Object Oriented Programming r/3 t/cool` and press Enter.
 
-![filedirectory](images/ug/ug_add_step2.png)
+![filedirectory](images/ug/ug_add_step1.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -164,7 +164,7 @@ To add a flashcard, type the command `add q/What does OOP stand for? a/Object Or
 
 **Step 3**: The list view will update to show the newly added flashcard at the end of the flashcard list
 
-![filedirectory](images/ug/ug_add_step3.png)
+![filedirectory](images/ug/ug_add_step2_3.png)
 
 <div markdown="span" class="alert alert-primary">:memo: Note:
 To add a flashcard without diagram, skip Step 1 and proceed from Step 2.
@@ -615,11 +615,11 @@ This short tutorial will be useful when adding or editing diagrams to flashcards
 
 **Step 1**: Locate the root folder containing the SWEe Jar file and navigate to it
 
-![filedirectory](images/ug/ug_add_step1.png) 
+![filedirectory](images/ug/ug_diagram_path_step1.png) 
 
 **Step 2**: Next, locate the relative file path of the image file. In this example, our diagram is located in the image folder.
 Hence, the relative file path is `image/classDiagramExample1.png` 
 
-![filedirectory](images/ug/ug_add_step1.1.PNG)
+![filedirectory](images/ug/ug_diagram_path_step2.png)
 
 **Step 3**: Now, go ahead and add or edit your flashcard by adding `d/image/classDiagramExample1.png` after the appropriate command!
