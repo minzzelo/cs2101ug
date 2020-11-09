@@ -250,7 +250,7 @@ Examples:
 
 ### Filter for flashcards  : `filter`
 
-Want to look at flashcards belonging to a certain category? Or look at flashcards with a rating of 5?
+Want to look at flashcards belonging to a certain category? Or look at flashcards with a rating of 5.
 Filter command allows you to filter for specific flashcard(s) based on your field input(s). 
 This will return all the flashcards whose fields match all the fields specified by you.
 
@@ -280,15 +280,18 @@ Examples:
     (only last instance of f/ is read)
 
 <div style="page-break-after: always;"></div>
+
 **Steps for filtering for a flashcard based on category and tag**:
 
-**Step 1**: We want to filter for a flashcard which has a Trivial category and contains the preloaded tag. Type the command `filter c/Trivial t/preloaded` and press Enter.
+**Step 1**: Suppose you want to filter for a flashcard which has a Trivial category and contains the preloaded tag. Type the command `filter c/Trivial t/preloaded` and press Enter.
 
 ![filedirectory](images/ug/ug_filter_step1.PNG)
 
-**Step 2**: The flashcard with the category Trivial and tag field preloaded is shown.
+**Step 2**: The result display will show the number of flashcards listed after applying the filter.
 
-![filedirectory](images/ug/ug_filter_step2.PNG)
+**Step 3**: The list view will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag.
+
+![filedirectory](images/ug/ug_filter_step2_3.PNG)
 
 <div style="page-break-after: always;"></div>
 
@@ -629,3 +632,5 @@ Hence, the relative file path is `image/classDiagramExample1.png`
 Examples of usages of the diagram field:
 * `add q/Is this a class diagram? a/Yes d/image/classDiagramExample1.png`
 *  `edit 1 d/image/classDiagramExample1.png`
+
+Navigate back to [adding a flashcard](#add-a-flashcard--add)
