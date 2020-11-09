@@ -134,6 +134,7 @@ Format: `add q/QUESTION a/ANSWER [c/CATEGORY] [r/RATING] [n/NOTE] [d/DIAGRAM] [t
 (Hint: You can always add in the remaining fields subsequently using our [edit command](#edit-a-flashcard---edit)!)
 * After a new flashcard is added, the flashcard list will update to include the new flashcard.
 * If you are having troubles understanding the format, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
+* To understand how to add diagrams using relative file paths, refer to this [short tutorial](#finding-file-path-for-diagram-field).
 
 <div markdown="span" class="alert alert-primary">
 
@@ -165,10 +166,6 @@ To add a flashcard, type the command `add q/What does OOP stand for? a/Object Or
 **Step 3**: The list view will update to show the newly added flashcard at the end of the flashcard list
 
 ![filedirectory](images/ug/ug_add_step2_3.png)
-
-<div markdown="span" class="alert alert-primary">:memo: Note:
-To add a flashcard without diagram, skip Step 1 and proceed from Step 2.
-</div>
 
 <div style="page-break-after: always;"></div>
 
@@ -623,3 +620,7 @@ Hence, the relative file path is `image/classDiagramExample1.png`
 ![filedirectory](images/ug/ug_diagram_path_step2.png)
 
 **Step 3**: Now, go ahead and add or edit your flashcard by adding `d/image/classDiagramExample1.png` after the appropriate command!
+
+Examples of usages of the diagram field:
+* `add q/Is this a class diagram? a/Yes d/image/classDiagramExample1.png`
+*  `edit 1 d/image/classDiagramExample1.png`
