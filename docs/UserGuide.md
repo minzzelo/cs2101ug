@@ -131,10 +131,10 @@ If you are reading this guide for the first time, you can skip to [Features](#fe
 
 Input Field | What is it & How to specify
 -----------|-----------------------
-`q/QUESTION`    | Question on the flashcard.<br>Question on the flashcard.<br>`QUESTION` has no character restrictions so you can input anything you like.
+`q/QUESTION`    | Question on the flashcard.<br>`QUESTION` has no character restrictions so you can input anything you like.
 `a/ANSWER`      | Answer on the flashcard.<br>`ANSWER` has no character restrictions so you can input anything you like.
 `c/CATEGORY`    | Category of the flashcard.<br>`CATEGORY` must be alphanumeric and can be multiple words.
-`r/RATING`      | Sstar rating of the flashcard.<br>`RATING` must be a number between 1 and 5 inclusive.
+`r/RATING`      | Star rating of the flashcard.<br>`RATING` must be a number between 1 and 5 inclusive.
 `d/DIAGRAM`     | Diagram (image) of the flashcard.<br>`DIAGRAM` must be a valid path to a file. <br>eg. It can be a full file path such as C:/users/tom/Desktop/image/diagram.png<br> eg. It can be a relative file path (relative to swee.jar) such as images/image.jpg<br>Only supports the following image file types: jpg, png, jpeg, bmp
 `n/NOTE`        | Note on the flashcard.<br>`NOTE` has no character limit or restrictions so you can input anything you like.
 `t/TAG`         | These are tags of the flashcard. A flashcard can have more than one tag.<br>`TAG` must be alphanumeric and must be a single word.
@@ -380,11 +380,11 @@ Format: `help`
 
 **Step 1**: Type `help` in the command box and press Enter.
 
-![filedirectory](images/ug/ug_help_step_1.PNG)
+![Help step 1](images/ug/ug_help_step_1.PNG)
 
 **Step 2**: A new window will pop out with a link.
 
-![filedirectory](images/ug/ug_help_step_2.PNG)
+![Help step 2](images/ug/ug_help_step_2.PNG)
 
 **Step 3**: Simply press Copy-URL then paste the link in your favourite browser, and you will be brought to our user guide website.
 
@@ -426,7 +426,7 @@ Want to study your flashcards? Our review mode lets you easily navigate freely b
 
 Format: `review`
 
-Typing the `review` and pressing Enter will put you in review mode and allows you to review the current displayed flashcard list.
+Typing `review` and pressing Enter will put you in review mode and allows you to review the current displayed flashcard list.
 <br><br>
 So what is review mode? Upon entering review mode, you can no longer input commands to the command box. However, the following keyboard input will now be recognised:
 
@@ -447,25 +447,25 @@ The review and success frequency of a flashcard is <b>not affected</b> by review
 
 **Step 1**: We want to enter review mode to review our flashcards. Type the command `review` and press Enter.
 
-![filedirectory](images/ug/ug_review_step1_edited.PNG)
+![Review step 1](images/ug/ug_review_step1_edited.PNG)
 
 **Step 2**: We are brought into review mode. The instructions on how to navigate review mode will be shown at the top.
 
-![filedirectory](images/ug/ug_review_step2_edited.PNG)
+![Review step 2](images/ug/ug_review_step2_edited.PNG)
 
 <div style="page-break-after: always;"></div>
 
 **Step 3**: In this example, we will demonstrate the behaviour of the `↓ key`. Upon pressing the `↓ key`, the answer of the flashcard is shown.
 
-![filedirectory](images/ug/ug_review_step3_edited.PNG)
+![Review step 3](images/ug/ug_review_step3_edited.PNG)
 
 **Step 4**: Now, let's move onto the next flashcard. We just need to press the `→ key`
 
-![filedirectory](images/ug/ug_review_step4.PNG)
+![Review step 4](images/ug/ug_review_step4.PNG)
 
 <br>
 
-To summarise, use the `↓ key` and `↑ key` to toggle showing the flashcard’s answer and notes. Use the `→ key` and `← key` to move between flashcards. Use the `q key` to quit review mode.
+To summarise, when you are in review mode, use the `↓ key` and `↑ key` to toggle showing the flashcard’s answer and notes. Use the `→ key` and `← key` to move between flashcards. Use the `q key` to quit review mode.
 
 <div style="page-break-after: always;"></div>
 
