@@ -251,16 +251,17 @@ Examples:
 
 ### Filter for flashcards  : `filter`
 
-Filters for specific flashcard(s) based on the field input(s) by the user. 
-This will return all the flashcards whose fields match all the fields specified by the user.
+Want to look at flashcards belonging to a certain category? Or look at flashcards with a rating of 5?
+Filter command allows you to filter for specific flashcard(s) based on your field input(s). 
+This will return all the flashcards whose fields match all the fields specified by you.
 
 Format: `filter [c/CATEGORY] [r/RATING] [f/<yes|no>] [t/TAG]...`
 
 * Filters the specified flashcard based on category, rating, favourite status or tags.
-* Refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 * Specifying `f/yes` filters for favourited flashcards while `f/no` filters for unfavourited flashcards.
 * Supports filtering of one or more different fields. For example:
     - `filter c/SDLC r/5` will filter out flashcards belonging to the SDLC category with a rating of 5.
+* Refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 * Although all fields are optional, a minimum of one field has to be given.
 <div markdown="span" class="alert alert-primary">:memo: Note:
 <code>filter r/</code> will filter for all unrated flashcards.</div>
