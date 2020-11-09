@@ -83,7 +83,7 @@ Feeling a little overwhelmed by the command format we use throughout the user gu
 
 Format/Notation | Meaning
 -----------|-----------------------
-`QUESTION` | Words in uppercase are parameters that you should supply. <br> E.g. in add q/QUESTION, QUESTION is a parameter which can be used as add q/What is my name?
+`QUESTION` | Words in uppercase are parameters that you should supply. <br> E.g. in `add q/QUESTION`, `QUESTION` is a parameter which can be used as `add q/What is my name?`
 `q/QUESTION` | The letter and slash before the parameter is the prefix. You should use this to separate the current parameter from other parameters.
 `success` | Words in lowercase are to be specified exactly, meaning word for word. 
 `<success|reviewed>` | Items in angle brackets are either/or options. Each option is delineated by a `|`. <br> E.g. `<success|reviewed>` can be used as success or reviewed but not both
