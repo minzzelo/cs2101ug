@@ -429,7 +429,7 @@ The quiz mode works in conjunction with the [statistics](#view-the-statistics-of
 
 ### Sort all flashcards : `sort`
 
-Sorts all flashcards according to the criteria given.
+Want to get an overview of how skilled you are at answering the flashcards? Our sort command is here to help you, with two important criteria that you can sort your flashcards by, namely the review frequency and success rate of your flashcards!
 
 Format: `sort <success|reviewed> <-a|-d>`
 
@@ -437,17 +437,23 @@ Format: `sort <success|reviewed> <-a|-d>`
 * Specifying `-d` means sorting by the criteria in descending order.
 
 Examples: 
-* `sort reviewed -a` shows a list of current flashcards sorted according to review frequency in ascending order
-* `sort reviewed -d` shows a list of current flashcards sorted according to review frequency in descending order
-* `sort success -a` shows a list of current flashcards sorted according to success rate in ascending order
-* `sort success -d` shows a list of current flashcards sorted according to success rate in descending order
+* `sort success -a` sorts the flashcards according to success rate in ascending order
+* `sort success -d` sorts the flashcards according to success rate in descending order
+* `sort reviewed -a` sorts the flashcards according to review frequency in ascending order
+* `sort reviewed -d` sorts the flashcards according to review frequency in descending order
 
-<div markdown="span" class="alert alert-primary">:memo: Note: The review frequency of a flashcard refers to the number of times you review in <b>quiz mode</b>, and the success rate refers to the rate at which you get the question correct in <b>quiz mode</b>.
-</div>
-<div markdown="span" class="alert alert-primary">:memo: Note: The review and success frequencies of a flashcard are <b>only affected by quiz mode</b>, not review mode. So you can think of review mode as a trial that <b>does not affect</b> the statistics of the flashcard.
-</div>
-<div markdown="span" class="alert alert-primary">:memo: Note: Sorting results in a permanent change in the ordering of the flashcards. This means your list of flashcards will follow the sorted order even after you relaunch the app.
-</div>
+**Steps for sorting flashcards**:
+
+**Step 1**: In this example, we want to sort the flashcards according to success rate in an ascending order. Type `sort success -a` into the command box and press Enter
+
+![filedirectory](images/ug/ug_sort_step1.PNG)
+<div style="page-break-after: always;"></div>
+
+**Step 2**: The result display will show a message telling you that the flashcards have been sorted according to success rate in ascending order
+
+**Step 3**: The list view will show the newly sorted list of flashcards according to the criteria
+
+![filedirectory](images/ug/ug_sort_step2.PNG)
 
 <div style="page-break-after: always;"></div>
 
