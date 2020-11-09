@@ -291,7 +291,7 @@ Examples:
 
 **Step 3**: The list view will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag
 
-![filedirectory](images/ug/ug_filter_step2_3.PNG)
+![filedirectory](images/ug/ug_filter_step2.PNG)
 
 <div style="page-break-after: always;"></div>
 
