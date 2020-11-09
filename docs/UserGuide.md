@@ -189,6 +189,7 @@ Format: `delete INDEX`
 Example: `delete 3` deletes the 3rd flashcard in the flashcard list.
 
 **Steps for deleting a flashcard**:
+
 **Step 1**: Locate the flashcard you want to delete. In this example, we want to delete the 3rd flashcard from the list. Type `delete 3` into the command box and press Enter 
 
 ![filedirectory](images/ug/ug_delete_step1.png)
