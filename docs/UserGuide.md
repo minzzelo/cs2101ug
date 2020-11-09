@@ -7,6 +7,7 @@ SWEe! is a  **desktop app for CS2103T students to manage their learning progress
 
 
 * Table of Contents
+    - [Introduction](#introduction)
     - [Quick start](#quick-start)
     - [Application layout](#application-layout)
     - [Notes about the command format](#notes-about-the-command-format)
@@ -34,35 +35,59 @@ SWEe! is a  **desktop app for CS2103T students to manage their learning progress
         
 
 --------------------------------------------------------------------------------------------------------------------
+## Introduction
 
+![filedirectory](images/ug/logo_image.jpg)
+
+#### Welcome to SWEe! (Software Engineering Everyday)! 😊
+
+Thank you for downloading our application. We look forward to your continuous support and appreciate your feedback to help us improve our application. 
+
+#### What is SWEe!?
+
+SWEe! is a desktop application with a command line interface (CLI) for CS2103T students to manage their learning progress through flashcards. With a CLI, you will be able to perform tasks and navigate to different functionalities of the application more quickly,  allowing you to save precious time for other tasks
+
+#### SWEe! is perfect for:
+
+* Organising key learning points from the textbook in 2103T website  in a single platform
+* Testing your knowledge of the content taught with the help of SWEe’s quiz mode
+* Tracking your progress and monitor which topics you are weak using SWEe’s statistics functionality
+
+#### So, is SWEe! for you?
+
+* Are you a busy CS2103T student who needs more time to focus on other modules such as CS2100 or CS2101?
+* Do you get frustrated navigating the CS2103T website?
+* Do you want to score well in your examinations?
+
+I’m sure you want to score in your examination 😊 so please proceed on to this user guide to discover the formula for scoring well in your exam. 
 <div style="page-break-after: always;"></div>
 
 ## Quick start
 
-1. Ensure you have Java `11` or above installed in your Computer.
+1. Grab your CS2103 notes before we get started.
 
-1. Download the latest `swee.jar` from [here](https://github.com/AY2021S1-CS2103T-T17-2/tp/releases).
+1. Ensure you have Java `11` or above installed in your Computer. But how? Well, follow the steps below to check your Java version. 
+   
+   Step 1: Open your terminal. Type in `java --version` and press *Enter*.
+
+   Step 2: You will now be able to check the Java version installed in your Computer!
+
+   ![Java Version](images/quick-start/javaVersion.png)
+
+
+1. Download the latest `swee.jar` from [here](https://github.com/AY2021S1-CS2103T-T17-2/tp/releases).<br>
+
+    ![Download Swee Jar](images/quick-start/downloadSweeJar.png)
 
 1. Copy the file to the folder you want to use as the _home folder_ for SWEe!.
 
 1. Double-click the file to start the app. The GUI similar to the image below should appear in a few seconds. Note how the app contains some sample data. <br>
+
     ![Quick Start UI](images/QuickStartUi.png)
     <div style="page-break-after: always;"></div>
-1. Type the command in the command box and press Enter to execute it.<br>
-   Some example commands you can try:
+<br>
+1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. E.g. typing help and pressing Enter will open the help window.
 
-   * **`add q/What does OOP stand for? a/Object Oriented Programming c/General`** : Adds a flashcard with a question and answer into the General category.
-
-   * **`delete 3`**: Deletes the 3rd flashcard in the current list.
-   
-   * **`list`** : Lists all flashcards.
-
-   * **`review`** : Reviews the current list of flashcards.
-   
-   * **`view 1`** : Views the 1st flashcard in the current list.
-
-   * **`exit`** : Exits the app.
-  
 1. Refer to the [Features](#features) below for details of each command.
 
 <div style="page-break-after: always;"></div>
@@ -175,51 +200,61 @@ Format: `clear`
 
 ### Delete a flashcard  : `delete`
 
-Deletes the specified flashcard.
+Realised that a flashcard is now useless or irrelevant? You can simply remove it from your list using our delete command!
 
 Format: `delete INDEX`
 
 * Deletes the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
-* `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
+* `INDEX` must be a positive integer eg. 1, 2, 3, …
 
-Examples:
-*  `list` followed by `delete 2` deletes the 2nd flashcard in the flashcard list.
+Example: `delete 3` deletes the 3rd flashcard in the flashcard list.
+
+**Steps for deleting a flashcard**:
+
+**Step 1**: Locate the flashcard you want to delete. In this example, we want to delete the 3rd flashcard from the list. Type `delete 3` into the command box and press Enter 
+
+![filedirectory](images/ug/ug_delete_step1.png)
+
+**Step 2**: The result display will display a message telling you that the flashcard has been deleted 
+
+**Step 3**: The list view will show the updated flashcard list, with the specified flashcard removed
+
+![filedirectory](images/ug/ug_delete_step2.png)
 
 <div style="page-break-after: always;"></div>
 
+<b>
+
 ### Edit a flashcard  : `edit`
 
-Edits a flashcard.
+Yes, we all make mistakes (and typos). Realised that you have a typo in your flashcard? Fret not, you can edit your flashcard details in SWEe by specifying the fields you want to edit!
 
 Format: `edit INDEX [q/QUESTION] [a/ANSWER] [c/CATEGORY] [n/NOTE] [r/RATING] [d/DIAGRAM] [t/TAG]...`
 
 * Edits the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
-* Refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
-* Although all fields are optional, a minimum of one field has to be given.
+* A minimum of one field has to be given.
 * Specifying empty values to `NOTE`, `RATING`, `TAG` or `DIAGRAM` eg. `r/` will remove the corresponding field in the flashcard.
-* Although `QUESTION`, `ANSWER` and `CATEGORY` are optional values, you are not allowed to specify an empty value to those attributes 
-once the prefix is declared e.g. `c/` is not allowed and will not remove category.
 
 Examples:
-* `edit 3 q/What does OOP stand for? a/Object Oriented Programming c/General`
-* `edit 3 q/What does OOP stand for? a/Object Oriented Programming`
-* `edit 3 n/Important question! r/`
+
+* `edit 3 q/What does OOP stand for? c/Acronyms` edits the 1st flashcard’s question and category to be What does OOP stand for? and Acronyms respectively.
+* `edit 3 a/Object Oriented Programming t/` edits the 3rd flashcard’s answer and clears all existing tags
+* `edit 3 n/Important question! r/` edits the 3rd flashcard’s note and clears rating
+
 <div style="page-break-after: always;"></div>
 
-**Steps for editing a flashcard's category and rating**:
+**Steps for editing a flashcard**:
 
-**Step 1**: Locate the flashcard you wish to edit. In this example, we want to edit the flashcard at index 2.
+**Step 1**: Locate the flashcard you wish to edit. In this example, we want to edit the first flashcard's question and category to What does OOP stand for? and Acronyms respectively. Type `edit 1 q/What does OOP stand for? c/Acronyms` into the command box and press Enter
 
 ![filedirectory](images/ug/ug_edit_step1.PNG)
 <div style="page-break-after: always;"></div>
 
-**Step 2**: We want to edit the category of the flashcard to Trivial and rating to 1. Type the command `edit 2 c/Trivial r/1` and press Enter.
+**Step 2**: The result display will show a message that the flashcard has been edited successfully
+
+**Step 3**: The list view will show the updated details of the flashcard after the edit
 
 ![filedirectory](images/ug/ug_edit_step2.PNG)
-
-**Step 3**: The flashcard's category and rating are edited to Trivial and 1 respectively.
-
-![filedirectory](images/ug/ug_edit_step3.PNG)
 
 <div style="page-break-after: always;"></div>
 
@@ -293,13 +328,18 @@ Examples:
 
 ### Find flashcards : `find`
 
-Searches for all flashcards matching any of the search keywords.
+Want to find a particular flashcard but too lazy to check through all the flashcards individually to find it? We understand your pain and fear not, let SWEe! take away your pain by doing the finding for you! Keep your flashcards coming as we will provide an quick and easy way for you to search for anything and everything no matter how many flashcards you have.
 
 Format: `find KEYWORD [KEYWORD]...`
-* Finds all flashcards containing any of the keywords.
+
 * Refer to [common input fields](#common-input-fields) on how to specify the different fields.
 * The keywords are **case insensitive**.
-* Keywords will match as long as they are contained within any flashcard’s question/answer/category/note/tags. eg. `UML` keyword will match a flashcard with a `category` called `UML-Diagram`
+
+<div markdown="span" class="alert alert-primary">
+
+:memo: Note: If you search for multiple keywords, flashcards containing either of the keywords will be returned. For example, "General OOP" will return flashcards containing either General and/or OOP. 
+
+</div>
 
 <div markdown="span" class="alert alert-primary">
 
@@ -310,8 +350,25 @@ Format: `find KEYWORD [KEYWORD]...`
 Examples: 
 * `find general` displays all flashcards containing the word general.
 * `find general important` displays all flashcards containing either the word general and/or important.
-* `find GENERAL object` displays all flashcards containing either the word general and/or object.
 * `find -` displays all flashcards containing "-".
+
+<div style="page-break-after: always;"></div>
+
+**Steps for finding flashcards**:
+
+**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the *Command Box* and press *Enter*.
+
+![Find Step 1](images/ug/ug_find_step1.png)
+
+<div style="page-break-after: always;"></div>
+
+**Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the *Result Display*, similar to number 2 in the picture below.
+
+**Step 3**: You can see the matching flashcards in the list view, similar to number 3 in the picture below.
+
+![Find Step 2 & 3](images/ug/ug_find_step23.png)
+
+<div style="page-break-after: always;"></div>
 
 ### View help : `help`
 
@@ -335,9 +392,31 @@ Format: `help`
 
 ### List all flashcards : `list`
 
-Shows a list of all flashcards. This is useful for removing any `filter` or `find` you have done on the flashcard list.
+Want to see all of your flashcards? This is the command for you! 
+
+<div markdown="span" class="alert alert-primary">
+
+:bulb: **Tip:** This command would be especially helpful in helping you to see your original list of flashcards after executing [filter](#filter-for-flashcards---filter) or [find](#find-flashcards--find) commands!
+
+</div> 
 
 Format: `list`
+
+<div style="page-break-after: always;"></div>
+
+**Steps for listing flashcards**:
+
+**Step 1**: Type `list` in the *Command Box* and press *Enter*. 
+
+![List Step 1](images/ug/ug_list_step1.png)
+
+<div style="page-break-after: always;"></div>
+
+**Step 2**: The *Result Display* will display the message "Listed all flashcards" 
+
+**Step 3**: All the flashcards are now displayed in the scrollable list view! Scroll down to see all of your flashcards!
+
+![List Step 2 & 3](images/ug/ug_list_step23.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -439,7 +518,7 @@ The quiz mode works in conjunction with the [statistics](#view-the-statistics-of
 
 ### Sort all flashcards : `sort`
 
-Sorts all flashcards according to the criteria given.
+Want to get an overview of how skilled you are at answering the flashcards? Our sort command is here to help you, with two important criteria that you can sort your flashcards by, namely the review frequency and success rate of your flashcards!
 
 Format: `sort <success|reviewed> <-a|-d>`
 
@@ -447,17 +526,23 @@ Format: `sort <success|reviewed> <-a|-d>`
 * Specifying `-d` means sorting by the criteria in descending order.
 
 Examples: 
-* `sort reviewed -a` shows a list of current flashcards sorted according to review frequency in ascending order
-* `sort reviewed -d` shows a list of current flashcards sorted according to review frequency in descending order
-* `sort success -a` shows a list of current flashcards sorted according to success rate in ascending order
-* `sort success -d` shows a list of current flashcards sorted according to success rate in descending order
+* `sort success -a` sorts the flashcards according to success rate in ascending order
+* `sort success -d` sorts the flashcards according to success rate in descending order
+* `sort reviewed -a` sorts the flashcards according to review frequency in ascending order
+* `sort reviewed -d` sorts the flashcards according to review frequency in descending order
 
-<div markdown="span" class="alert alert-primary">:memo: Note: The review frequency of a flashcard refers to the number of times you review in <b>quiz mode</b>, and the success rate refers to the rate at which you get the question correct in <b>quiz mode</b>.
-</div>
-<div markdown="span" class="alert alert-primary">:memo: Note: The review and success frequencies of a flashcard are <b>only affected by quiz mode</b>, not review mode. So you can think of review mode as a trial that <b>does not affect</b> the statistics of the flashcard.
-</div>
-<div markdown="span" class="alert alert-primary">:memo: Note: Sorting results in a permanent change in the ordering of the flashcards. This means your list of flashcards will follow the sorted order even after you relaunch the app.
-</div>
+**Steps for sorting flashcards**:
+
+**Step 1**: In this example, we want to sort the flashcards according to success rate in an ascending order. Type `sort success -a` into the command box and press Enter
+
+![filedirectory](images/ug/ug_sort_step1.png)
+<div style="page-break-after: always;"></div>
+
+**Step 2**: The result display will show a message telling you that the flashcards have been sorted according to success rate in ascending order
+
+**Step 3**: The list view will show the newly sorted list of flashcards according to the criteria
+
+![filedirectory](images/ug/ug_sort_step2.png)
 
 <div style="page-break-after: always;"></div>
 
