@@ -335,9 +335,29 @@ Format: `help`
 
 ### List all flashcards : `list`
 
-Shows a list of all flashcards. This is useful for removing any `filter` or `find` you have done on the flashcard list.
+Want to see all of your flashcards? This is the command for you! 
+
+<div markdown="span" class="alert alert-primary">
+
+:bulb: **Tip:** This command would be especially helpful in helping you to see your original list of flashcards after executing [filter](#filter-for-flashcards---filter) or [find](#find-flashcards--find) commands!
+
+</div> 
 
 Format: `list`
+
+<div style="page-break-after: always;"></div>
+
+**Steps for listing flashcards**:
+
+**Step 1**: Type `list` in the *Command Box* and press *Enter*. 
+
+![List Step 1](images/ug/ug_list_step1.png)
+
+**Step 2**: The *Result Display* will display the message "Listed all flashcards" 
+
+**Step 3**: All the flashcards are now displayed in the scrollable list view! Scroll down to see all of your flashcards!
+
+![List Step 2 & 3](images/ug/ug_list_step23.png)
 
 <div style="page-break-after: always;"></div>
 
