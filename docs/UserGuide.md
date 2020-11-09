@@ -223,11 +223,10 @@ Example: `delete 3` deletes the 3rd flashcard in the flashcard list.
 
 <div style="page-break-after: always;"></div>
 
-<b>
 
 ### Edit a flashcard  : `edit`
 
-Yes, we all make mistakes (and typos). Realised that you have a typo in your flashcard? Fret not, you can edit your flashcard details in SWEe by specifying the fields you want to edit!
+Yes, we all make mistakes (and typos). Realised that you have a typo in your flashcard? Fret not, you can edit your flashcard details in SWEe! by specifying the fields you want to edit!
 
 Format: `edit INDEX [q/QUESTION] [a/ANSWER] [c/CATEGORY] [n/NOTE] [r/RATING] [d/DIAGRAM] [t/TAG]...`
 
@@ -548,17 +547,15 @@ Examples:
 
 ### View a flashcard  : `view`
 
-Views the specified flashcard. A "snapshot" of the flashcard is taken and displayed in the view pane to the user.
+Want to view a flashcard in all its detail? The view command allows you to do just that! You will be able to see the full question on the flashcard and the diagram (if present) of the flashcard. Optionally, you can also choose to see the answer and notes (if present) of the flashcard.
 
 Format: `view INDEX [-a]`
 
-* Views the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
-* `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 * If `-a` is specified, the answer and notes of the flashcard will be shown too.
 
 Examples:
-* `view 1` shows the 1st flashcard (in the displayed flashcard list) on the view pane without answer and notes.
-* `view 1 -a` shows the 1st flashcard (in the displayed flashcard list) on the view pane with answer and notes.
+* `view 1` shows the flashcard at index 1 on the view pane **without** answer and notes.
+* `view 1 -a` shows the flashcard at index 1 on the view pane **with** answer and notes.
 
 <div markdown="span" class="alert alert-primary">:memo: Note: Once another command is executed, the view pane will be returned to a blank state even if the shown
 flashcard was not modified/deleted.
@@ -571,21 +568,21 @@ flashcard was not modified/deleted.
 
 **Step 1**: Locate the flashcard you wish to view. In this example, we want to view the flashcard at index 3. Type the command `view 3` and press Enter.
 
-![filedirectory](images/ug/ug_view_step1.PNG)
+![filedirectory](images/ug/ug_view_step1_edited.png)
 
 **Step 2**: We will be presented with a "snapshot" of the flashcard at index 3 in the view pane.
 
-![filedirectory](images/ug/ug_view_step2.PNG)
+![filedirectory](images/ug/ug_view_step2_edited.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 3**: To view the answer and notes (if applicable) of the flashcard on the view pane. Type the command `view 3 -a` and press Enter.
+**Step 3**: Now lets say we also want to view the answer and notes (if present) of this flashcard. Type the command `view 3 -a` and press Enter.
 
-![filedirectory](images/ug/ug_view_step3.PNG)
+![filedirectory](images/ug/ug_view_step3_edited.png)
 
-**Step 4**: The answer of the flashcard is displayed on the view pane.
+**Step 4**: The answer of the flashcard is displayed on the view pane as well.
 
-![filedirectory](images/ug/ug_view_step4.PNG)
+![filedirectory](images/ug/ug_view_step4_edited.png)
 
 <div style="page-break-after: always;"></div>
 
