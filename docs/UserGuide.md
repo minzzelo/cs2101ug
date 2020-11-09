@@ -179,17 +179,29 @@ Format: `clear`
 
 ### Delete a flashcard  : `delete`
 
-Deletes the specified flashcard.
+Realised that a flashcard is now useless or irrelevant? You can simply remove it from your list using our delete command!
 
 Format: `delete INDEX`
 
 * Deletes the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
-* `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
+* `INDEX` must be a positive integer eg. 1, 2, 3, …
 
-Examples:
-*  `list` followed by `delete 2` deletes the 2nd flashcard in the flashcard list.
+Example: `delete 3` deletes the 3rd flashcard in the flashcard list.
+
+**Steps for deleting a flashcard**:
+**Step 1**: Locate the flashcard you want to delete. In this example, we want to delete the 3rd flashcard from the list. Type `delete 3` into the command box and press Enter 
+
+![filedirectory](images/ug/ug_delete_step1.png)
+
+**Step 2**: The result display will display a message telling you that the flashcard has been deleted 
+
+**Step 3**: The list view will show the updated flashcard list, with the specified flashcard removed
+
+![filedirectory](images/ug/ug_delete_step2.png)
 
 <div style="page-break-after: always;"></div>
+
+<b>
 
 ### Edit a flashcard  : `edit`
 
