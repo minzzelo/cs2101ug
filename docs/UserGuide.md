@@ -149,23 +149,20 @@ by specifying its file path.
 
 <div style="page-break-after: always;"></div>
 
-**Steps for adding a flashcard with diagram**:
-
-**Step 1**: Locate the relative file path of the image file. In this example, our file path is `image/classDiagramExample1.png` 
-
-Root folder containing SWEe Jar file        |  Image directory
-:-------------------------:|:-------------------------:
-![filedirectory](images/ug/ug_add_step1.png) |  ![filedirectory](images/ug/ug_add_step1.1.PNG)
+**Steps for adding a flashcard**:
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: Type the command `add q/This is an example of a class diagram a/True d/image/classDiagramExample1.png` and press Enter. Remember to include the file extension in `DIAGRAM`
+**Step 1**: In this case, we will use one of the add commands above as an example.
+To add a flashcard, type the command `add q/What does OOP stand for? a/Object Oriented Programming r/3 t/cool` and press Enter.
 
 ![filedirectory](images/ug/ug_add_step2.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 3**: Success! The flashcard is added to the flashcard list.
+**Step 2**: Success! The result display will display a message telling you that the flashcard is added to the flashcard list.
+
+**Step 3**: The list view will update to show the newly added flashcard at the end of the flashcard list
 
 ![filedirectory](images/ug/ug_add_step3.png)
 
@@ -609,3 +606,20 @@ Action | Format, Examples
 **View** | `view INDEX [-a]` <br> eg. `view 1`
 **Stats** | `stats INDEX` <br> eg. `stats 3`
 **Exit** | `exit`
+
+## Appendix
+
+### Finding file path for Diagram field
+This short tutorial will be useful when adding or editing diagrams to flashcards.
+
+
+**Step 1**: Locate the root folder containing the SWEe Jar file and navigate to it
+
+![filedirectory](images/ug/ug_add_step1.png) 
+
+**Step 2**: Next, locate the relative file path of the image file. In this example, our diagram is located in the image folder.
+Hence, the relative file path is `image/classDiagramExample1.png` 
+
+![filedirectory](images/ug/ug_add_step1.1.PNG)
+
+**Step 3**: Now, go ahead and add or edit your flashcard by adding `d/image/classDiagramExample1.png` after the appropriate command!
