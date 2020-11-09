@@ -126,12 +126,14 @@ Input Field | Restrictions and how to specify
 
 ### Add a flashcard : `add`
 
-Adds a flashcard.
+Now let's get started. The first thing you would do on the app is to, of course, add flashcards!
 
 Format: `add q/QUESTION a/ANSWER [c/CATEGORY] [r/RATING] [n/NOTE] [d/DIAGRAM] [t/TAG]...`
 
-* Refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
-* After a new flashcard is added, all flashcards will be listed. 
+* If you are having troubles understanding the format, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
+* Remember that the `QUESTION` and `ANSWER` fields are compulsory while adding a flashcard! The rest are optional.
+(Hint: You can always add in the remaining fields subsequently using our [edit command](#edit-a-flashcard---edit)!)
+* After a new flashcard is added, the flashcard list will update to include the new flashcard.
 
 <div markdown="span" class="alert alert-primary">
 
