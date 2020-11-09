@@ -360,7 +360,7 @@ Examples:
 
 **Steps for finding flashcards**:
 
-**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the *Command Box* and press *Enter*
+**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the *Command Box* and press *Enter*.
 
 ![Find Step 1](images/ug/ug_find_step1.png)
 
