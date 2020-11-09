@@ -386,7 +386,7 @@ Format: `help`
 
 ![Help step 2](images/ug/ug_help_step_2.png)
 
-**Step 3**: Simply press Copy-URL then paste the link in your favourite browser, and you will be brought to our user guide website.
+**Step 3**: Simply press "Copy URL" then paste the link in your favourite browser, and you will be brought to our user guide website.
 
 
 
