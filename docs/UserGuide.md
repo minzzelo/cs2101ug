@@ -232,9 +232,9 @@ Examples:
 ![filedirectory](images/ug/ug_edit_step1.PNG)
 <div style="page-break-after: always;"></div>
 
-**Step 2**: 2. The result display will show a message that the flashcard has been edited successfully
+**Step 2**: The result display will show a message that the flashcard has been edited successfully
 
-**Step 3**: 3. The list view will show the updated details of the flashcard after the edit
+**Step 3**: The list view will show the updated details of the flashcard after the edit
 
 ![filedirectory](images/ug/ug_edit_step2.PNG)
 
