@@ -31,6 +31,7 @@ SWEe! is a  **desktop app for CS2103T students to manage their learning progress
         - [Saving the data](#saving-the-data)
     - [FAQ](#faq)
     - [Command summary](#command-summary)
+    - [Appendix](#appendix)
         
 
 --------------------------------------------------------------------------------------------------------------------
@@ -179,9 +180,13 @@ Format: `clear`
 
 **Step 1**: Type `clear` into the command box and press Enter
 
+![filedirectory](images/ug/ug_clear_step1.png)
+
 **Step 2**: The result display will display a message telling you that all flashcards have been cleared
 
 **Step 3**: The list view will update to show an empty flashcard list
+
+![filedirectory](images/ug/ug_clear_step2_3.png)
 
 ### Delete a flashcard  : `delete`
 
