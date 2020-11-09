@@ -446,14 +446,14 @@ Examples:
 
 **Step 1**: In this example, we want to sort the flashcards according to success rate in an ascending order. Type `sort success -a` into the command box and press Enter
 
-![filedirectory](images/ug/ug_sort_step1.PNG)
+![filedirectory](images/ug/ug_sort_step1.png)
 <div style="page-break-after: always;"></div>
 
 **Step 2**: The result display will show a message telling you that the flashcards have been sorted according to success rate in ascending order
 
 **Step 3**: The list view will show the newly sorted list of flashcards according to the criteria
 
-![filedirectory](images/ug/ug_sort_step2.PNG)
+![filedirectory](images/ug/ug_sort_step2.png)
 
 <div style="page-break-after: always;"></div>
 
