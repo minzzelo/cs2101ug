@@ -126,35 +126,34 @@ Input Field | Restrictions and how to specify
 
 ### Add a flashcard : `add`
 
-Now let's get started. The first thing you would do on the app is to, of course, add flashcards!
+Now let's get started. The first thing you would do on SWEe is to, of course, add flashcards!
 
 Format: `add q/QUESTION a/ANSWER [c/CATEGORY] [r/RATING] [n/NOTE] [d/DIAGRAM] [t/TAG]...`
 
-* If you are having troubles understanding the format, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 * Remember that the `QUESTION` and `ANSWER` fields are compulsory while adding a flashcard! The rest are optional.
 (Hint: You can always add in the remaining fields subsequently using our [edit command](#edit-a-flashcard---edit)!)
 * After a new flashcard is added, the flashcard list will update to include the new flashcard.
+* If you are having troubles understanding the format, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 
 <div markdown="span" class="alert alert-primary">
 
-:bulb: **Tip:** If the category is not specified, the flashcard will have the <b>General</b> category.
+:bulb: **Tip:** If the category is not specified, the flashcard  will be assigned to the <b>General</b> category by default.
 
 </div>
 
 Examples:
-* `add q/What does OOP stand for? a/Object Oriented Programming`
-* `add q/What does OOP stand for? a/Object Oriented Programming r/3 t/cool`
-* `add q/What does OOP stand for? a/Object Oriented Programming c/Super Important n/Important question!`
-* `add q/What does OOP stand for? a/Object Oriented Programming d/images/diagram.png`
-* `add q/What does OOP stand for? a/Object Oriented Programming c/UML n/Important question! d/images/diagram.png`
+* `add q/What does OOP stand for? a/Object Oriented Programming` adds a flashcard with only its compulsory fields, a question and an answer.
+* `add q/What does OOP stand for? a/Object Oriented Programming r/3 t/cool` adds a flashcard containing a question, an answer, a rating and a tag.
+* `add q/What does OOP stand for? a/Object Oriented Programming d/images/diagram.png` adds a flashcard containing a question, an answer and a diagram
+by specifying its file path.
 
 <div style="page-break-after: always;"></div>
 
 **Steps for adding a flashcard with diagram**:
 
-**Step 1**: Locate the relative file path of the image file. In this example, our file path is `images/classDiagramExample1.png` 
+**Step 1**: Locate the relative file path of the image file. In this example, our file path is `image/classDiagramExample1.png` 
 
-Root folder containing the jar file        |  Image directory
+Root folder containing SWEe Jar file        |  Image directory
 :-------------------------:|:-------------------------:
 ![filedirectory](images/ug/ug_add_step1.png) |  ![filedirectory](images/ug/ug_add_step1.1.PNG)
 
@@ -166,9 +165,13 @@ Root folder containing the jar file        |  Image directory
 
 <div style="page-break-after: always;"></div>
 
-**Step 3**: The flashcard is added to the list.
+**Step 3**: Success! The flashcard is added to the flashcard list.
 
 ![filedirectory](images/ug/ug_add_step3.png)
+
+<div markdown="span" class="alert alert-primary">:memo: Note:
+To add a flashcard without diagram, skip Step 1 and proceed from Step 2.
+</div>
 
 <div style="page-break-after: always;"></div>
 
