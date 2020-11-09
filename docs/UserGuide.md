@@ -341,7 +341,7 @@ Format: `find KEYWORD [KEYWORD]...`
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: Note: If you search for multiple keywords, flashcards containing <b>either<b> of keywords will be returned. For example, "General OOP" will return flashcards containing either General and/or OOP. 
+:memo: Note: If you search for multiple keywords, flashcards containing either of the keywords will be returned. For example, "General OOP" will return flashcards containing either General and/or OOP. 
 
 </div>
 
