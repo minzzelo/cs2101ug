@@ -206,37 +206,37 @@ Example: `delete 3` deletes the 3rd flashcard in the flashcard list.
 
 ### Edit a flashcard  : `edit`
 
-Edits a flashcard.
+Yes, we all make mistakes (and typos). Realised that you have a typo in your flashcard? Fret not, you can edit your flashcard details in SWEe by specifying the fields you want to edit!
 
 Format: `edit INDEX [q/QUESTION] [a/ANSWER] [c/CATEGORY] [n/NOTE] [r/RATING] [d/DIAGRAM] [t/TAG]...`
 
 * Edits the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
-* Refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
-* Although all fields are optional, a minimum of one field has to be given.
+* A minimum of one field has to be given.
 * Specifying empty values to `NOTE`, `RATING`, `TAG` or `DIAGRAM` eg. `r/` will remove the corresponding field in the flashcard.
-* Although `QUESTION`, `ANSWER` and `CATEGORY` are optional values, you are not allowed to specify an empty value to those attributes 
-once the prefix is declared e.g. `c/` is not allowed and will not remove category.
 
 Examples:
-* `edit 3 q/What does OOP stand for? a/Object Oriented Programming c/General`
-* `edit 3 q/What does OOP stand for? a/Object Oriented Programming`
-* `edit 3 n/Important question! r/`
+
+* To edit the 1st flashcard’s question and category to be What does OOP stand for? and Acronyms respectively.
+`edit 3 q/What does OOP stand for? c/Acronyms`
+* To edit the 3rd flashcard’s answer and clear all existing tags
+`edit 3 a/Object Oriented Programming t/`
+* To edit the 3rd flashcard’s note and clear rating
+`edit 3 n/Important question! r/`
+
 <div style="page-break-after: always;"></div>
 
-**Steps for editing a flashcard's category and rating**:
+**Steps for editing a flashcard**:
 
-**Step 1**: Locate the flashcard you wish to edit. In this example, we want to edit the flashcard at index 2.
+**Step 1**: Locate the flashcard you wish to edit. In this example, we want to edit the first flashcard's question and category to What does OOP stand for? and Acronyms respectively. Type `edit 1 q/What does OOP stand for? c/Acronyms` into the command box and press Enter
 
 ![filedirectory](images/ug/ug_edit_step1.PNG)
 <div style="page-break-after: always;"></div>
 
-**Step 2**: We want to edit the category of the flashcard to Trivial and rating to 1. Type the command `edit 2 c/Trivial r/1` and press Enter.
+**Step 2**: 2. The result display will show a message that the flashcard has been edited successfully
+
+**Step 3**: 3. The list view will show the updated details of the flashcard after the edit
 
 ![filedirectory](images/ug/ug_edit_step2.PNG)
-
-**Step 3**: The flashcard's category and rating are edited to Trivial and 1 respectively.
-
-![filedirectory](images/ug/ug_edit_step3.PNG)
 
 <div style="page-break-after: always;"></div>
 
