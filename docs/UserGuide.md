@@ -169,7 +169,7 @@ Root folder containing SWEe Jar file        |  Image directory
 
 ![filedirectory](images/ug/ug_add_step3.png)
 
-<div markdown="span" class="alert alert-primary">:memo: Note:
+<div markdown="span" class="alert alert-primary">:bulb: **Tip:**
 To add a flashcard without diagram, skip Step 1 and proceed from Step 2.
 </div>
 
