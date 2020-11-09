@@ -90,11 +90,6 @@ Format/Notation | Meaning
 `[c/CATEGORY]` | Items in square brackets are optional. You can choose whether you want to specify them. <br> E.g. `q/QUESTION [c/CATEGORY]` can be used as `q/What is my name? c/Name` or `q/What is my name?`
 `[t/TAG]...` | Items with ellipsis after them can be used either multiple or zero times <br> E.g. `t/TAG` can be used 0 times or as `t/friend`, `t/friend t/family`, etc
 
-<div markdown="block" class="alert alert-info">
-* Parameters can be in any order.
-  * eg. Specifying `q/QUESTION a/ANSWER` or `a/ANSWER q/QUESTION` are both acceptable.<br><br>
-</div>
-
 <div markdown="span" class="alert alert-primary">
 
 :bulb: **Tip:** Parameters can be specified in any order. If the command specifies `q/QUESTION a/ANSWER`, you can specify it as `a/ANSWER q/QUESTION` as well 
