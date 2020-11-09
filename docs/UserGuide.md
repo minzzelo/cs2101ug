@@ -177,10 +177,17 @@ To add a flashcard without diagram, skip Step 1 and proceed from Step 2.
 
 ### Clear all flashcards : `clear` 
 
-Clears all flashcard data from the program.
+Want to delete all flashcards at one go? Clear command clears all flashcard data from the program.
 
 Format: `clear`
 
+**Steps for clearing all flashcards**:
+
+**Step 1**: Type `clear` into the command box and press Enter
+
+**Step 2**: The result display will display a message telling you that all flashcards have been cleared
+
+**Step 3**: The list view will update to show an empty flashcard list
 
 ### Delete a flashcard  : `delete`
 
