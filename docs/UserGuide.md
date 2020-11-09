@@ -380,11 +380,11 @@ Format: `help`
 
 **Step 1**: Type `help` in the command box and press Enter.
 
-![Help step 1](images/ug/ug_help_step_1.PNG)
+![Help step 1](images/ug/ug_help_step_1.png)
 
 **Step 2**: A new window will pop out with a link.
 
-![Help step 2](images/ug/ug_help_step_2.PNG)
+![Help step 2](images/ug/ug_help_step_2.png)
 
 **Step 3**: Simply press Copy-URL then paste the link in your favourite browser, and you will be brought to our user guide website.
 
@@ -447,21 +447,21 @@ The review and success frequency of a flashcard is <b>not affected</b> by review
 
 **Step 1**: We want to enter review mode to review our flashcards. Type the command `review` and press Enter.
 
-![Review step 1](images/ug/ug_review_step1_edited.PNG)
+![Review step 1](images/ug/ug_review_step1_edited.png)
 
 **Step 2**: We are brought into review mode. The instructions on how to navigate review mode will be shown at the top.
 
-![Review step 2](images/ug/ug_review_step2_edited.PNG)
+![Review step 2](images/ug/ug_review_step2_edited.png)
 
 <div style="page-break-after: always;"></div>
 
 **Step 3**: In this example, we will demonstrate the behaviour of the `↓ key`. Upon pressing the `↓ key`, the answer of the flashcard is shown.
 
-![Review step 3](images/ug/ug_review_step3_edited.PNG)
+![Review step 3](images/ug/ug_review_step3_edited.png)
 
 **Step 4**: Now, let's move onto the next flashcard. We just need to press the `→ key`
 
-![Review step 4](images/ug/ug_review_step4.PNG)
+![Review step 4](images/ug/ug_review_step4.png)
 
 <br>
 
