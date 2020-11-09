@@ -283,13 +283,13 @@ Examples:
 
 **Steps for filtering for a flashcard based on category and tag**:
 
-**Step 1**: Suppose you want to filter for a flashcard which has a Trivial category and contains the preloaded tag. Type the command `filter c/Trivial t/preloaded` and press Enter.
+**Step 1**: Suppose you want to filter for a flashcard which has a Trivial category and contains the preloaded tag. Type the command `filter c/Trivial t/preloaded` and press Enter
 
 ![filedirectory](images/ug/ug_filter_step1.PNG)
 
-**Step 2**: The result display will show the number of flashcards listed after applying the filter.
+**Step 2**: The result display will show the number of flashcards listed after applying the filter
 
-**Step 3**: The list view will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag.
+**Step 3**: The list view will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag
 
 ![filedirectory](images/ug/ug_filter_step2_3.PNG)
 
