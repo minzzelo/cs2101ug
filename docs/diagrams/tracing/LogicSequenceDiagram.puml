@@ -1,0 +1,21 @@
+@startuml
+!include ../style.puml
+
+Participant ":LogicManager" as logic LOGIC_COLOR
+Participant ":FlashcardDeckParser" as fdp LOGIC_COLOR
+Participant ":EditCommandParser" as ecp LOGIC_COLOR
+Participant "command:EditCommand" as ec LOGIC_COLOR
+
+[-> logic : execute
+activate logic
+logic -> fdp ++: parseCommand(commandText)
+create ecp
+fdp -> ecp
+fdp -> ecp ++: parse(arguments)
+create ec
+ecp -> ec ++: index, editFlashcardDescriptor
+ec --> ecp --
+ecp --> fdp --: command
+fdp --> logic --: command
+
+@enduml

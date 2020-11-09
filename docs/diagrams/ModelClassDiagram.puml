@@ -1,0 +1,41 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor MODEL_COLOR
+skinparam classBackgroundColor MODEL_COLOR
+scale 0.5
+
+Package Model <<Rectangle>>{
+Interface ReadOnlyFlashcardDeck <<Interface>>
+Interface Model <<Interface>>
+Interface ObservableList <<Interface>>
+Class FlashcardDeck
+Class ReadOnlyFlashcardDeck
+Class Model
+Class ModelManager
+Class UserPrefs
+Class ReadOnlyUserPrefs
+
+Package Flashcard {
+Class Flashcard
+Class UniqueFlashcardList
+}
+
+Class HiddenOutside #FFFFFF
+HiddenOutside ..> Model
+
+FlashcardDeck .up.|> ReadOnlyFlashcardDeck
+
+ModelManager .up.|> Model
+Model .right.> ObservableList
+ModelManager o--> "1" FlashcardDeck
+ModelManager o-left-> "1" UserPrefs
+UserPrefs .up.|> ReadOnlyUserPrefs
+
+FlashcardDeck *--> "1" UniqueFlashcardList
+UniqueFlashcardList o-left-> "*" Flashcard
+
+ModelManager --> Flashcard : filtered list
+ModelManager --> Flashcard : sorted list
+
+@enduml

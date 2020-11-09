@@ -1,0 +1,25 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor STORAGE_COLOR
+skinparam classBackgroundColor STORAGE_COLOR
+
+Interface Storage <<Interface>>
+Interface UserPrefsStorage <<Interface>>
+Interface FlashcardDeckStorage <<Interface>>
+
+Class StorageManager
+Class JsonUserPrefsStorage
+Class JsonFlashcardDeckStorage
+
+StorageManager .left.|> Storage
+StorageManager o-right-> UserPrefsStorage
+StorageManager o--> FlashcardDeckStorage
+
+JsonUserPrefsStorage .left.|> UserPrefsStorage
+JsonFlashcardDeckStorage .left.|> FlashcardDeckStorage
+JsonFlashcardDeckStorage .down.> JsonSerializableFlashcardDeckStorage
+JsonSerializableFlashcardDeckStorage .right.> JsonAdaptedFlashcard
+JsonAdaptedFlashcard .right.> JsonAdaptedTag
+JsonAdaptedFlashcard .right.> JsonAdaptedStatistics
+@enduml
