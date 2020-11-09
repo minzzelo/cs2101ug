@@ -99,26 +99,22 @@ Format/Notation | Meaning
 
 ## Common Input Fields
 
-This section will help you understand the different fields you will see in [Features](#features). It gives an overview of what they are, how to specify them and any restrictions.
-
-#### General Notes about Input Fields:
-* **Can be empty**  means you can specify the prefix but not pass a value.<br>eg. passing `r/` is valid.
-* **Cannot be empty** means you have to specify a value when you specify the prefix.<br>eg. passing `c/` is invalid.
-* All input fields should not contain other input prefixes. eg. passing in `What is c/?` as a `QUESTION` to `q/QUESTION` is not supported.
+Many of our commands use the same input fields. This section will teach you what each of them mean and how to specify them.
+If you are reading this guide for the first time, you can skip to [Features](#features) first. You can refer back to this table at any time!
 
 <br>
 
-Input Field | Restrictions and how to specify
+Input Field | What is it & How to specify
 -----------|-----------------------
-`q/QUESTION`    | This is the question on the flashcard.<br>`QUESTION` has no character limit or restrictions (eg. can have spaces).<br>Cannot be empty.
-`a/ANSWER`      | This is the answer on the flashcard.<br>`ANSWER` has no character limit or restrictions (eg. can have spaces).<br>Cannot be empty.
-`c/CATEGORY`    | This is the category of the flashcard.<br>`CATEGORY` must be alphanumeric and have a maximum of 50 characters. It can consist of multiple words but there should only be 1 space between words.<br>Cannot be empty.
-`r/RATING`      | This is the star rating of the flashcard.<br>`RATING` must be a number between 1 and 5 inclusive.<br>Can be empty.
-`d/DIAGRAM`     | This is the diagram of the flashcard (associated with a question in the view pane).<br>`DIAGRAM` must be a valid relative or absolute path to a file. <br>Currently only supports file path **without** spaces. <br>eg. image/umlDiagram.png is supported but image/u mlDiagram.png is not supported <br>Only supports the following image file types: jpg, png, jpeg, bmp <br>Can be empty.
-`n/NOTE`        | This is the notes of the flashcard (associated with an answer in the view pane).<br>`NOTE` has no character limit or restrictions.<br>Can be empty.
-`t/TAG`         | These are tags of the flashcard. A flashcard can have more than one tag.<br>`TAG` must be alphanumeric and have a maximum of 50 characters.<br>Must **only** be one word.<br>Cannot be empty.
-`INDEX`         | `INDEX` refers to the index number shown in the displayed flashcard list.<br>Every visible flashcard on the display list has an `INDEX`.<br>`INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
-`KEYWORD`       | `KEYWORD` can be alphanumeric or punctuations. `KEYWORD` has no character limit but there should be no spaces within the keyword. 
+`q/QUESTION`    | Question on the flashcard.<br>Question on the flashcard.<br>`QUESTION` has no character restrictions so you can input anything you like.
+`a/ANSWER`      | Answer on the flashcard.<br>`ANSWER` has no character restrictions so you can input anything you like.
+`c/CATEGORY`    | Category of the flashcard.<br>`CATEGORY` must be alphanumeric and can be multiple words.
+`r/RATING`      | Sstar rating of the flashcard.<br>`RATING` must be a number between 1 and 5 inclusive.
+`d/DIAGRAM`     | Diagram (image) of the flashcard.<br>`DIAGRAM` must be a valid path to a file. <br>eg. It can be a full file path such as C:/users/tom/Desktop/image/diagram.png<br> eg. It can be a relative file path (relative to swee.jar) such as images/image.jpg<br>Only supports the following image file types: jpg, png, jpeg, bmp
+`n/NOTE`        | Note on the flashcard.<br>`NOTE` has no character limit or restrictions so you can input anything you like.
+`t/TAG`         | These are tags of the flashcard. A flashcard can have more than one tag.<br>`TAG` must be alphanumeric and must be a single word.
+`INDEX`         | `INDEX` refers to the index number shown in the displayed flashcard list.<br>Every visible flashcard on the display list has an `INDEX`.<br>`INDEX` is always a positive integer greater than 0. eg. 1, 2, 3, …
+`KEYWORD`       | `KEYWORD` can be alphanumeric or punctuations. `KEYWORD` should not contain spaces.
 
 <div style="page-break-after: always;"></div>
 
@@ -319,9 +315,23 @@ Examples:
 
 ### View help : `help`
 
-Opens a window with a link that directs you to our user guide.
+If you forget how to use the app or have some things you are unsure about, fear not! You can use our help function which will lead you to our user guide.
 
 Format: `help`
+
+**Steps to use the help function**
+
+**Step 1**: Type `help` in the command box and press Enter.
+
+![filedirectory](images/ug/ug_help_step_1.PNG)
+
+**Step 2**: A new window will pop out with a link.
+
+![filedirectory](images/ug/ug_help_step_2.PNG)
+
+**Step 3**: Simply press Copy-URL then paste the link in your favourite browser, and you will be brought to our user guide website.
+
+
 
 ### List all flashcards : `list`
 
@@ -333,12 +343,14 @@ Format: `list`
 
 ### Review flashcards: `review`
 
-Reviews the current list of flashcards. This puts the user in review mode and the user can no 
-longer input commands to the textbox.
+Want to study your flashcards? Our review mode lets you easily navigate freely between flashcards to study them so that you can ace your next exam!
 
 Format: `review`
 
-Upon entering review mode, the following user input will be recognised:
+Typing the `review` and pressing Enter will put you in review mode and allows you to review the current displayed flashcard list.
+<br><br>
+So what is review mode? Upon entering review mode, you can no longer input commands to the command box. However, the following keyboard input will now be recognised:
+
 * `↓ key` shows answer and notes of the current flashcard  
 * `↑ key` hides answer and notes of the current flashcard  
 * `→ key` moves on to the next flashcard (if there is a next flashcard)
@@ -356,17 +368,25 @@ The review and success frequency of a flashcard is <b>not affected</b> by review
 
 **Step 1**: We want to enter review mode to review our flashcards. Type the command `review` and press Enter.
 
-![filedirectory](images/ug/ug_review_step1.PNG)
+![filedirectory](images/ug/ug_review_step1_edited.PNG)
 
 **Step 2**: We are brought into review mode. The instructions on how to navigate review mode will be shown at the top.
 
-![filedirectory](images/ug/ug_review_step2.PNG)
+![filedirectory](images/ug/ug_review_step2_edited.PNG)
 
 <div style="page-break-after: always;"></div>
 
 **Step 3**: In this example, we will demonstrate the behaviour of the `↓ key`. Upon pressing the `↓ key`, the answer of the flashcard is shown.
 
-![filedirectory](images/ug/ug_review_step3.PNG)
+![filedirectory](images/ug/ug_review_step3_edited.PNG)
+
+**Step 4**: Now, let's move onto the next flashcard. We just need to press the `→ key`
+
+![filedirectory](images/ug/ug_review_step4.PNG)
+
+<br>
+
+To summarise, use the `↓ key` and `↑ key` to toggle showing the flashcard’s answer and notes. Use the `→ key` and `← key` to move between flashcards. Use the `q key` to quit review mode.
 
 <div style="page-break-after: always;"></div>
 
