@@ -39,30 +39,30 @@ SWEe! is a  **desktop app for CS2103T students to manage their learning progress
 
 ## Quick start
 
-1. Ensure you have Java `11` or above installed in your Computer.
+1. Grab your CS2103 notes before we get started.
 
-1. Download the latest `swee.jar` from [here](https://github.com/AY2021S1-CS2103T-T17-2/tp/releases).
+1. Ensure you have Java `11` or above installed in your Computer. But how? Well, follow the steps below to check your Java version. 
+   
+   Step 1: Open your terminal. Type in `java --version` and press *Enter*.
+
+   Step 2: You will now be able to check the Java version installed in your Computer!
+
+   ![Java Version](images/quick-start/javaVersion.png)
+
+
+1. Download the latest `swee.jar` from [here](https://github.com/AY2021S1-CS2103T-T17-2/tp/releases).<br>
+
+    ![Download Swee Jar](images/quick-start/downloadSweeJar.png)
 
 1. Copy the file to the folder you want to use as the _home folder_ for SWEe!.
 
 1. Double-click the file to start the app. The GUI similar to the image below should appear in a few seconds. Note how the app contains some sample data. <br>
+
     ![Quick Start UI](images/QuickStartUi.png)
     <div style="page-break-after: always;"></div>
-1. Type the command in the command box and press Enter to execute it.<br>
-   Some example commands you can try:
+<br>
+1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. E.g. typing help and pressing Enter will open the help window.
 
-   * **`add q/What does OOP stand for? a/Object Oriented Programming c/General`** : Adds a flashcard with a question and answer into the General category.
-
-   * **`delete 3`**: Deletes the 3rd flashcard in the current list.
-   
-   * **`list`** : Lists all flashcards.
-
-   * **`review`** : Reviews the current list of flashcards.
-   
-   * **`view 1`** : Views the 1st flashcard in the current list.
-
-   * **`exit`** : Exits the app.
-  
 1. Refer to the [Features](#features) below for details of each command.
 
 <div style="page-break-after: always;"></div>
