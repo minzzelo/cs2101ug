@@ -137,7 +137,7 @@ Format: `add q/QUESTION a/ANSWER [c/CATEGORY] [r/RATING] [n/NOTE] [d/DIAGRAM] [t
 
 <div markdown="span" class="alert alert-primary">
 
-:bulb: **Tip:** If the category is not specified, the flashcard  will be assigned to the <b>General</b> category by default.
+:memo: Note: If the category is not specified, the flashcard  will be assigned to the <b>General</b> category by default.
 
 </div>
 
@@ -169,7 +169,7 @@ Root folder containing SWEe Jar file        |  Image directory
 
 ![filedirectory](images/ug/ug_add_step3.png)
 
-<div markdown="span" class="alert alert-primary">:bulb: **Tip:**
+<div markdown="span" class="alert alert-primary">:memo: Note:
 To add a flashcard without diagram, skip Step 1 and proceed from Step 2.
 </div>
 
