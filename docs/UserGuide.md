@@ -587,6 +587,9 @@ If you still want to perform the action, do take note that you may face unintend
 **Q**: What is the success rate of a flashcard?<br>
 **A**: Success rate of a flashcard is measured by `(success frequency) / (review frequency) x 100%`. If a flashcard has a review frequency of 0, then its success rate will be 0%.
 
+**Q**: How do I save my progress after executing commands?<br>
+**A**: SWEe does an auto save every time you exit the app and automatically loads the latest state of flashcards when you relaunch the app. 
+
 --------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
