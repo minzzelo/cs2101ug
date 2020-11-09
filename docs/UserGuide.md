@@ -332,13 +332,18 @@ Examples:
 
 ### Find flashcards : `find`
 
-Searches for all flashcards matching any of the search keywords.
+Want to find a particular flashcard but too lazy to check through all the flashcards individually to find it? We understand your pain and fear not, let SWEe! take away your pain by doing the finding for you! Keep your flashcards coming as we will provide an quick and easy way for you to search for anything and everything no matter how many flashcards you have.
 
 Format: `find KEYWORD [KEYWORD]...`
-* Finds all flashcards containing any of the keywords.
+
 * Refer to [common input fields](#common-input-fields) on how to specify the different fields.
 * The keywords are **case insensitive**.
-* Keywords will match as long as they are contained within any flashcard’s question/answer/category/note/tags. eg. `UML` keyword will match a flashcard with a `category` called `UML-Diagram`
+
+<div markdown="span" class="alert alert-primary">
+
+:memo: Note: If you search for multiple keywords, flashcards containing <b>either<b> of keywords will be returned. For example, "General OOP" will return flashcards containing either General and/or OOP. 
+
+</div>
 
 <div markdown="span" class="alert alert-primary">
 
@@ -349,8 +354,25 @@ Format: `find KEYWORD [KEYWORD]...`
 Examples: 
 * `find general` displays all flashcards containing the word general.
 * `find general important` displays all flashcards containing either the word general and/or important.
-* `find GENERAL object` displays all flashcards containing either the word general and/or object.
 * `find -` displays all flashcards containing "-".
+
+<div style="page-break-after: always;"></div>
+
+**Steps for finding flashcards**:
+
+**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the *Command Box* and press *Enter*.
+
+![Find Step 1](images/ug/ug_find_step1.png)
+
+<div style="page-break-after: always;"></div>
+
+**Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the *Result Display*, similar to number 2 in the picture below.
+
+**Step 3**: You can see the matching flashcards in the list view, similar to number 3 in the picture below.
+
+![Find Step 2 & 3](images/ug/ug_find_step23.png)
+
+<div style="page-break-after: always;"></div>
 
 ### View help : `help`
 
@@ -377,6 +399,8 @@ Format: `list`
 **Step 1**: Type `list` in the *Command Box* and press *Enter*. 
 
 ![List Step 1](images/ug/ug_list_step1.png)
+
+<div style="page-break-after: always;"></div>
 
 **Step 2**: The *Result Display* will display the message "Listed all flashcards" 
 
