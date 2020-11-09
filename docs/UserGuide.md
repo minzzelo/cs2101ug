@@ -217,11 +217,11 @@ Format: `edit INDEX [q/QUESTION] [a/ANSWER] [c/CATEGORY] [n/NOTE] [r/RATING] [d/
 Examples:
 
 * To edit the 1st flashcard’s question and category to be What does OOP stand for? and Acronyms respectively.
-`edit 3 q/What does OOP stand for? c/Acronyms`
+    `edit 3 q/What does OOP stand for? c/Acronyms`
 * To edit the 3rd flashcard’s answer and clear all existing tags
-`edit 3 a/Object Oriented Programming t/`
+    `edit 3 a/Object Oriented Programming t/`
 * To edit the 3rd flashcard’s note and clear rating
-`edit 3 n/Important question! r/`
+    `edit 3 n/Important question! r/`
 
 <div style="page-break-after: always;"></div>
 
