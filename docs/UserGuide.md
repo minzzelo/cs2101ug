@@ -426,7 +426,7 @@ Examples:
 
 ### View help : `help`
 
-If you forget how to use the app or have some things you are unsure about, fear not! You can use our help function which will lead you to our user guide.
+If you are unsure about some things in our app, you can use our help function which will direct you to our user guide.
 
 Format: `help`
 
@@ -490,9 +490,6 @@ So what is review mode? Upon entering review mode, you can no longer input comma
 * `← key` moves to the previous flashcard (if there is a previous flashcard)
 * `q` quits review mode
 
-<div markdown="span" class="alert alert-primary">:memo: Note:
-The review and success frequency of a flashcard is <b>not affected</b> by review mode.
-</div>
 <br>
 
 <div style="page-break-after: always;"></div>
@@ -596,7 +593,7 @@ Examples:
 
 ### View a flashcard  : `view`
 
-Want to view a flashcard in all its detail? The `view` command allows you to do just that! You will be able to see the full question on the flashcard and the diagram (if present) of the flashcard. Optionally, you can also choose to see the answer and notes (if present) of the flashcard.
+The view command allows you to see your flashcards in detail. You will be able to see the full question on the flashcard and the diagram of the flashcard. Optionally, you can also choose to see the answer and notes of the flashcard.
 
 Format: `view INDEX [-a]`
 
@@ -606,9 +603,6 @@ Examples:
 * `view 1` shows the flashcard at index 1 on the view pane **without** answer and notes.
 * `view 1 -a` shows the flashcard at index 1 on the view pane **with** answer and notes.
 
-<div markdown="span" class="alert alert-primary">:memo: Note: Once another command is executed, the view pane will be returned to a blank state even if the shown
-flashcard was not modified/deleted.
-</div>
 <br>
 
 <div style="page-break-after: always;"></div>
@@ -625,7 +619,7 @@ flashcard was not modified/deleted.
 
 <div style="page-break-after: always;"></div>
 
-**Step 3**: Now lets say we also want to view the answer and notes (if present) of this flashcard. Type the command `view 3 -a` and press Enter.
+**Step 3**: Now lets say we also want to view the answer and notes of this flashcard. Type the command `view 3 -a` and press Enter.
 
 ![filedirectory](images/ug/ug_view_step3_edited.png)
 
