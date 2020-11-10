@@ -499,7 +499,7 @@ Quiz attempts are recorded and information about your scores can be displayed us
 
 <div style="page-break-after: always;"></div>
 
-**Step 3**: In this example, we will demonstrate the behaviour of the `↓ key`. Upon pressing the `↓ key`, we will be prompted if we got the answer correct.
+**Step 3**: In this example, we will demonstrate the behaviour of the `↓ key`. Upon pressing the `↓ key`, the answer of the flashcard will be shown and we will be prompted if we got the answer correct.
 
 ![filedirectory](images/ug/ug_quiz_step3.PNG)
 
@@ -613,9 +613,19 @@ flashcard was not modified/deleted.
 
 ### Exit the program : `exit`
 
-Exits the program.
+Need a break from using SWEe!?
 
 Format: `exit`
+
+<div style="page-break-after: always;"></div>
+
+**Steps to use the exit function**
+
+**Step 1**: Type `exit` in the command box and press Enter. The application will close and we look forward to seeing you back 😊 .
+
+![Exit step 1](images/ug/ug_exit_step1.png)
+
+<div style="page-break-after: always;"></div>
 
 ### Saving the data
 
