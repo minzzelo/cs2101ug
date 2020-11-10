@@ -676,7 +676,7 @@ Format: `exit`
 
 ### Saving the data
 
-Worried that all the precious flashcards you have saved would be gone after closing the app? Fear not! Feel free to close the app anytime in peace! Flashcards data are saved in the hard disk automatically for you after any command that changes the data. There is no need to save manually.
+Worried that all the precious flashcards you have saved would be gone after closing the app? Do not worry! Feel free to close the app anytime in peace! Flashcards data are saved in the hard disk automatically for you after any command that changes the data. There is no need to save manually.
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -684,7 +684,7 @@ Worried that all the precious flashcards you have saved would be gone after clos
 
 ## FAQ
 
-**Q**: Help! I cant't open the app by double-clicking the jar file? <br>
+**Q**: Help! I can't open the app by double-clicking the jar file? <br>
 **A**: Don't worry! Follow the steps below to open the app! <br>
 
 * **Step 1:** Fire up your terminal and navigate to the *home folder* where the Jar file is located! <br>
