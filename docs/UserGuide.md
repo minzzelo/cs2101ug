@@ -683,6 +683,13 @@ Worried that all the precious flashcards you have saved would be gone after clos
 
 ## FAQ
 
+**Q**: Help! I cant't open the app by double-clicking the jar file? <br>
+**A**: Don't worry! Follow the steps below to open the app! <br>
+
+   Step 1: Fire up your terminal and navigate to the *home folder* where the Jar file is located! <br>
+
+   Step 2: Type in the command `java -jar swee.jar` and the app should start in a few seconds!
+
 **Q**: What does it mean if some action is **not supported**?<br>
 **A**: It means that our app is not intended to allow said action to work although it may work under certain circumstances.
 If you still want to perform the action, do take note that you may face unintended or unexplained behaviour.
