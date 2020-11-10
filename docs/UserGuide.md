@@ -235,7 +235,9 @@ Yes, we all make mistakes (and typos). Realised that you have a typo in your fla
 
 Format: `edit INDEX [q/QUESTION] [a/ANSWER] [c/CATEGORY] [n/NOTE] [r/RATING] [d/DIAGRAM] [t/TAG]...`
 
+* Refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 * A minimum of one field has to be given.
+* To understand how to edit diagrams using relative file paths, refer to this [short tutorial](#finding-file-path-for-diagram-field).
 
 Examples:
 
@@ -574,6 +576,12 @@ Examples:
 * `sort reviewed -a` sorts the flashcards according to review frequency in ascending order
 * `sort reviewed -d` sorts the flashcards according to review frequency in descending order
 
+<div markdown="span" class="alert alert-primary">
+
+:bulb: **Tip:** If you are confused about how review frequency and success rate are calculated, head over to our [FAQ](#faq) section to understand it more!
+</div> 
+
+
 **Steps for sorting flashcards**:
 
 **Step 1**: In this example, we want to sort the flashcards according to success rate in an ascending order. Type `sort success -a` into the command box and press Enter.
@@ -760,3 +768,4 @@ Examples of usages of the diagram field:
 *  `edit 1 d/image/classDiagramExample1.png`
 
 Navigate back to [adding a flashcard](#add-a-flashcard--add)
+Navigate back to [editing a flashcard](#edit-a-flashcard---edit)
