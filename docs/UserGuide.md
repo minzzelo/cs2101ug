@@ -60,7 +60,7 @@ SWEe! is a desktop application with a command line interface (CLI) for CS2103 st
 I’m sure you want to score in your examination 😊 so please proceed on to this user guide to discover the formula for scoring well in your exam. 
 <div style="page-break-after: always;"></div>
 
-## Quick start
+## Quick Start
 
 1. Grab your CS2103 notes before we get started.
 
@@ -90,7 +90,7 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
 
 <div style="page-break-after: always;"></div>
 
-## Application layout
+## Application Layout
 
 Here is how our application looks like.
 
@@ -308,7 +308,7 @@ Examples:
 
 **Step 3**: The list view will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag
 
-![filedirectory](images/ug/ug_filter_step2.PNG)
+![filedirectory](images/ug/ug_filter_step2.png)
 
 <div style="page-break-after: always;"></div>
 
