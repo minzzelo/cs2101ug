@@ -91,7 +91,7 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
 
 ## Application layout
 
-The figures below show the annotated version of the graphic user interface. This will help you better identify the various sections and elements in the application, as well as understand the technical terms stated in this documentation.
+Here is how our application looks like.
 
 ![filedirectory](images/ug/label1.png)
 
