@@ -7,6 +7,7 @@ SWEe! is a  **desktop app for CS2103T students to manage their learning progress
 
 
 * Table of Contents
+    - [Introduction](#introduction)
     - [Quick start](#quick-start)
     - [Application layout](#application-layout)
     - [Notes about the command format](#notes-about-the-command-format)
@@ -35,35 +36,59 @@ SWEe! is a  **desktop app for CS2103T students to manage their learning progress
         
 
 --------------------------------------------------------------------------------------------------------------------
+## Introduction
 
+![filedirectory](images/ug/logo_image.jpg)
+
+#### Welcome to SWEe! (Software Engineering Everyday)! 😊
+
+Thank you for downloading our application. We look forward to your continuous support and appreciate your feedback to help us improve our application. 
+
+#### What is SWEe!?
+
+SWEe! is a desktop application with a command line interface (CLI) for CS2103T students to manage their learning progress through flashcards. With a CLI, you will be able to perform tasks and navigate to different functionalities of the application more quickly,  allowing you to save precious time for other tasks
+
+#### SWEe! is perfect for:
+
+* Organising key learning points from the textbook in 2103T website  in a single platform
+* Testing your knowledge of the content taught with the help of SWEe’s quiz mode
+* Tracking your progress and monitor which topics you are weak using SWEe’s statistics functionality
+
+#### So, is SWEe! for you?
+
+* Are you a busy CS2103T student who needs more time to focus on other modules such as CS2100 or CS2101?
+* Do you get frustrated navigating the CS2103T website?
+* Do you want to score well in your examinations?
+
+I’m sure you want to score in your examination 😊 so please proceed on to this user guide to discover the formula for scoring well in your exam. 
 <div style="page-break-after: always;"></div>
 
 ## Quick start
 
-1. Ensure you have Java `11` or above installed in your Computer.
+1. Grab your CS2103 notes before we get started.
 
-1. Download the latest `swee.jar` from [here](https://github.com/AY2021S1-CS2103T-T17-2/tp/releases).
+1. Ensure you have Java `11` or above installed in your Computer. But how? Well, follow the steps below to check your Java version. 
+   
+   Step 1: Open your terminal. Type in `java --version` and press *Enter*.
+
+   Step 2: You will now be able to check the Java version installed in your Computer!
+
+   ![Java Version](images/quick-start/javaVersion.png)
+
+
+1. Download the latest `swee.jar` from [here](https://github.com/AY2021S1-CS2103T-T17-2/tp/releases).<br>
+
+    ![Download Swee Jar](images/quick-start/downloadSweeJar.png)
 
 1. Copy the file to the folder you want to use as the _home folder_ for SWEe!.
 
 1. Double-click the file to start the app. The GUI similar to the image below should appear in a few seconds. Note how the app contains some sample data. <br>
+
     ![Quick Start UI](images/QuickStartUi.png)
     <div style="page-break-after: always;"></div>
-1. Type the command in the command box and press Enter to execute it.<br>
-   Some example commands you can try:
+<br>
+1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. E.g. typing help and pressing Enter will open the help window.
 
-   * **`add q/What does OOP stand for? a/Object Oriented Programming c/General`** : Adds a flashcard with a question and answer into the General category.
-
-   * **`delete 3`**: Deletes the 3rd flashcard in the current list.
-   
-   * **`list`** : Lists all flashcards.
-
-   * **`review`** : Reviews the current list of flashcards.
-   
-   * **`view 1`** : Views the 1st flashcard in the current list.
-
-   * **`exit`** : Exits the app.
-  
 1. Refer to the [Features](#features) below for details of each command.
 
 <div style="page-break-after: always;"></div>
@@ -100,26 +125,22 @@ Format/Notation | Meaning
 
 ## Common Input Fields
 
-This section will help you understand the different fields you will see in [Features](#features). It gives an overview of what they are, how to specify them and any restrictions.
-
-#### General Notes about Input Fields:
-* **Can be empty**  means you can specify the prefix but not pass a value.<br>eg. passing `r/` is valid.
-* **Cannot be empty** means you have to specify a value when you specify the prefix.<br>eg. passing `c/` is invalid.
-* All input fields should not contain other input prefixes. eg. passing in `What is c/?` as a `QUESTION` to `q/QUESTION` is not supported.
+Many of our commands use the same input fields. This section will teach you what each of them mean and how to specify them.
+If you are reading this guide for the first time, you can skip to [Features](#features) first. You can refer back to this table at any time!
 
 <br>
 
-Input Field | Restrictions and how to specify
+Input Field | What is it & How to specify
 -----------|-----------------------
-`q/QUESTION`    | This is the question on the flashcard.<br>`QUESTION` has no character limit or restrictions (eg. can have spaces).<br>Cannot be empty.
-`a/ANSWER`      | This is the answer on the flashcard.<br>`ANSWER` has no character limit or restrictions (eg. can have spaces).<br>Cannot be empty.
-`c/CATEGORY`    | This is the category of the flashcard.<br>`CATEGORY` must be alphanumeric and have a maximum of 50 characters. It can consist of multiple words but there should only be 1 space between words.<br>Cannot be empty.
-`r/RATING`      | This is the star rating of the flashcard.<br>`RATING` must be a number between 1 and 5 inclusive.<br>Can be empty.
-`d/DIAGRAM`     | This is the diagram of the flashcard (associated with a question in the view pane).<br>`DIAGRAM` must be a valid relative or absolute path to a file. <br>Currently only supports file path **without** spaces. <br>eg. image/umlDiagram.png is supported but image/u mlDiagram.png is not supported <br>Only supports the following image file types: jpg, png, jpeg, bmp <br>Can be empty.
-`n/NOTE`        | This is the notes of the flashcard (associated with an answer in the view pane).<br>`NOTE` has no character limit or restrictions.<br>Can be empty.
-`t/TAG`         | These are tags of the flashcard. A flashcard can have more than one tag.<br>`TAG` must be alphanumeric and have a maximum of 50 characters.<br>Must **only** be one word.<br>Cannot be empty.
-`INDEX`         | `INDEX` refers to the index number shown in the displayed flashcard list.<br>Every visible flashcard on the display list has an `INDEX`.<br>`INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
-`KEYWORD`       | `KEYWORD` can be alphanumeric or punctuations. `KEYWORD` has no character limit but there should be no spaces within the keyword. 
+`q/QUESTION`    | Question on the flashcard.<br>`QUESTION` has no character restrictions so you can input anything you like.
+`a/ANSWER`      | Answer on the flashcard.<br>`ANSWER` has no character restrictions so you can input anything you like.
+`c/CATEGORY`    | Category of the flashcard.<br>`CATEGORY` must be alphanumeric and can be multiple words.
+`r/RATING`      | Star rating of the flashcard.<br>`RATING` must be a number between 1 and 5 inclusive.
+`d/DIAGRAM`     | Diagram (image) of the flashcard.<br>`DIAGRAM` must be a valid path to a file. <br>eg. It can be a full file path such as C:/users/tom/Desktop/image/diagram.png<br> eg. It can be a relative file path (relative to swee.jar) such as images/image.jpg<br>Only supports the following image file types: jpg, png, jpeg, bmp
+`n/NOTE`        | Note on the flashcard.<br>`NOTE` has no character limit or restrictions so you can input anything you like.
+`t/TAG`         | These are tags of the flashcard. A flashcard can have more than one tag.<br>`TAG` must be alphanumeric and must be a single word.
+`INDEX`         | `INDEX` refers to the index number shown in the displayed flashcard list.<br>Every visible flashcard on the display list has an `INDEX`.<br>`INDEX` is always a positive integer greater than 0. eg. 1, 2, 3, …
+`KEYWORD`       | `KEYWORD` can be alphanumeric or punctuations. `KEYWORD` should not contain spaces.
 
 <div style="page-break-after: always;"></div>
 
@@ -213,11 +234,10 @@ Example: `delete 3` deletes the 3rd flashcard in the flashcard list.
 
 <div style="page-break-after: always;"></div>
 
-<b>
 
 ### Edit a flashcard  : `edit`
 
-Yes, we all make mistakes (and typos). Realised that you have a typo in your flashcard? Fret not, you can edit your flashcard details in SWEe by specifying the fields you want to edit!
+Yes, we all make mistakes (and typos). Realised that you have a typo in your flashcard? Fret not, you can edit your flashcard details in SWEe! by specifying the fields you want to edit!
 
 Format: `edit INDEX [q/QUESTION] [a/ANSWER] [c/CATEGORY] [n/NOTE] [r/RATING] [d/DIAGRAM] [t/TAG]...`
 
@@ -297,39 +317,86 @@ Examples:
 
 ### Favourite a flashcard  : `fav`
 
-Favourites the specified flashcard.
+Have you ever felt that some flashcards seem particularly attractive or important to you and want to flag them out? We understand your need! Simply bookmark those flashcards using our `fav` command! 
 
 Format: `fav INDEX`
 
-* Favourites the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
-* `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
+* Refer to [common input fields](#common-input-fields) to know more about `INDEX`
+* Do remember that `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 
 Examples: 
-* `list` followed by `fav 2` favourites the 2nd flashcard in the displayed flashcard list.
+* `fav 2` favourites the 2nd flashcard in the displayed flashcard list.
+
+<div markdown="span" class="alert alert-primary">
+
+:bulb: **Tip:** Want to see all the flashcards that are favourited? This is where our [filter](#filter-for-flashcards---filter) command comes into play! Type in `filter f/yes` to see all the flashcards that are not favourited!
+
+</div> 
+
+<div style="page-break-after: always;"></div>
+
+**Steps for favouriting a flashcard**: 
+
+**Step 1**: Identify the flashcard you want to favourite! In this example, we want to favourite the 1st flashcard in the list. Type in `unfav 1` and press *Enter*. 
+
+![Fav Step 1](images/ug/ug_fav_step1.png)
+
+**Step 2**: The *Result Display* will display a message to let you know that the flashcard has been favourited!
+
+**Step 3**: Check out that cute heart icon in the flashcard you have favourited!
+
+![Fav Step 2 + 3](images/ug/ug_fav_step23.png)
+
+<div style="page-break-after: always;"></div>
 
 ### Unfavourite a flashcard  : `unfav`
 
-Unfavourites the specified flashcard.
+Oh no! Accidentally favourited the wrong flashcard? Or did you have a change in heart and decided one of the flashcards is no longer your favourite? We are here for you! Simply unfavourite the flashcard using our `unfav` command!
 
 Format: `unfav INDEX`
 
-* Unfavourites the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
-* `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
+* Refer to [common input fields](#common-input-fields) to know more about `INDEX`
+* Do remember that `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 
 Examples: 
-* `list` followed by `unfav 2` unfavourites the 2nd flashcard in the displayed flashcard list.
+* `unfav 2` unfavourites the 2nd flashcard in the displayed flashcard list.
+
+<div markdown="span" class="alert alert-primary">
+
+:bulb: **Tip:** Want to see all the flashcards that are not favourited? This is where our [filter](#filter-for-flashcards---filter) command comes into play! Type in `filter f/no` to see all the flashcards that are not favourited!
+
+</div> 
+
+<div style="page-break-after: always;"></div>
+
+**Steps for unfavouriting a flashcard**: 
+
+**Step 1**: Identify the flashcard you want to unfavourited! In this example, we want to unfavourite the 1st flashcard in the list. Type in `unfav 1` and press *Enter*. 
+
+![Unfav Step 1](images/ug/ug_unfav_step1.png)
+
+**Step 2**: The *Result Display* will display a message to let you know that the flashcard has been unfavourited!
+
+**Step 3**: The heart icon will no longer be visible on the flashcard
+
+![Unfav Step 2 + 3](images/ug/ug_unfav_step23.png)
 
 <div style="page-break-after: always;"></div>
 
 ### Find flashcards : `find`
 
-Searches for all flashcards matching any of the search keywords.
+Want to find a particular flashcard but too lazy to check through all the flashcards individually to find it? We understand your pain and fear not, let SWEe! take away your pain by doing the finding for you! Keep your flashcards coming as we will provide an quick and easy way for you to search for anything and everything no matter how many flashcards you have.
 
 Format: `find KEYWORD [KEYWORD]...`
-* Finds all flashcards containing any of the keywords.
+
 * Refer to [common input fields](#common-input-fields) on how to specify the different fields.
 * The keywords are **case insensitive**.
-* Keywords will match as long as they are contained within any flashcard’s question/answer/category/note/tags. eg. `UML` keyword will match a flashcard with a `category` called `UML-Diagram`
+
+<div markdown="span" class="alert alert-primary">
+
+:memo: Note: If you search for multiple keywords, flashcards containing either of the keywords will be returned. For example, "General OOP" will return flashcards containing either General and/or OOP. 
+
+</div>
 
 <div markdown="span" class="alert alert-primary">
 
@@ -340,33 +407,88 @@ Format: `find KEYWORD [KEYWORD]...`
 Examples: 
 * `find general` displays all flashcards containing the word general.
 * `find general important` displays all flashcards containing either the word general and/or important.
-* `find GENERAL object` displays all flashcards containing either the word general and/or object.
 * `find -` displays all flashcards containing "-".
+
+<div style="page-break-after: always;"></div>
+
+**Steps for finding flashcards**:
+
+**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the *Command Box* and press *Enter*.
+
+![Find Step 1](images/ug/ug_find_step1.png)
+
+<div style="page-break-after: always;"></div>
+
+**Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the *Result Display*, similar to number 2 in the picture below.
+
+**Step 3**: You can see the matching flashcards in the list view, similar to number 3 in the picture below.
+
+![Find Step 2 & 3](images/ug/ug_find_step23.png)
+
+<div style="page-break-after: always;"></div>
 
 ### View help : `help`
 
-Opens a window with a link that directs you to our user guide.
+If you forget how to use the app or have some things you are unsure about, fear not! You can use our help function which will lead you to our user guide.
 
 Format: `help`
 
+**Steps to use the help function**
+
+**Step 1**: Type `help` in the command box and press Enter.
+
+![Help step 1](images/ug/ug_help_step_1.png)
+
+**Step 2**: A new window will pop out with a link.
+
+![Help step 2](images/ug/ug_help_step_2.png)
+
+**Step 3**: Simply press "Copy URL" then paste the link in your favourite browser, and you will be brought to our user guide website.
+
+
+
 ### List all flashcards : `list`
 
-Shows a list of all flashcards. This is useful for removing any `filter` or `find` you have done on the flashcard list.
+Want to see all of your flashcards? This is the command for you! 
+
+<div markdown="span" class="alert alert-primary">
+
+:bulb: **Tip:** This command would be especially helpful in helping you to see your original list of flashcards after executing [filter](#filter-for-flashcards---filter) or [find](#find-flashcards--find) commands!
+
+</div> 
 
 Format: `list`
 
 <div style="page-break-after: always;"></div>
 
+**Steps for listing flashcards**:
+
+**Step 1**: Type `list` in the *Command Box* and press *Enter*. 
+
+![List Step 1](images/ug/ug_list_step1.png)
+
+<div style="page-break-after: always;"></div>
+
+**Step 2**: The *Result Display* will display the message "Listed all flashcards" 
+
+**Step 3**: All the flashcards are now displayed in the scrollable list view! Scroll down to see all of your flashcards!
+
+![List Step 2 & 3](images/ug/ug_list_step23.png)
+
+<div style="page-break-after: always;"></div>
+
 ### Review flashcards: `review`
 
-Reviews the current list of flashcards. This puts the user in review mode and the user can no 
-longer input commands to the textbox.
+Want to study your flashcards? Our review mode lets you easily navigate freely between flashcards to study them so that you can ace your next exam!
 
 Format: `review`
 
-Upon entering review mode, the following user input will be recognised:
-* `↓ key` shows answer and notes of the current flashcard  
-* `↑ key` hides answer and notes of the current flashcard  
+Typing `review` and pressing Enter will put you in review mode and allows you to review the current displayed flashcard list.
+<br><br>
+So what is review mode? Upon entering review mode, you can no longer input commands to the command box. However, the following keyboard input will now be recognised:
+
+* `↓ key` shows the answer and notes of the current flashcard  
+* `↑ key` hides the answer and notes of the current flashcard  
 * `→ key` moves on to the next flashcard (if there is a next flashcard)
 * `← key` moves to the previous flashcard (if there is a previous flashcard)
 * `q` quits review mode
@@ -382,42 +504,44 @@ The review and success frequency of a flashcard is <b>not affected</b> by review
 
 **Step 1**: We want to enter review mode to review our flashcards. Type the command `review` and press Enter.
 
-![filedirectory](images/ug/ug_review_step1.PNG)
+![Review step 1](images/ug/ug_review_step1_edited.png)
 
 **Step 2**: We are brought into review mode. The instructions on how to navigate review mode will be shown at the top.
 
-![filedirectory](images/ug/ug_review_step2.PNG)
+![Review step 2](images/ug/ug_review_step2_edited.png)
 
 <div style="page-break-after: always;"></div>
 
 **Step 3**: In this example, we will demonstrate the behaviour of the `↓ key`. Upon pressing the `↓ key`, the answer of the flashcard is shown.
 
-![filedirectory](images/ug/ug_review_step3.PNG)
+![Review step 3](images/ug/ug_review_step3_edited.png)
+
+**Step 4**: Now, let's move onto the next flashcard. We just need to press the `→ key`
+
+![Review step 4](images/ug/ug_review_step4.png)
+
+<br>
+
+To summarise, when you are in review mode, use the `↓ key` and `↑ key` to toggle showing the flashcard’s answer and notes. Use the `→ key` and `← key` to move between flashcards. Use the `q key` to quit review mode.
 
 <div style="page-break-after: always;"></div>
 
 ### Quiz flashcards: `quiz`
 
-Quizzes the current list of flashcards. This puts the user in quiz mode and the user can no longer input commands to the textbox.
+Want to revise for your upcoming exam? Our quiz mode simulates a mock exam to put your knowledge to the test and monitors how well you did.
 
 Format: `quiz`
 
-Upon entering quiz mode, the following user input will be recognised:
-* `↓ key` shows answer and notes of the current flashcard  
+So what is quiz mode? Upon entering quiz mode, you can no longer input commands to the command box. However, the following keyboard input will now be recognised:
+* `↓ key` shows the answer and notes of the current flashcard  
 * `q` quits quiz mode
-* `y` This input will only be recognised after the `↓ key` is pressed. `y` is a feedback to indicate a correct answer. 
-* `n` This input will only be recognised after the `↓ key` is pressed. `n` is a feedback to indicate an incorrect answer. 
+* `y` This input will only be recognised after the `↓ key` is pressed. `y` indicate a correct answer. 
+* `n` This input will only be recognised after the `↓ key` is pressed. `n` indicates an incorrect answer. 
 
 Upon pressing the `↓ key`, the user will be prompted if they got the answer correct. The user can then press 
 `y` to feedback that they got the correct answer or `n` to feedback that they got an incorrect answer.  
 
-The quiz mode works in conjunction with the [statistics](#view-the-statistics-of-flashcard--stats) feature. Quiz attempts are recorded and information about the success frequency can be displayed using the [statistics](#view-the-statistics-of-flashcard--stats) feature.
-* Pressing `y` will increase the review and success frequency of the flashcard.
-* Pressing `n` will increase the review frequency of the flashcard.
-
-<div markdown="span" class="alert alert-primary">:memo: Note: Once the user presses <code>y</code> or <code>n</code>, the review and success frequency of the flashcard is updated accordingly even if the user quits the quiz prematurely.
-</div>
-<br>
+Quiz attempts are recorded and information about your scores can be displayed using the [statistics](#view-the-statistics-of-flashcard--stats) command.
 
 <div style="page-break-after: always;"></div>
 
@@ -433,7 +557,7 @@ The quiz mode works in conjunction with the [statistics](#view-the-statistics-of
 
 <div style="page-break-after: always;"></div>
 
-**Step 3**: In this example, we will demonstrate the behaviour of the `↓ key`. Upon pressing the `↓ key`, we will be prompted if we got the answer correct.
+**Step 3**: In this example, we will demonstrate the behaviour of the `↓ key`. Upon pressing the `↓ key`, the answer of the flashcard will be shown and we will be prompted if we got the answer correct.
 
 ![filedirectory](images/ug/ug_quiz_step3.PNG)
 
@@ -475,17 +599,15 @@ Examples:
 
 ### View a flashcard  : `view`
 
-Views the specified flashcard. A "snapshot" of the flashcard is taken and displayed in the view pane to the user.
+Want to view a flashcard in all its detail? The `view` command allows you to do just that! You will be able to see the full question on the flashcard and the diagram (if present) of the flashcard. Optionally, you can also choose to see the answer and notes (if present) of the flashcard.
 
 Format: `view INDEX [-a]`
 
-* Views the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
-* `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 * If `-a` is specified, the answer and notes of the flashcard will be shown too.
 
 Examples:
-* `view 1` shows the 1st flashcard (in the displayed flashcard list) on the view pane without answer and notes.
-* `view 1 -a` shows the 1st flashcard (in the displayed flashcard list) on the view pane with answer and notes.
+* `view 1` shows the flashcard at index 1 on the view pane **without** answer and notes.
+* `view 1 -a` shows the flashcard at index 1 on the view pane **with** answer and notes.
 
 <div markdown="span" class="alert alert-primary">:memo: Note: Once another command is executed, the view pane will be returned to a blank state even if the shown
 flashcard was not modified/deleted.
@@ -498,27 +620,27 @@ flashcard was not modified/deleted.
 
 **Step 1**: Locate the flashcard you wish to view. In this example, we want to view the flashcard at index 3. Type the command `view 3` and press Enter.
 
-![filedirectory](images/ug/ug_view_step1.PNG)
+![filedirectory](images/ug/ug_view_step1_edited.png)
 
 **Step 2**: We will be presented with a "snapshot" of the flashcard at index 3 in the view pane.
 
-![filedirectory](images/ug/ug_view_step2.PNG)
+![filedirectory](images/ug/ug_view_step2_edited.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 3**: To view the answer and notes (if applicable) of the flashcard on the view pane. Type the command `view 3 -a` and press Enter.
+**Step 3**: Now lets say we also want to view the answer and notes (if present) of this flashcard. Type the command `view 3 -a` and press Enter.
 
-![filedirectory](images/ug/ug_view_step3.PNG)
+![filedirectory](images/ug/ug_view_step3_edited.png)
 
-**Step 4**: The answer of the flashcard is displayed on the view pane.
+**Step 4**: The answer of the flashcard is displayed on the view pane as well.
 
-![filedirectory](images/ug/ug_view_step4.PNG)
+![filedirectory](images/ug/ug_view_step4_edited.png)
 
 <div style="page-break-after: always;"></div>
 
 ### View the statistics of flashcard : `stats`
 
-View the statistics of a flashcard.
+Want to view the results of your attempts in quiz mode? The `stats` command does the crunching of numbers for you. You will be able to see a pie chart that provides a graphic representation of your attempts.
 
 Format: `stats INDEX`
 
@@ -526,15 +648,7 @@ Format: `stats INDEX`
 * `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 
 Example:
-* `stats 1` shows the statistics of the 1st flashcard (in the displayed flashcard list) on the view pane.
-
-The statistics feature works in conjunction with the [quiz](#quiz-flashcards-quiz) feature.
-
-The following information will be displayed on the view pane:
-* Question of the flashcard (may be truncated for brevity).
-* Reviewed count of the flashcard.
-* Correct count of the flashcard.
-* Pie chart to show the graphical representation of correct attempts vs wrong attempts in quiz mode of the flashcard. (No pie chart will be shown if the flashcard has not been reviewed.)
+* `stats 1` shows the statistics of the 1st flashcard in the displayed flashcard list on the view pane.
 
 <div markdown="span" class="alert alert-primary">:memo: Note: Once another command is executed, the view pane containing the statistics will be returned to a blank state even if the shown
 flashcard was not modified/deleted.
@@ -557,19 +671,36 @@ flashcard was not modified/deleted.
 
 ### Exit the program : `exit`
 
-Exits the program.
+Need a break from using SWEe!?
 
 Format: `exit`
 
+<div style="page-break-after: always;"></div>
+
+**Steps to use the exit function**
+
+**Step 1**: Type `exit` in the command box and press Enter. The application will close and we look forward to seeing you back 😊 .
+
+![Exit step 1](images/ug/ug_exit_step1.png)
+
+<div style="page-break-after: always;"></div>
+
 ### Saving the data
 
-Flashcards data are saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
+Worried that all the precious flashcards you have saved would be gone after closing the app? Fear not! Feel free to close the app anytime in peace! Flashcards data are saved in the hard disk automatically for you after any command that changes the data. There is no need to save manually.
 
 --------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
 
 ## FAQ
+
+**Q**: Help! I cant't open the app by double-clicking the jar file? <br>
+**A**: Don't worry! Follow the steps below to open the app! <br>
+
+* **Step 1:** Fire up your terminal and navigate to the *home folder* where the Jar file is located! <br>
+
+* **Step 2:** Type in the command `java -jar swee.jar` and the app should start in a few seconds!
 
 **Q**: What does it mean if some action is **not supported**?<br>
 **A**: It means that our app is not intended to allow said action to work although it may work under certain circumstances.
