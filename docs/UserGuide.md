@@ -32,6 +32,7 @@ SWEe! is a  **desktop app for CS2103T students to manage their learning progress
         - [Saving the data](#saving-the-data)
     - [FAQ](#faq)
     - [Command summary](#command-summary)
+    - [Appendix](#appendix)
         
 
 --------------------------------------------------------------------------------------------------------------------
@@ -147,56 +148,66 @@ Input Field | What is it & How to specify
 
 ### Add a flashcard : `add`
 
-Adds a flashcard.
+Now let's get started. The first thing you would do on SWEe is to, of course, add flashcards!
 
 Format: `add q/QUESTION a/ANSWER [c/CATEGORY] [r/RATING] [n/NOTE] [d/DIAGRAM] [t/TAG]...`
 
-* Refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
-* After a new flashcard is added, all flashcards will be listed. 
+* Remember that the `QUESTION` and `ANSWER` fields are compulsory while adding a flashcard! The rest are optional.
+(Hint: You can always add in the remaining fields subsequently using our [edit command](#edit-a-flashcard---edit)!)
+* After a new flashcard is added, the flashcard list will update to include the new flashcard.
+* If you are having troubles understanding the format, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
+* To understand how to add diagrams using relative file paths, refer to this [short tutorial](#finding-file-path-for-diagram-field).
 
 <div markdown="span" class="alert alert-primary">
 
-:bulb: **Tip:** If the category is not specified, the flashcard will have the <b>General</b> category.
+:memo: Note: If the category is not specified, the flashcard  will be assigned to the <b>General</b> category by default.
 
 </div>
 
 Examples:
-* `add q/What does OOP stand for? a/Object Oriented Programming`
-* `add q/What does OOP stand for? a/Object Oriented Programming r/3 t/cool`
-* `add q/What does OOP stand for? a/Object Oriented Programming c/Super Important n/Important question!`
-* `add q/What does OOP stand for? a/Object Oriented Programming d/images/diagram.png`
-* `add q/What does OOP stand for? a/Object Oriented Programming c/UML n/Important question! d/images/diagram.png`
+* `add q/What does OOP stand for? a/Object Oriented Programming` adds a flashcard with only its compulsory fields, a question and an answer.
+* `add q/What does OOP stand for? a/Object Oriented Programming r/3 t/cool` adds a flashcard containing a question, an answer, a rating and a tag.
+* `add q/What does OOP stand for? a/Object Oriented Programming d/images/diagram.png` adds a flashcard containing a question, an answer and a diagram
+by specifying its file path.
 
 <div style="page-break-after: always;"></div>
 
-**Steps for adding a flashcard with diagram**:
-
-**Step 1**: Locate the relative file path of the image file. In this example, our file path is `images/classDiagramExample1.png` 
-
-Root folder containing the jar file        |  Image directory
-:-------------------------:|:-------------------------:
-![filedirectory](images/ug/ug_add_step1.png) |  ![filedirectory](images/ug/ug_add_step1.1.PNG)
+**Steps for adding a flashcard**:
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: Type the command `add q/This is an example of a class diagram a/True d/image/classDiagramExample1.png` and press Enter. Remember to include the file extension in `DIAGRAM`
+**Step 1**: In this case, we will use one of the add commands above as an example.
+To add a flashcard, type the command `add q/What does OOP stand for? a/Object Oriented Programming r/3 t/cool` and press Enter.
 
-![filedirectory](images/ug/ug_add_step2.png)
+![filedirectory](images/ug/ug_add_step1.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 3**: The flashcard is added to the list.
+**Step 2**: Success! The result display will display a message telling you that the flashcard is added to the flashcard list.
 
-![filedirectory](images/ug/ug_add_step3.png)
+**Step 3**: The list view will update to show the newly added flashcard at the end of the flashcard list
+
+![filedirectory](images/ug/ug_add_step2_3.png)
 
 <div style="page-break-after: always;"></div>
 
 ### Clear all flashcards : `clear` 
 
-Clears all flashcard data from the program.
+Want to delete all flashcards at one go? Clear command clears all flashcard data from the program.
 
 Format: `clear`
 
+**Steps for clearing all flashcards**:
+
+**Step 1**: Type `clear` into the command box and press Enter
+
+![filedirectory](images/ug/ug_clear_step1.png)
+
+**Step 2**: The result display will display a message telling you that all flashcards have been cleared
+
+**Step 3**: The list view will update to show an empty flashcard list
+
+![filedirectory](images/ug/ug_clear_step2_3.png)
 
 ### Delete a flashcard  : `delete`
 
@@ -259,17 +270,19 @@ Examples:
 
 ### Filter for flashcards  : `filter`
 
-Filters for specific flashcard(s) based on the field input(s) by the user. 
-This will return all the flashcards whose fields match all the fields specified by the user.
+Want to look at flashcards belonging to a certain category? Or look at flashcards with a rating of 5.
+Filter command allows you to filter for specific flashcard(s) based on your field input(s). 
+This will return all the flashcards whose fields match all the fields specified by you.
 
 Format: `filter [c/CATEGORY] [r/RATING] [f/<yes|no>] [t/TAG]...`
 
 * Filters the specified flashcard based on category, rating, favourite status or tags.
-* Refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 * Specifying `f/yes` filters for favourited flashcards while `f/no` filters for unfavourited flashcards.
 * Supports filtering of one or more different fields. For example:
     - `filter c/SDLC r/5` will filter out flashcards belonging to the SDLC category with a rating of 5.
 * Although all fields are optional, a minimum of one field has to be given.
+* If you are having troubles understanding the format, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
+
 <div markdown="span" class="alert alert-primary">:memo: Note:
 <code>filter r/</code> will filter for all unrated flashcards.</div>
 
@@ -287,13 +300,16 @@ Examples:
     (only last instance of f/ is read)
 
 <div style="page-break-after: always;"></div>
+
 **Steps for filtering for a flashcard based on category and tag**:
 
-**Step 1**: We want to filter for a flashcard which has a Trivial category and contains the preloaded tag. Type the command `filter c/Trivial t/preloaded` and press Enter.
+**Step 1**: Suppose you want to filter for a flashcard which has a Trivial category and contains the preloaded tag. Type the command `filter c/Trivial t/preloaded` and press Enter
 
 ![filedirectory](images/ug/ug_filter_step1.PNG)
 
-**Step 2**: The flashcard with the category Trivial and tag field preloaded is shown.
+**Step 2**: The result display will show the number of flashcards listed after applying the filter
+
+**Step 3**: The list view will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag
 
 ![filedirectory](images/ug/ug_filter_step2.PNG)
 
@@ -702,6 +718,9 @@ If you still want to perform the action, do take note that you may face unintend
 **Q**: What is the success rate of a flashcard?<br>
 **A**: Success rate of a flashcard is measured by `(success frequency) / (review frequency) x 100%`. If a flashcard has a review frequency of 0, then its success rate will be 0%.
 
+**Q**: How do I save my progress after executing commands?<br>
+**A**: SWEe does an auto save every time you exit the app and automatically loads the latest state of flashcards when you relaunch the app. 
+
 --------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
@@ -726,3 +745,26 @@ Action | Format, Examples
 **View** | `view INDEX [-a]` <br> eg. `view 1`
 **Stats** | `stats INDEX` <br> eg. `stats 3`
 **Exit** | `exit`
+
+## Appendix
+
+### Finding file path for Diagram field
+This short tutorial will be useful when adding or editing diagrams to flashcards.
+
+
+**Step 1**: Locate the root folder containing the SWEe Jar file and navigate to it
+
+![filedirectory](images/ug/ug_diagram_path_step1.png) 
+
+**Step 2**: Next, locate the relative file path of the image file. In this example, our diagram is located in the image folder.
+Hence, the relative file path is `image/classDiagramExample1.png` 
+
+![filedirectory](images/ug/ug_diagram_path_step2.png)
+
+**Step 3**: Now, go ahead and add or edit your flashcard by adding `d/image/classDiagramExample1.png` after the appropriate command!
+
+Examples of usages of the diagram field:
+* `add q/Is this a class diagram? a/Yes d/image/classDiagramExample1.png`
+*  `edit 1 d/image/classDiagramExample1.png`
+
+Navigate back to [adding a flashcard](#add-a-flashcard--add)
