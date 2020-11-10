@@ -313,17 +313,36 @@ Examples:
 
 ### Unfavourite a flashcard  : `unfav`
 
-Unfavourites the specified flashcard.
+Had a change in heart and decided one of the flashcards is no longer your favourite? We are here for you! Simply unfavourite the flashcard using our `unfav` command!
 
 Format: `unfav INDEX`
 
-* Unfavourites the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
 * `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 
 Examples: 
-* `list` followed by `unfav 2` unfavourites the 2nd flashcard in the displayed flashcard list.
+* `unfav 2` unfavourites the 2nd flashcard in the displayed flashcard list.
+
+<div markdown="span" class="alert alert-primary">
+
+:bulb: **Tip:** Want to see all the flashcards that are not favourited? This is where our [filter](#filter-for-flashcards---filter) command comes into play! Type in `filter f/no` to see all the flashcards that are not favourited!
+
+</div> 
 
 <div style="page-break-after: always;"></div>
+
+**Steps for unfavouriting a flashcard**: 
+
+**Step 1**: Identify the flashcard you want to unfavourited! In this example, we want to unfavourite the 1st flashcard in the list. Type in `unfav 1` and press *Enter*. 
+
+![Unfav Step 1](images/ug/ug_unfav_step1.png)
+
+**Step 2**: The *Result Display* will display a message to let you know that the flashcard has been unfavourited!
+
+**Step 3**: The heart icon will no longer be visible on the flashcard
+
+
+![Unfav Step 2 + 3](images/ug/ug_unfav_step23.png)
+
 
 ### Find flashcards : `find`
 
