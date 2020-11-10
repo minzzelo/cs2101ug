@@ -196,13 +196,13 @@ Format: `clear`
 
 **Steps for clearing all flashcards**:
 
-**Step 1**: Type `clear` into the command box and press Enter
+**Step 1**: Type `clear` into the command box and press Enter.
 
 ![filedirectory](images/ug/ug_clear_step1.png)
 
-**Step 2**: The result display will display a message telling you that all flashcards have been cleared
+**Step 2**: The result display will display a message telling you that all flashcards have been cleared.
 
-**Step 3**: The list view will update to show an empty flashcard list
+**Step 3**: The list view will update to show an empty flashcard list.
 
 ![filedirectory](images/ug/ug_clear_step2_3.png)
 
@@ -267,13 +267,12 @@ Examples:
 
 ### Filter for flashcards  : `filter`
 
-Want to look at flashcards belonging to a certain category? Or look at flashcards with a rating of 5.
-Filter command allows you to filter for specific flashcard(s) based on your field input(s). 
-This will return all the flashcards whose fields match all the fields specified by you.
+Want to look at flashcards belonging to a certain category? Or look at flashcards with a rating of 5?
+Filter command allows you to filter for specified flashcards based on your field inputs. 
 
 Format: `filter [c/CATEGORY] [r/RATING] [f/<yes|no>] [t/TAG]...`
 
-* Filters the specified flashcard based on category, rating, favourite status or tags.
+* Filters for specified flashcards based on category, rating, favourite status or tags.
 * Specifying `f/yes` filters for favourited flashcards while `f/no` filters for unfavourited flashcards.
 * Supports filtering of one or more different fields. For example:
     - `filter c/SDLC r/5` will filter out flashcards belonging to the SDLC category with a rating of 5.
@@ -293,22 +292,20 @@ Examples:
 *  `filter c/SDLC` filters and lists all flashcards belonging to the SDLC category.
 *  `filter t/examinable t/study` filters and lists all flashcards that have both an “examinable” tag and a “study” tag.
 *  `filter r/3 f/yes` filters and lists all favourited flashcards that have a rating of 3.
-*  `filter f/no f/yes c/General` filters and lists all favourited flashcards that belong to the General category.
-    (only last instance of f/ is read)
 
 <div style="page-break-after: always;"></div>
 
 **Steps for filtering for a flashcard based on category and tag**:
 
-**Step 1**: Suppose you want to filter for a flashcard which has a Trivial category and contains the preloaded tag. Type the command `filter c/Trivial t/preloaded` and press Enter
+**Step 1**: Suppose you want to filter for a flashcard which has a Trivial category and contains the preloaded tag. Type the command `filter c/Trivial t/preloaded` and press Enter.
 
 ![filedirectory](images/ug/ug_filter_step1.PNG)
 
-**Step 2**: The result display will show the number of flashcards listed after applying the filter
+**Step 2**: The result display will show the number of flashcards listed after applying the filter.
 
-**Step 3**: The list view will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag
+**Step 3**: The list view will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag.
 
-![filedirectory](images/ug/ug_filter_step2.PNG)
+![filedirectory](images/ug/ug_filter_step2.png)
 
 <div style="page-break-after: always;"></div>
 
