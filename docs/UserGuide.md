@@ -109,7 +109,7 @@ Format/Notation | Meaning
 `QUESTION` | Words in uppercase are parameters that you should supply. <br> eg. in `add q/QUESTION`, `QUESTION` is a parameter which can be used as `add q/What is my name?`
 `q/QUESTION` | The letter and slash before the parameter is the prefix. You should use this to separate the current parameter from other parameters.
 `success` | Words in lowercase are to be specified exactly, meaning word for word. 
-`<success|reviewed>` | Items in angle brackets are either/or options. Each option is delineated by a `|`. <br> eg. `<success|reviewed>` can be used as success or reviewed but not both
+`<success|quiz>` | Items in angle brackets are either/or options. Each option is delineated by a `|`. <br> eg. `<success|quiz>` can be used as `success` or `quiz` but not both
 `[c/CATEGORY]` | Items in square brackets are optional. You can choose whether you want to specify them. <br> eg. `q/QUESTION [c/CATEGORY]` can be used as `q/What is my name? c/Name` or `q/What is my name?`
 `[t/TAG]...` | Items with ellipsis after them can be used either multiple or zero times <br> eg. `t/TAG` can be used 0 times or as `t/friend`, `t/friend t/family`, etc
 
@@ -552,9 +552,9 @@ Quiz attempts are recorded and information about your scores can be displayed us
 
 ### Sort all flashcards : `sort`
 
-Want to get an overview of how skilled you are at answering the flashcards? Our sort command is here to help you, with two important criteria that you can sort your flashcards by, namely the review frequency and success rate of your flashcards!
+Want to get an overview of how skilled you are at answering the flashcards? Our sort command is here to help you, with two important criteria that you can sort your flashcards by, namely the quiz frequency and success rate of your flashcards!
 
-Format: `sort <success|reviewed> <-a|-d>`
+Format: `sort <success|quiz> <-a|-d>`
 
 * Specifying `-a` means sorting by the criteria in ascending order.
 * Specifying `-d` means sorting by the criteria in descending order.
@@ -562,12 +562,12 @@ Format: `sort <success|reviewed> <-a|-d>`
 Examples: 
 * `sort success -a` sorts the flashcards according to success rate in ascending order
 * `sort success -d` sorts the flashcards according to success rate in descending order
-* `sort reviewed -a` sorts the flashcards according to review frequency in ascending order
-* `sort reviewed -d` sorts the flashcards according to review frequency in descending order
+* `sort quiz -a` sorts the flashcards according to quiz frequency in ascending order
+* `sort quiz -d` sorts the flashcards according to quiz frequency in descending order
 
 <div markdown="span" class="alert alert-primary">
 
-:bulb: **Tip:** If you are confused about how review frequency and success rate are calculated, head over to our [FAQ](#faq) section to understand it more!
+:bulb: **Tip:** If you are confused about what quiz frequency and success rate mean, head over to our [FAQ](#faq) section to understand it more!
 </div> 
 
 
