@@ -83,7 +83,7 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
     ![Quick Start UI](images/QuickStartUi.png)
     <div style="page-break-after: always;"></div>
 <br>
-1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. E.g. typing help and pressing Enter will open the help window.
+1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. eg. typing help and pressing Enter will open the help window.
 
 1. Refer to the [Features](#features) below for details of each command.
 
@@ -105,12 +105,12 @@ Feeling a little overwhelmed by the command format we use throughout the user gu
 
 Format/Notation | Meaning
 -----------|-----------------------
-`QUESTION` | Words in uppercase are parameters that you should supply. <br> E.g. in `add q/QUESTION`, `QUESTION` is a parameter which can be used as `add q/What is my name?`
+`QUESTION` | Words in uppercase are parameters that you should supply. <br> eg. in `add q/QUESTION`, `QUESTION` is a parameter which can be used as `add q/What is my name?`
 `q/QUESTION` | The letter and slash before the parameter is the prefix. You should use this to separate the current parameter from other parameters.
 `success` | Words in lowercase are to be specified exactly, meaning word for word. 
-`<success|reviewed>` | Items in angle brackets are either/or options. Each option is delineated by a `|`. <br> E.g. `<success|reviewed>` can be used as success or reviewed but not both
-`[c/CATEGORY]` | Items in square brackets are optional. You can choose whether you want to specify them. <br> E.g. `q/QUESTION [c/CATEGORY]` can be used as `q/What is my name? c/Name` or `q/What is my name?`
-`[t/TAG]...` | Items with ellipsis after them can be used either multiple or zero times <br> E.g. `t/TAG` can be used 0 times or as `t/friend`, `t/friend t/family`, etc
+`<success|reviewed>` | Items in angle brackets are either/or options. Each option is delineated by a `|`. <br> eg. `<success|reviewed>` can be used as success or reviewed but not both
+`[c/CATEGORY]` | Items in square brackets are optional. You can choose whether you want to specify them. <br> eg. `q/QUESTION [c/CATEGORY]` can be used as `q/What is my name? c/Name` or `q/What is my name?`
+`[t/TAG]...` | Items with ellipsis after them can be used either multiple or zero times <br> eg. `t/TAG` can be used 0 times or as `t/friend`, `t/friend t/family`, etc
 
 <div markdown="span" class="alert alert-primary">
 
@@ -121,7 +121,7 @@ Format/Notation | Meaning
 
 ## Common Input Fields
 
-Many of our commands use the same input fields. This section will teach you what each of them mean and how to specify them.
+Many of our commands use the same input fields. This section will teach you what each of them means and how to specify them.
 If you are reading this guide for the first time, you can skip to [Features](#features) first. You can refer back to this table at any time!
 
 <br>
