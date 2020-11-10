@@ -675,7 +675,7 @@ Format: `exit`
 
 ### Saving the data
 
-Flashcards data are saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
+Worried that all the precious flashcards you have saved would be gone after closing the app? Fear not! Feel free to close the app anytime in peace! Flashcards data are saved in the hard disk automatically for you after any command that changes the data. There is no need to save manually.
 
 --------------------------------------------------------------------------------------------------------------------
 
