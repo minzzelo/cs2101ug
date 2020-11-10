@@ -3,9 +3,6 @@ layout: page
 title: User Guide
 ---
 
-SWEe! is a  **desktop app for CS2103T students to manage their learning progress mainly through flashcards**. It is optimized for CLI users so that frequent tasks can be done faster by typing in commands. If you can type fast, SWEe! can create your CS2103T flashcards faster than traditional GUI apps.
-
-
 * Table of Contents
     - [Introduction](#introduction)
     - [Quick start](#quick-start)
@@ -46,13 +43,13 @@ Thank you for downloading our application. We look forward to your continuous su
 
 #### What is SWEe!?
 
-SWEe! is a desktop application with a command line interface (CLI) for CS2103T students to manage their learning progress through flashcards. With a CLI, you will be able to perform tasks and navigate to different functionalities of the application more quickly,  allowing you to save precious time for other tasks
+SWEe! is a desktop application with a command line interface (CLI) for CS2103 students to manage their learning progress through flashcards. With a CLI, you will be able to perform tasks and navigate to different functionalities of the application more quickly,  allowing you to save precious time for other tasks.
 
 #### SWEe! is perfect for:
 
-* Organising key learning points from the textbook in 2103T website  in a single platform
-* Testing your knowledge of the content taught with the help of SWEe’s quiz mode
-* Tracking your progress and monitor which topics you are weak using SWEe’s statistics functionality
+* Organising key learning points from the textbook in CS2103 website  in a single platform
+* Testing your knowledge of the content taught with the help of SWEe!’s quiz mode
+* Tracking your progress and monitor which topics you are weak using SWEe!’s statistics functionality
 
 #### So, is SWEe! for you?
 
@@ -87,7 +84,7 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
     ![Quick Start UI](images/QuickStartUi.png)
     <div style="page-break-after: always;"></div>
 <br>
-1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. E.g. typing help and pressing Enter will open the help window.
+1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. eg. typing help and pressing Enter will open the help window.
 
 1. Refer to the [Features](#features) below for details of each command.
 
@@ -95,7 +92,7 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
 
 ## Application layout
 
-The figures below show the annotated version of the graphic user interface. This will help you better identify the various sections and elements in the application, as well as understand the technical terms stated in this documentation.
+Here is how our application looks like.
 
 ![filedirectory](images/ug/label1.png)
 
@@ -109,12 +106,12 @@ Feeling a little overwhelmed by the command format we use throughout the user gu
 
 Format/Notation | Meaning
 -----------|-----------------------
-`QUESTION` | Words in uppercase are parameters that you should supply. <br> E.g. in `add q/QUESTION`, `QUESTION` is a parameter which can be used as `add q/What is my name?`
+`QUESTION` | Words in uppercase are parameters that you should supply. <br> eg. in `add q/QUESTION`, `QUESTION` is a parameter which can be used as `add q/What is my name?`
 `q/QUESTION` | The letter and slash before the parameter is the prefix. You should use this to separate the current parameter from other parameters.
 `success` | Words in lowercase are to be specified exactly, meaning word for word. 
-`<success|reviewed>` | Items in angle brackets are either/or options. Each option is delineated by a `|`. <br> E.g. `<success|reviewed>` can be used as success or reviewed but not both
-`[c/CATEGORY]` | Items in square brackets are optional. You can choose whether you want to specify them. <br> E.g. `q/QUESTION [c/CATEGORY]` can be used as `q/What is my name? c/Name` or `q/What is my name?`
-`[t/TAG]...` | Items with ellipsis after them can be used either multiple or zero times <br> E.g. `t/TAG` can be used 0 times or as `t/friend`, `t/friend t/family`, etc
+`<success|reviewed>` | Items in angle brackets are either/or options. Each option is delineated by a `|`. <br> eg. `<success|reviewed>` can be used as success or reviewed but not both
+`[c/CATEGORY]` | Items in square brackets are optional. You can choose whether you want to specify them. <br> eg. `q/QUESTION [c/CATEGORY]` can be used as `q/What is my name? c/Name` or `q/What is my name?`
+`[t/TAG]...` | Items with ellipsis after them can be used either multiple or zero times <br> eg. `t/TAG` can be used 0 times or as `t/friend`, `t/friend t/family`, etc
 
 <div markdown="span" class="alert alert-primary">
 
@@ -125,7 +122,7 @@ Format/Notation | Meaning
 
 ## Common Input Fields
 
-Many of our commands use the same input fields. This section will teach you what each of them mean and how to specify them.
+Many of our commands use the same input fields. This section will teach you what each of them means and how to specify them.
 If you are reading this guide for the first time, you can skip to [Features](#features) first. You can refer back to this table at any time!
 
 <br>
