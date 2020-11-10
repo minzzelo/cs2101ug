@@ -133,7 +133,7 @@ Input Field | What is it & How to specify
 `a/ANSWER`      | Answer on the flashcard.<br>`ANSWER` has no character restrictions so you can input anything you like.
 `c/CATEGORY`    | Category of the flashcard.<br>`CATEGORY` must be alphanumeric and can be multiple words.
 `r/RATING`      | Star rating of the flashcard.<br>`RATING` must be a number between 1 and 5 inclusive.
-`d/DIAGRAM`     | Diagram (image) of the flashcard.<br>`DIAGRAM` must be a valid path to a file. <br>eg. It can be a full file path such as C:/users/tom/Desktop/image/diagram.png<br> eg. It can be a relative file path (relative to swee.jar) such as images/image.jpg<br>Only supports the following image file types: jpg, png, jpeg, bmp
+`d/DIAGRAM`     | Diagram (image) of the flashcard.<br>`DIAGRAM` must be a valid path to a file. <br>eg. It can be a full file path such as `C:/users/tom/Desktop/image/diagram.png`<br> eg. It can be a relative file path (relative to swee.jar) such as `images/image.jpg`<br>Only supports the following image file types: jpg, png, jpeg, bmp
 `n/NOTE`        | Note on the flashcard.<br>`NOTE` has no character limit or restrictions so you can input anything you like.
 `t/TAG`         | These are tags of the flashcard. A flashcard can have more than one tag.<br>`TAG` must be alphanumeric and must be a single word.
 `INDEX`         | `INDEX` refers to the index number shown in the displayed flashcard list.<br>Every visible flashcard on the display list has an `INDEX`.<br>`INDEX` is always a positive integer greater than 0. eg. 1, 2, 3, …
@@ -515,8 +515,8 @@ Format: `quiz`
 So what is quiz mode? Upon entering quiz mode, you can no longer input commands to the command box. However, the following keyboard input will now be recognised:
 * `↓ key` shows the answer and notes of the current flashcard  
 * `q` quits quiz mode
-* `y` This input will only be recognised after the `↓ key` is pressed. `y` indicate a correct answer. 
-* `n` This input will only be recognised after the `↓ key` is pressed. `n` indicates an incorrect answer. 
+* `y` This input will only be recognised after the `↓ key` is pressed. `y` indicate a correct quiz attempt. 
+* `n` This input will only be recognised after the `↓ key` is pressed. `n` indicates an incorrect quiz attempt. 
 
 Quiz attempts are recorded and information about your scores can be displayed using the [stats](#view-the-statistics-of-flashcard--stats) command.
 
@@ -688,24 +688,20 @@ Worried that all the precious flashcards you have saved would be gone after clos
 **Q**: Why are there data which I did not include when I first start SWEe!?
 **A**: We understand that you are a new user! SWEe! therefore provides you with some sample data to experiment first before you start using SWEe! proper. Hope that you will enjoy using SWEe!.
 
-**Q**: What does it mean if some action is **not supported**?<br>
-**A**: It means that our app is not intended to allow said action to work although it may work under certain circumstances.
-If you still want to perform the action, do take note that you may face unintended or unexplained behaviour.
-
 **Q**: What is the difference between review mode and quiz mode?<br>
 **A**: Review mode is like a sandbox mode where you can move back and forth between flashcards. In quiz mode, you can only go forward. Also, quiz mode asks you for feedback and keeps track of statistics but review mode doesn't.
 
-**Q**: Are success frequency and correct count of a flashcard the same thing?<br>
-**A**: Yes. They both refer to how many times you answered with `y` in quiz mode for the flashcard.
+**Q**: What is the quiz frequency of a flashcard?<br>
+**A**: It is just the total number of quiz attempts for the flashcard! (refer to [Quiz](#quiz-flashcards-quiz)).
 
-**Q**: Why doesn't review mode affect review frequency/count of a flashcard?<br>
-**A**: We know the naming may be a little bit confusing but just keep in mind that review mode does **not** affect the statistics (success, review frequency) of a flashcard. Only quiz mode does!
+**Q**: What is the success frequency of a flashcard?<br>
+**A**: It is just the number of **correct** quiz attempts for the flashcard! (refer to [Quiz](#quiz-flashcards-quiz)).
 
 **Q**: What is the success rate of a flashcard?<br>
-**A**: Success rate of a flashcard is measured by `(success frequency) / (review frequency) x 100%`. If a flashcard has a review frequency of 0, then its success rate will be 0%.
+**A**: Success rate of a flashcard is measured by `(success frequency) / (quiz frequency) x 100%`. If a flashcard has a quiz frequency of 0, then its success rate will be 0%.
 
 **Q**: How do I save my progress after executing commands?<br>
-**A**: SWEe does an auto save every time you exit the app and automatically loads the latest state of flashcards when you relaunch the app. 
+**A**: SWEe! does an auto save every time you exit the app and automatically loads the latest state of flashcards when you relaunch the app. 
 
 --------------------------------------------------------------------------------------------------------------------
 
