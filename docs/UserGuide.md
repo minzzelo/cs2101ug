@@ -311,19 +311,16 @@ Examples:
 
 ### Favourite a flashcard  : `fav`
 
-Have you ever felt that some flashcards seem particularly attractive or important to you and want to flag them out? We understand your need! Simply bookmark those flashcards using our `fav` command! 
+Have you ever felt that some flashcards seem particularly important to you and want to flag them out? We understand your need! Simply bookmark those flashcards using our Fav command! 
 
 Format: `fav INDEX`
-
-* Refer to [common input fields](#common-input-fields) to know more about `INDEX`
-* Do remember that `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 
 Examples: 
 * `fav 2` favourites the 2nd flashcard in the displayed flashcard list.
 
 <div markdown="span" class="alert alert-primary">
 
-:bulb: **Tip:** Want to see all the flashcards that are favourited? This is where our [filter](#filter-for-flashcards---filter) command comes into play! Type in `filter f/yes` to see all the flashcards that are not favourited!
+:bulb: **Tip:** Want to see all the flashcards that are favourited? This is where our [filter](#filter-for-flashcards---filter) command comes into play! Type in `filter f/yes` to see all the flashcards that are favourited!
 
 </div> 
 
@@ -331,11 +328,11 @@ Examples:
 
 **Steps for favouriting a flashcard**: 
 
-**Step 1**: Identify the flashcard you want to favourite! In this example, we want to favourite the 1st flashcard in the list. Type in `unfav 1` and press *Enter*. 
+**Step 1**: Identify the flashcard you want to favourite! In this example, we want to favourite the 1st flashcard in the list. Type in `fav 1` and press Enter. 
 
 ![Fav Step 1](images/ug/ug_fav_step1.png)
 
-**Step 2**: The *Result Display* will display a message to let you know that the flashcard has been favourited!
+**Step 2**: The Result Display will display a message to let you know that the flashcard has been favourited!
 
 **Step 3**: Check out that cute heart icon in the flashcard you have favourited!
 
@@ -345,12 +342,9 @@ Examples:
 
 ### Unfavourite a flashcard  : `unfav`
 
-Oh no! Accidentally favourited the wrong flashcard? Or did you have a change in heart and decided one of the flashcards is no longer your favourite? We are here for you! Simply unfavourite the flashcard using our `unfav` command!
+Oh no! Accidentally favourited the wrong flashcard? Or did you have a change in heart and decided one of the flashcards is no longer your favourite? Simply unfavourite the flashcard using our Unfav command!
 
 Format: `unfav INDEX`
-
-* Refer to [common input fields](#common-input-fields) to know more about `INDEX`
-* Do remember that `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 
 Examples: 
 * `unfav 2` unfavourites the 2nd flashcard in the displayed flashcard list.
@@ -365,7 +359,7 @@ Examples:
 
 **Steps for unfavouriting a flashcard**: 
 
-**Step 1**: Identify the flashcard you want to unfavourited! In this example, we want to unfavourite the 1st flashcard in the list. Type in `unfav 1` and press *Enter*. 
+**Step 1**: Identify the flashcard you want to unfavourited! In this example, we want to unfavourite the 1st flashcard in the list. Type in `unfav 1` and press Enter. 
 
 ![Unfav Step 1](images/ug/ug_unfav_step1.png)
 
@@ -379,16 +373,15 @@ Examples:
 
 ### Find flashcards : `find`
 
-Want to find a particular flashcard but too lazy to check through all the flashcards individually to find it? We understand your pain and fear not, let SWEe! take away your pain by doing the finding for you! Keep your flashcards coming as we will provide an quick and easy way for you to search for anything and everything no matter how many flashcards you have.
+Want to find a particular flashcard but too lazy to check through all the flashcards individually to find it? We understand your struggles! Let SWEe! ease your pain by doing the finding for you! Keep your flashcards coming as we will provide an quick and easy way for you to search for anything and everything no matter how many flashcards you have.
 
 Format: `find KEYWORD [KEYWORD]...`
 
-* Refer to [common input fields](#common-input-fields) on how to specify the different fields.
 * The keywords are **case insensitive**.
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: Note: If you search for multiple keywords, flashcards containing either of the keywords will be returned. For example, "General OOP" will return flashcards containing either General and/or OOP. 
+:memo: Note: If you search for multiple keywords, flashcards containing either of the keywords will be returned. For example, "General OOP" will return flashcards containing either General or OOP. 
 
 </div>
 
@@ -400,22 +393,21 @@ Format: `find KEYWORD [KEYWORD]...`
 
 Examples: 
 * `find general` displays all flashcards containing the word general.
-* `find general important` displays all flashcards containing either the word general and/or important.
-* `find -` displays all flashcards containing "-".
+* `find general important` displays all flashcards containing either the word general or important.
 
 <div style="page-break-after: always;"></div>
 
 **Steps for finding flashcards**:
 
-**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the *Command Box* and press *Enter*.
+**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the Command Box and press Enter.
 
 ![Find Step 1](images/ug/ug_find_step1.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the *Result Display*, similar to number 2 in the picture below.
+**Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the Result Display, similar to number 2 in the picture below.
 
-**Step 3**: You can see the matching flashcards in the list view, similar to number 3 in the picture below.
+**Step 3**: You can see the matching flashcards in the flashcard list, similar to number 3 in the picture below.
 
 ![Find Step 2 & 3](images/ug/ug_find_step23.png)
 
@@ -457,15 +449,15 @@ Format: `list`
 
 **Steps for listing flashcards**:
 
-**Step 1**: Type `list` in the *Command Box* and press *Enter*. 
+**Step 1**: Type `list` in the Command Box and press Enter. 
 
 ![List Step 1](images/ug/ug_list_step1.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: The *Result Display* will display the message "Listed all flashcards" 
+**Step 2**: The Result Display will display the message "Listed all flashcards" 
 
-**Step 3**: All the flashcards are now displayed in the scrollable list view! Scroll down to see all of your flashcards!
+**Step 3**: All the flashcards are now displayed in the scrollable flashcard list! Scroll down to see all of your flashcards!
 
 ![List Step 2 & 3](images/ug/ug_list_step23.png)
 
