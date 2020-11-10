@@ -212,20 +212,17 @@ Realised that a flashcard is now useless or irrelevant? You can simply remove it
 
 Format: `delete INDEX`
 
-* Deletes the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
-* `INDEX` must be a positive integer eg. 1, 2, 3, …
-
 Example: `delete 3` deletes the 3rd flashcard in the flashcard list.
 
 **Steps for deleting a flashcard**:
 
-**Step 1**: Locate the flashcard you want to delete. In this example, we want to delete the 3rd flashcard from the list. Type `delete 3` into the command box and press Enter 
+**Step 1**: Locate the flashcard you want to delete. In this example, we want to delete the 3rd flashcard from the list. Type `delete 3` into the command box and press Enter.
 
 ![filedirectory](images/ug/ug_delete_step1.png)
 
-**Step 2**: The result display will display a message telling you that the flashcard has been deleted 
+**Step 2**: The result display will display a message telling you that the flashcard has been deleted.
 
-**Step 3**: The list view will show the updated flashcard list, with the specified flashcard removed
+**Step 3**: The flashcard list will be updated with the specified flashcard removed.
 
 ![filedirectory](images/ug/ug_delete_step2.png)
 
@@ -238,30 +235,30 @@ Yes, we all make mistakes (and typos). Realised that you have a typo in your fla
 
 Format: `edit INDEX [q/QUESTION] [a/ANSWER] [c/CATEGORY] [n/NOTE] [r/RATING] [d/DIAGRAM] [t/TAG]...`
 
-* Edits the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
+* Refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 * A minimum of one field has to be given.
-* Specifying empty values to `NOTE`, `RATING`, `TAG` or `DIAGRAM` eg. `r/` will remove the corresponding field in the flashcard.
+* To understand how to edit diagrams using relative file paths, refer to this [short tutorial](#finding-file-path-for-diagram-field).
 
 Examples:
 
-* `edit 3 q/What does OOP stand for? c/Acronyms` edits the 1st flashcard’s question and category to be What does OOP stand for? and Acronyms respectively.
-* `edit 3 a/Object Oriented Programming t/` edits the 3rd flashcard’s answer and clears all existing tags
-* `edit 3 n/Important question! r/` edits the 3rd flashcard’s note and clears rating
+* `edit 3 q/What does OOP stand for? c/Acronyms` edits the 1st flashcard’s question and category to be "What does OOP stand for?" and "Acronyms" respectively
+* `edit 3 a/Object Oriented Programming t/OOP` edits the 3rd flashcard’s answer to "Object Oriented Programmin" and tag to "OOP"
+* `edit 3 n/Important question!` edits the 3rd flashcard’s note
 
 <div style="page-break-after: always;"></div>
 
 **Steps for editing a flashcard**:
 
-**Step 1**: Locate the flashcard you wish to edit. In this example, we want to edit the first flashcard's question and category to What does OOP stand for? and Acronyms respectively. Type `edit 1 q/What does OOP stand for? c/Acronyms` into the command box and press Enter
+**Step 1**: Locate the flashcard you wish to edit. In this example, we want to edit the first flashcard's question and category to "What does OOP stand for?" and "Acronyms" respectively. Type `edit 1 q/What does OOP stand for? c/Acronyms` into the command box and press Enter.
 
-![filedirectory](images/ug/ug_edit_step1.PNG)
+![filedirectory](images/ug/ug_edit_step1.png)
 <div style="page-break-after: always;"></div>
 
-**Step 2**: The result display will show a message that the flashcard has been edited successfully
+**Step 2**: The result display will show a message that the flashcard has been edited successfully.
 
-**Step 3**: The list view will show the updated details of the flashcard after the edit
+**Step 3**: The flashcard list will show the updated details of the flashcard after the edit.
 
-![filedirectory](images/ug/ug_edit_step2.PNG)
+![filedirectory](images/ug/ug_edit_step2.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -568,16 +565,22 @@ Examples:
 * `sort reviewed -a` sorts the flashcards according to review frequency in ascending order
 * `sort reviewed -d` sorts the flashcards according to review frequency in descending order
 
+<div markdown="span" class="alert alert-primary">
+
+:bulb: **Tip:** If you are confused about how review frequency and success rate are calculated, head over to our [FAQ](#faq) section to understand it more!
+</div> 
+
+
 **Steps for sorting flashcards**:
 
-**Step 1**: In this example, we want to sort the flashcards according to success rate in an ascending order. Type `sort success -a` into the command box and press Enter
+**Step 1**: In this example, we want to sort the flashcards according to success rate in an ascending order. Type `sort success -a` into the command box and press Enter.
 
 ![filedirectory](images/ug/ug_sort_step1.png)
 <div style="page-break-after: always;"></div>
 
-**Step 2**: The result display will show a message telling you that the flashcards have been sorted according to success rate in ascending order
+**Step 2**: The result display will show a message telling you that the flashcards have been sorted according to success rate in ascending order.
 
-**Step 3**: The list view will show the newly sorted list of flashcards according to the criteria
+**Step 3**: The flashcard list will show the newly sorted list of flashcards according to the criteria.
 
 ![filedirectory](images/ug/ug_sort_step2.png)
 
@@ -754,3 +757,4 @@ Examples of usages of the diagram field:
 *  `edit 1 d/image/classDiagramExample1.png`
 
 Navigate back to [adding a flashcard](#add-a-flashcard--add)
+Navigate back to [editing a flashcard](#edit-a-flashcard---edit)
