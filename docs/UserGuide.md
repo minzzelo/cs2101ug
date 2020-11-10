@@ -60,7 +60,7 @@ SWEe! is a desktop application with a command line interface (CLI) for CS2103 st
 I’m sure you want to score in your examination 😊 so please proceed on to this user guide to discover the formula for scoring well in your exam. 
 <div style="page-break-after: always;"></div>
 
-## Quick start
+## Quick Start
 
 1. Grab your CS2103 notes before we get started.
 
@@ -90,7 +90,7 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
 
 <div style="page-break-after: always;"></div>
 
-## Application layout
+## Application Layout
 
 Here is how our application looks like.
 
@@ -109,7 +109,7 @@ Format/Notation | Meaning
 `QUESTION` | Words in uppercase are parameters that you should supply. <br> eg. in `add q/QUESTION`, `QUESTION` is a parameter which can be used as `add q/What is my name?`
 `q/QUESTION` | The letter and slash before the parameter is the prefix. You should use this to separate the current parameter from other parameters.
 `success` | Words in lowercase are to be specified exactly, meaning word for word. 
-`<success|reviewed>` | Items in angle brackets are either/or options. Each option is delineated by a `|`. <br> eg. `<success|reviewed>` can be used as success or reviewed but not both
+`<success|quiz>` | Items in angle brackets are either/or options. Each option is delineated by a `|`. <br> eg. `<success|quiz>` can be used as `success` or `quiz` but not both
 `[c/CATEGORY]` | Items in square brackets are optional. You can choose whether you want to specify them. <br> eg. `q/QUESTION [c/CATEGORY]` can be used as `q/What is my name? c/Name` or `q/What is my name?`
 `[t/TAG]...` | Items with ellipsis after them can be used either multiple or zero times <br> eg. `t/TAG` can be used 0 times or as `t/friend`, `t/friend t/family`, etc
 
@@ -196,13 +196,13 @@ Format: `clear`
 
 **Steps for clearing all flashcards**:
 
-**Step 1**: Type `clear` into the command box and press Enter
+**Step 1**: Type `clear` into the command box and press Enter.
 
 ![filedirectory](images/ug/ug_clear_step1.png)
 
-**Step 2**: The result display will display a message telling you that all flashcards have been cleared
+**Step 2**: The result display will display a message telling you that all flashcards have been cleared.
 
-**Step 3**: The list view will update to show an empty flashcard list
+**Step 3**: The list view will update to show an empty flashcard list.
 
 ![filedirectory](images/ug/ug_clear_step2_3.png)
 
@@ -212,20 +212,17 @@ Realised that a flashcard is now useless or irrelevant? You can simply remove it
 
 Format: `delete INDEX`
 
-* Deletes the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
-* `INDEX` must be a positive integer eg. 1, 2, 3, …
-
 Example: `delete 3` deletes the 3rd flashcard in the flashcard list.
 
 **Steps for deleting a flashcard**:
 
-**Step 1**: Locate the flashcard you want to delete. In this example, we want to delete the 3rd flashcard from the list. Type `delete 3` into the command box and press Enter 
+**Step 1**: Locate the flashcard you want to delete. In this example, we want to delete the 3rd flashcard from the list. Type `delete 3` into the command box and press Enter.
 
 ![filedirectory](images/ug/ug_delete_step1.png)
 
-**Step 2**: The result display will display a message telling you that the flashcard has been deleted 
+**Step 2**: The result display will display a message telling you that the flashcard has been deleted.
 
-**Step 3**: The list view will show the updated flashcard list, with the specified flashcard removed
+**Step 3**: The flashcard list will be updated with the specified flashcard removed.
 
 ![filedirectory](images/ug/ug_delete_step2.png)
 
@@ -238,42 +235,41 @@ Yes, we all make mistakes (and typos). Realised that you have a typo in your fla
 
 Format: `edit INDEX [q/QUESTION] [a/ANSWER] [c/CATEGORY] [n/NOTE] [r/RATING] [d/DIAGRAM] [t/TAG]...`
 
-* Edits the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
+* Refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 * A minimum of one field has to be given.
-* Specifying empty values to `NOTE`, `RATING`, `TAG` or `DIAGRAM` eg. `r/` will remove the corresponding field in the flashcard.
+* To understand how to edit diagrams using relative file paths, refer to this [short tutorial](#finding-file-path-for-diagram-field).
 
 Examples:
 
-* `edit 3 q/What does OOP stand for? c/Acronyms` edits the 1st flashcard’s question and category to be What does OOP stand for? and Acronyms respectively.
-* `edit 3 a/Object Oriented Programming t/` edits the 3rd flashcard’s answer and clears all existing tags
-* `edit 3 n/Important question! r/` edits the 3rd flashcard’s note and clears rating
+* `edit 3 q/What does OOP stand for? c/Acronyms` edits the 1st flashcard’s question and category to be "What does OOP stand for?" and "Acronyms" respectively
+* `edit 3 a/Object Oriented Programming t/OOP` edits the 3rd flashcard’s answer to "Object Oriented Programmin" and tag to "OOP"
+* `edit 3 n/Important question!` edits the 3rd flashcard’s note
 
 <div style="page-break-after: always;"></div>
 
 **Steps for editing a flashcard**:
 
-**Step 1**: Locate the flashcard you wish to edit. In this example, we want to edit the first flashcard's question and category to What does OOP stand for? and Acronyms respectively. Type `edit 1 q/What does OOP stand for? c/Acronyms` into the command box and press Enter
+**Step 1**: Locate the flashcard you wish to edit. In this example, we want to edit the first flashcard's question and category to "What does OOP stand for?" and "Acronyms" respectively. Type `edit 1 q/What does OOP stand for? c/Acronyms` into the command box and press Enter.
 
-![filedirectory](images/ug/ug_edit_step1.PNG)
+![filedirectory](images/ug/ug_edit_step1.png)
 <div style="page-break-after: always;"></div>
 
-**Step 2**: The result display will show a message that the flashcard has been edited successfully
+**Step 2**: The result display will show a message that the flashcard has been edited successfully.
 
-**Step 3**: The list view will show the updated details of the flashcard after the edit
+**Step 3**: The flashcard list will show the updated details of the flashcard after the edit.
 
-![filedirectory](images/ug/ug_edit_step2.PNG)
+![filedirectory](images/ug/ug_edit_step2.png)
 
 <div style="page-break-after: always;"></div>
 
 ### Filter for flashcards  : `filter`
 
-Want to look at flashcards belonging to a certain category? Or look at flashcards with a rating of 5.
-Filter command allows you to filter for specific flashcard(s) based on your field input(s). 
-This will return all the flashcards whose fields match all the fields specified by you.
+Want to look at flashcards belonging to a certain category? Or look at flashcards with a rating of 5?
+Filter command allows you to filter for specified flashcards based on your field inputs. 
 
 Format: `filter [c/CATEGORY] [r/RATING] [f/<yes|no>] [t/TAG]...`
 
-* Filters the specified flashcard based on category, rating, favourite status or tags.
+* Filters for specified flashcards based on category, rating, favourite status or tags.
 * Specifying `f/yes` filters for favourited flashcards while `f/no` filters for unfavourited flashcards.
 * Supports filtering of one or more different fields. For example:
     - `filter c/SDLC r/5` will filter out flashcards belonging to the SDLC category with a rating of 5.
@@ -293,40 +289,35 @@ Examples:
 *  `filter c/SDLC` filters and lists all flashcards belonging to the SDLC category.
 *  `filter t/examinable t/study` filters and lists all flashcards that have both an “examinable” tag and a “study” tag.
 *  `filter r/3 f/yes` filters and lists all favourited flashcards that have a rating of 3.
-*  `filter f/no f/yes c/General` filters and lists all favourited flashcards that belong to the General category.
-    (only last instance of f/ is read)
 
 <div style="page-break-after: always;"></div>
 
 **Steps for filtering for a flashcard based on category and tag**:
 
-**Step 1**: Suppose you want to filter for a flashcard which has a Trivial category and contains the preloaded tag. Type the command `filter c/Trivial t/preloaded` and press Enter
+**Step 1**: Suppose you want to filter for a flashcard which has a Trivial category and contains the preloaded tag. Type the command `filter c/Trivial t/preloaded` and press Enter.
 
 ![filedirectory](images/ug/ug_filter_step1.PNG)
 
-**Step 2**: The result display will show the number of flashcards listed after applying the filter
+**Step 2**: The result display will show the number of flashcards listed after applying the filter.
 
-**Step 3**: The list view will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag
+**Step 3**: The list view will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag.
 
-![filedirectory](images/ug/ug_filter_step2.PNG)
+![filedirectory](images/ug/ug_filter_step2.png)
 
 <div style="page-break-after: always;"></div>
 
 ### Favourite a flashcard  : `fav`
 
-Have you ever felt that some flashcards seem particularly attractive or important to you and want to flag them out? We understand your need! Simply bookmark those flashcards using our `fav` command! 
+Have you ever felt that some flashcards seem particularly important to you and want to flag them out? We understand your need! Simply bookmark those flashcards using our Fav command! 
 
 Format: `fav INDEX`
-
-* Refer to [common input fields](#common-input-fields) to know more about `INDEX`
-* Do remember that `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 
 Examples: 
 * `fav 2` favourites the 2nd flashcard in the displayed flashcard list.
 
 <div markdown="span" class="alert alert-primary">
 
-:bulb: **Tip:** Want to see all the flashcards that are favourited? This is where our [filter](#filter-for-flashcards---filter) command comes into play! Type in `filter f/yes` to see all the flashcards that are not favourited!
+:bulb: **Tip:** Want to see all the flashcards that are favourited? This is where our [filter](#filter-for-flashcards---filter) command comes into play! Type in `filter f/yes` to see all the flashcards that are favourited!
 
 </div> 
 
@@ -334,11 +325,11 @@ Examples:
 
 **Steps for favouriting a flashcard**: 
 
-**Step 1**: Identify the flashcard you want to favourite! In this example, we want to favourite the 1st flashcard in the list. Type in `unfav 1` and press *Enter*. 
+**Step 1**: Identify the flashcard you want to favourite! In this example, we want to favourite the 1st flashcard in the list. Type in `fav 1` and press Enter. 
 
 ![Fav Step 1](images/ug/ug_fav_step1.png)
 
-**Step 2**: The *Result Display* will display a message to let you know that the flashcard has been favourited!
+**Step 2**: The Result Display will display a message to let you know that the flashcard has been favourited!
 
 **Step 3**: Check out that cute heart icon in the flashcard you have favourited!
 
@@ -348,12 +339,9 @@ Examples:
 
 ### Unfavourite a flashcard  : `unfav`
 
-Oh no! Accidentally favourited the wrong flashcard? Or did you have a change in heart and decided one of the flashcards is no longer your favourite? We are here for you! Simply unfavourite the flashcard using our `unfav` command!
+Oh no! Accidentally favourited the wrong flashcard? Or did you have a change in heart and decided one of the flashcards is no longer your favourite? Simply unfavourite the flashcard using our Unfav command!
 
 Format: `unfav INDEX`
-
-* Refer to [common input fields](#common-input-fields) to know more about `INDEX`
-* Do remember that `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 
 Examples: 
 * `unfav 2` unfavourites the 2nd flashcard in the displayed flashcard list.
@@ -368,7 +356,7 @@ Examples:
 
 **Steps for unfavouriting a flashcard**: 
 
-**Step 1**: Identify the flashcard you want to unfavourited! In this example, we want to unfavourite the 1st flashcard in the list. Type in `unfav 1` and press *Enter*. 
+**Step 1**: Identify the flashcard you want to unfavourited! In this example, we want to unfavourite the 1st flashcard in the list. Type in `unfav 1` and press Enter. 
 
 ![Unfav Step 1](images/ug/ug_unfav_step1.png)
 
@@ -382,16 +370,15 @@ Examples:
 
 ### Find flashcards : `find`
 
-Want to find a particular flashcard but too lazy to check through all the flashcards individually to find it? We understand your pain and fear not, let SWEe! take away your pain by doing the finding for you! Keep your flashcards coming as we will provide an quick and easy way for you to search for anything and everything no matter how many flashcards you have.
+Want to find a particular flashcard but too lazy to check through all the flashcards individually to find it? We understand your struggles! Let SWEe! ease your pain by doing the finding for you! Keep your flashcards coming as we will provide an quick and easy way for you to search for anything and everything no matter how many flashcards you have.
 
 Format: `find KEYWORD [KEYWORD]...`
 
-* Refer to [common input fields](#common-input-fields) on how to specify the different fields.
 * The keywords are **case insensitive**.
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: Note: If you search for multiple keywords, flashcards containing either of the keywords will be returned. For example, "General OOP" will return flashcards containing either General and/or OOP. 
+:memo: Note: If you search for multiple keywords, flashcards containing either of the keywords will be returned. For example, "General OOP" will return flashcards containing either General or OOP. 
 
 </div>
 
@@ -403,22 +390,21 @@ Format: `find KEYWORD [KEYWORD]...`
 
 Examples: 
 * `find general` displays all flashcards containing the word general.
-* `find general important` displays all flashcards containing either the word general and/or important.
-* `find -` displays all flashcards containing "-".
+* `find general important` displays all flashcards containing either the word general or important.
 
 <div style="page-break-after: always;"></div>
 
 **Steps for finding flashcards**:
 
-**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the *Command Box* and press *Enter*.
+**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the Command Box and press Enter.
 
 ![Find Step 1](images/ug/ug_find_step1.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the *Result Display*, similar to number 2 in the picture below.
+**Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the Result Display, similar to number 2 in the picture below.
 
-**Step 3**: You can see the matching flashcards in the list view, similar to number 3 in the picture below.
+**Step 3**: You can see the matching flashcards in the flashcard list, similar to number 3 in the picture below.
 
 ![Find Step 2 & 3](images/ug/ug_find_step23.png)
 
@@ -460,15 +446,15 @@ Format: `list`
 
 **Steps for listing flashcards**:
 
-**Step 1**: Type `list` in the *Command Box* and press *Enter*. 
+**Step 1**: Type `list` in the Command Box and press Enter. 
 
 ![List Step 1](images/ug/ug_list_step1.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: The *Result Display* will display the message "Listed all flashcards" 
+**Step 2**: The Result Display will display the message "Listed all flashcards" 
 
-**Step 3**: All the flashcards are now displayed in the scrollable list view! Scroll down to see all of your flashcards!
+**Step 3**: All the flashcards are now displayed in the scrollable flashcard list! Scroll down to see all of your flashcards!
 
 ![List Step 2 & 3](images/ug/ug_list_step23.png)
 
@@ -522,7 +508,7 @@ To summarise, when you are in review mode, use the `↓ key` and `↑ key` to to
 
 ### Quiz flashcards: `quiz`
 
-Want to revise for your upcoming exam? Our quiz mode simulates a mock exam to put your knowledge to the test and monitors how well you did.
+Want to revise for your upcoming exam? Our quiz mode simulates a mock exam to put your knowledge to the test and monitors how well you score.
 
 Format: `quiz`
 
@@ -532,10 +518,7 @@ So what is quiz mode? Upon entering quiz mode, you can no longer input commands 
 * `y` This input will only be recognised after the `↓ key` is pressed. `y` indicate a correct answer. 
 * `n` This input will only be recognised after the `↓ key` is pressed. `n` indicates an incorrect answer. 
 
-Upon pressing the `↓ key`, the user will be prompted if they got the answer correct. The user can then press 
-`y` to feedback that they got the correct answer or `n` to feedback that they got an incorrect answer.  
-
-Quiz attempts are recorded and information about your scores can be displayed using the [statistics](#view-the-statistics-of-flashcard--stats) command.
+Quiz attempts are recorded and information about your scores can be displayed using the [stats](#view-the-statistics-of-flashcard--stats) command.
 
 <div style="page-break-after: always;"></div>
 
@@ -563,9 +546,9 @@ Quiz attempts are recorded and information about your scores can be displayed us
 
 ### Sort all flashcards : `sort`
 
-Want to get an overview of how skilled you are at answering the flashcards? Our sort command is here to help you, with two important criteria that you can sort your flashcards by, namely the review frequency and success rate of your flashcards!
+Want to get an overview of how skilled you are at answering the flashcards? Our sort command is here to help you, with two important criteria that you can sort your flashcards by, namely the quiz frequency and success rate of your flashcards!
 
-Format: `sort <success|reviewed> <-a|-d>`
+Format: `sort <success|quiz> <-a|-d>`
 
 * Specifying `-a` means sorting by the criteria in ascending order.
 * Specifying `-d` means sorting by the criteria in descending order.
@@ -573,19 +556,25 @@ Format: `sort <success|reviewed> <-a|-d>`
 Examples: 
 * `sort success -a` sorts the flashcards according to success rate in ascending order
 * `sort success -d` sorts the flashcards according to success rate in descending order
-* `sort reviewed -a` sorts the flashcards according to review frequency in ascending order
-* `sort reviewed -d` sorts the flashcards according to review frequency in descending order
+* `sort quiz -a` sorts the flashcards according to quiz frequency in ascending order
+* `sort quiz -d` sorts the flashcards according to quiz frequency in descending order
+
+<div markdown="span" class="alert alert-primary">
+
+:bulb: **Tip:** If you are confused about what quiz frequency and success rate mean, head over to our [FAQ](#faq) section to understand it more!
+</div> 
+
 
 **Steps for sorting flashcards**:
 
-**Step 1**: In this example, we want to sort the flashcards according to success rate in an ascending order. Type `sort success -a` into the command box and press Enter
+**Step 1**: In this example, we want to sort the flashcards according to success rate in an ascending order. Type `sort success -a` into the command box and press Enter.
 
 ![filedirectory](images/ug/ug_sort_step1.png)
 <div style="page-break-after: always;"></div>
 
-**Step 2**: The result display will show a message telling you that the flashcards have been sorted according to success rate in ascending order
+**Step 2**: The result display will show a message telling you that the flashcards have been sorted according to success rate in ascending order.
 
-**Step 3**: The list view will show the newly sorted list of flashcards according to the criteria
+**Step 3**: The flashcard list will show the newly sorted list of flashcards according to the criteria.
 
 ![filedirectory](images/ug/ug_sort_step2.png)
 
@@ -631,19 +620,22 @@ Examples:
 
 ### View the statistics of flashcard : `stats`
 
-Want to view the results of your attempts in quiz mode? The `stats` command does the crunching of numbers for you. You will be able to see a pie chart that provides a graphic representation of your attempts.
+Want to view the results of your attempts in quiz mode? The stats command does the crunching of numbers for you.
 
 Format: `stats INDEX`
-
-* Shows the statistics of the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
-* `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 
 Example:
 * `stats 1` shows the statistics of the 1st flashcard in the displayed flashcard list on the view pane.
 
-<div markdown="span" class="alert alert-primary">:memo: Note: Once another command is executed, the view pane containing the statistics will be returned to a blank state even if the shown
-flashcard was not modified/deleted.
-</div>
+Using the `stats` command will show the following information in the view pane:
+
+* Pie chart. This chart shows the percentage of correct attempts versus incorrect attempts.
+* Total quiz attempts. This numerical value represents the total number of attempts in quiz mode.
+* Correct attempts. This numerical value represents the total number of correct attempts in quiz mode.
+
+A labelled example is shown below.
+![pie chart](images/ug/piechart.png)
+
 <br>
 
 <div style="page-break-after: always;"></div>
@@ -668,7 +660,7 @@ Format: `exit`
 
 <div style="page-break-after: always;"></div>
 
-**Steps to use the exit function**
+**Steps to use the exit function**:
 
 **Step 1**: Type `exit` in the command box and press Enter. The application will close and we look forward to seeing you back 😊 .
 
@@ -678,7 +670,7 @@ Format: `exit`
 
 ### Saving the data
 
-Worried that all the precious flashcards you have saved would be gone after closing the app? Fear not! Feel free to close the app anytime in peace! Flashcards data are saved in the hard disk automatically for you after any command that changes the data. There is no need to save manually.
+Worried that all the precious flashcards you have saved would be gone after closing the app? Do not worry! Feel free to close the app anytime in peace! Flashcards data are saved in the hard disk automatically for you after any command that changes the data. There is no need to save manually.
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -686,12 +678,15 @@ Worried that all the precious flashcards you have saved would be gone after clos
 
 ## FAQ
 
-**Q**: Help! I cant't open the app by double-clicking the jar file? <br>
+**Q**: Help! I can't open the app by double-clicking the jar file? <br>
 **A**: Don't worry! Follow the steps below to open the app! <br>
 
 * **Step 1:** Fire up your terminal and navigate to the *home folder* where the Jar file is located! <br>
 
 * **Step 2:** Type in the command `java -jar swee.jar` and the app should start in a few seconds!
+
+**Q**: Why are there data which I did not include when I first start SWEe!?
+**A**: We understand that you are a new user! SWEe! therefore provides you with some sample data to experiment first before you start using SWEe! proper. Hope that you will enjoy using SWEe!.
 
 **Q**: What does it mean if some action is **not supported**?<br>
 **A**: It means that our app is not intended to allow said action to work although it may work under certain circumstances.
@@ -759,3 +754,4 @@ Examples of usages of the diagram field:
 *  `edit 1 d/image/classDiagramExample1.png`
 
 Navigate back to [adding a flashcard](#add-a-flashcard--add)
+Navigate back to [editing a flashcard](#edit-a-flashcard---edit)
