@@ -362,7 +362,7 @@ Examples:
 
 **Steps for unfavouriting a flashcard**: 
 
-**Step 1**: Identify the flashcard you want to unfavourited! In this example, we want to unfavourite the 1st flashcard in the list. Type in `unfav 1` and press *Enter*. 
+**Step 1**: Identify the flashcard you want to unfavourited! In this example, we want to unfavourite the 1st flashcard in the list. Type in `unfav 1` and press Enter. 
 
 ![Unfav Step 1](images/ug/ug_unfav_step1.png)
 
