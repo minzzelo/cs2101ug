@@ -429,8 +429,8 @@ Typing `review` and pressing Enter will put you in review mode and allows you to
 <br><br>
 So what is review mode? Upon entering review mode, you can no longer input commands to the command box. However, the following keyboard input will now be recognised:
 
-* `↓ key` shows answer and notes of the current flashcard  
-* `↑ key` hides answer and notes of the current flashcard  
+* `↓ key` shows the answer and notes of the current flashcard  
+* `↑ key` hides the answer and notes of the current flashcard  
 * `→ key` moves on to the next flashcard (if there is a next flashcard)
 * `← key` moves to the previous flashcard (if there is a previous flashcard)
 * `q` quits review mode
@@ -470,26 +470,20 @@ To summarise, when you are in review mode, use the `↓ key` and `↑ key` to to
 
 ### Quiz flashcards: `quiz`
 
-Quizzes the current list of flashcards. This puts the user in quiz mode and the user can no longer input commands to the textbox.
+Want to revise for your upcoming exam? Our quiz mode simulates a mock exam to put your knowledge to the test and monitors how well you did.
 
 Format: `quiz`
 
-Upon entering quiz mode, the following user input will be recognised:
-* `↓ key` shows answer and notes of the current flashcard  
+So what is quiz mode? Upon entering quiz mode, you can no longer input commands to the command box. However, the following keyboard input will now be recognised:
+* `↓ key` shows the answer and notes of the current flashcard  
 * `q` quits quiz mode
-* `y` This input will only be recognised after the `↓ key` is pressed. `y` is a feedback to indicate a correct answer. 
-* `n` This input will only be recognised after the `↓ key` is pressed. `n` is a feedback to indicate an incorrect answer. 
+* `y` This input will only be recognised after the `↓ key` is pressed. `y` indicate a correct answer. 
+* `n` This input will only be recognised after the `↓ key` is pressed. `n` indicates an incorrect answer. 
 
 Upon pressing the `↓ key`, the user will be prompted if they got the answer correct. The user can then press 
 `y` to feedback that they got the correct answer or `n` to feedback that they got an incorrect answer.  
 
-The quiz mode works in conjunction with the [statistics](#view-the-statistics-of-flashcard--stats) feature. Quiz attempts are recorded and information about the success frequency can be displayed using the [statistics](#view-the-statistics-of-flashcard--stats) feature.
-* Pressing `y` will increase the review and success frequency of the flashcard.
-* Pressing `n` will increase the review frequency of the flashcard.
-
-<div markdown="span" class="alert alert-primary">:memo: Note: Once the user presses <code>y</code> or <code>n</code>, the review and success frequency of the flashcard is updated accordingly even if the user quits the quiz prematurely.
-</div>
-<br>
+Quiz attempts are recorded and information about your scores can be displayed using the [statistics](#view-the-statistics-of-flashcard--stats) command.
 
 <div style="page-break-after: always;"></div>
 
@@ -547,7 +541,7 @@ Examples:
 
 ### View a flashcard  : `view`
 
-Want to view a flashcard in all its detail? The view command allows you to do just that! You will be able to see the full question on the flashcard and the diagram (if present) of the flashcard. Optionally, you can also choose to see the answer and notes (if present) of the flashcard.
+Want to view a flashcard in all its detail? The `view` command allows you to do just that! You will be able to see the full question on the flashcard and the diagram (if present) of the flashcard. Optionally, you can also choose to see the answer and notes (if present) of the flashcard.
 
 Format: `view INDEX [-a]`
 
@@ -588,7 +582,7 @@ flashcard was not modified/deleted.
 
 ### View the statistics of flashcard : `stats`
 
-View the statistics of a flashcard.
+Want to view the results of your attempts in quiz mode? The `stats` command does the crunching of numbers for you. You will be able to see a pie chart that provides a graphic representation of your attempts.
 
 Format: `stats INDEX`
 
@@ -596,15 +590,7 @@ Format: `stats INDEX`
 * `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 
 Example:
-* `stats 1` shows the statistics of the 1st flashcard (in the displayed flashcard list) on the view pane.
-
-The statistics feature works in conjunction with the [quiz](#quiz-flashcards-quiz) feature.
-
-The following information will be displayed on the view pane:
-* Question of the flashcard (may be truncated for brevity).
-* Reviewed count of the flashcard.
-* Correct count of the flashcard.
-* Pie chart to show the graphical representation of correct attempts vs wrong attempts in quiz mode of the flashcard. (No pie chart will be shown if the flashcard has not been reviewed.)
+* `stats 1` shows the statistics of the 1st flashcard in the displayed flashcard list on the view pane.
 
 <div markdown="span" class="alert alert-primary">:memo: Note: Once another command is executed, the view pane containing the statistics will be returned to a blank state even if the shown
 flashcard was not modified/deleted.
