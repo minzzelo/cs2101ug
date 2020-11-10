@@ -3,9 +3,6 @@ layout: page
 title: User Guide
 ---
 
-SWEe! is a  **desktop app for CS2103T students to manage their learning progress mainly through flashcards**. It is optimized for CLI users so that frequent tasks can be done faster by typing in commands. If you can type fast, SWEe! can create your CS2103T flashcards faster than traditional GUI apps.
-
-
 * Table of Contents
     - [Introduction](#introduction)
     - [Quick start](#quick-start)
@@ -45,13 +42,13 @@ Thank you for downloading our application. We look forward to your continuous su
 
 #### What is SWEe!?
 
-SWEe! is a desktop application with a command line interface (CLI) for CS2103T students to manage their learning progress through flashcards. With a CLI, you will be able to perform tasks and navigate to different functionalities of the application more quickly,  allowing you to save precious time for other tasks
+SWEe! is a desktop application with a command line interface (CLI) for CS2103 students to manage their learning progress through flashcards. With a CLI, you will be able to perform tasks and navigate to different functionalities of the application more quickly,  allowing you to save precious time for other tasks.
 
 #### SWEe! is perfect for:
 
-* Organising key learning points from the textbook in 2103T website  in a single platform
-* Testing your knowledge of the content taught with the help of SWEe’s quiz mode
-* Tracking your progress and monitor which topics you are weak using SWEe’s statistics functionality
+* Organising key learning points from the textbook in CS2103 website  in a single platform
+* Testing your knowledge of the content taught with the help of SWEe!’s quiz mode
+* Tracking your progress and monitor which topics you are weak using SWEe!’s statistics functionality
 
 #### So, is SWEe! for you?
 
