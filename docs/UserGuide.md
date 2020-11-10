@@ -525,7 +525,7 @@ To summarise, when you are in review mode, use the `↓ key` and `↑ key` to to
 
 ### Quiz flashcards: `quiz`
 
-Want to revise for your upcoming exam? Our quiz mode simulates a mock exam to put your knowledge to the test and monitors how well you did.
+Want to revise for your upcoming exam? Our quiz mode simulates a mock exam to put your knowledge to the test and monitors how well you score.
 
 Format: `quiz`
 
@@ -535,10 +535,7 @@ So what is quiz mode? Upon entering quiz mode, you can no longer input commands 
 * `y` This input will only be recognised after the `↓ key` is pressed. `y` indicate a correct answer. 
 * `n` This input will only be recognised after the `↓ key` is pressed. `n` indicates an incorrect answer. 
 
-Upon pressing the `↓ key`, the user will be prompted if they got the answer correct. The user can then press 
-`y` to feedback that they got the correct answer or `n` to feedback that they got an incorrect answer.  
-
-Quiz attempts are recorded and information about your scores can be displayed using the [statistics](#view-the-statistics-of-flashcard--stats) command.
+Quiz attempts are recorded and information about your scores can be displayed using the [stats](#view-the-statistics-of-flashcard--stats) command.
 
 <div style="page-break-after: always;"></div>
 
@@ -637,19 +634,22 @@ flashcard was not modified/deleted.
 
 ### View the statistics of flashcard : `stats`
 
-Want to view the results of your attempts in quiz mode? The `stats` command does the crunching of numbers for you. You will be able to see a pie chart that provides a graphic representation of your attempts.
+Want to view the results of your attempts in quiz mode? The stats command does the crunching of numbers for you.
 
 Format: `stats INDEX`
-
-* Shows the statistics of the flashcard at the specified `INDEX`. The `INDEX` refers to the index number shown in the displayed flashcard list.
-* `INDEX` must be a positive integer **greater than 0**. eg. 1, 2, 3, …
 
 Example:
 * `stats 1` shows the statistics of the 1st flashcard in the displayed flashcard list on the view pane.
 
-<div markdown="span" class="alert alert-primary">:memo: Note: Once another command is executed, the view pane containing the statistics will be returned to a blank state even if the shown
-flashcard was not modified/deleted.
-</div>
+Using the `stats` command will show the following information in the view pane:
+
+* Pie chart. This chart shows the percentage of correct attempts versus incorrect attempts.
+* Total quiz attempts. This numerical value represents the total number of attempts in quiz mode.
+* Correct attempts. This numerical value represents the total number of correct attempts in quiz mode.
+
+A labelled example is shown below.
+![pie chart](images/ug/piechart.png)
+
 <br>
 
 <div style="page-break-after: always;"></div>
@@ -674,7 +674,7 @@ Format: `exit`
 
 <div style="page-break-after: always;"></div>
 
-**Steps to use the exit function**
+**Steps to use the exit function**:
 
 **Step 1**: Type `exit` in the command box and press Enter. The application will close and we look forward to seeing you back 😊 .
 
