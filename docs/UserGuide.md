@@ -634,7 +634,7 @@ flashcard was not modified/deleted.
 
 ### View the statistics of flashcard : `stats`
 
-Want to view the results of your attempts in quiz mode? The stats command does the crunching of numbers for you.
+Want to view the results of your attempts in quiz mode? The stats command simplifies your life by providing visual representations of the result.
 
 Format: `stats INDEX`
 
@@ -648,7 +648,8 @@ Using the `stats` command will show the following information in the view pane:
 * Correct attempts. This numerical value represents the total number of correct attempts in quiz mode.
 
 A labelled example is shown below.
-![pie chart](images/ug/piechart.png)
+
+![pie chart](images/ug/piechart_without_labels.PNG)
 
 <br>
 
@@ -668,7 +669,7 @@ A labelled example is shown below.
 
 ### Exit the program : `exit`
 
-Need a break from using SWEe!?
+Need a coffee break? You can exit from SWEe! using the following command.
 
 Format: `exit`
 
