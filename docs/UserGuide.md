@@ -109,7 +109,7 @@ Here is an instance on how a flashcard looks like.
 Some terms to take note of:
 * Rating: Rating states the importance of the flashcard, from 1 to 5
 * Favourite: Favourite allows you to mark out flashcards that are important to you
-* Tag: Tags can be added to uniquely identify the flashcard (just like Twitter!)
+* Tag: Tags can be added to uniquely identify the flashcard (just like Twitter! 😊)
 * Notes: Extra pointers that you would like to note down can be stored here
 
 
@@ -765,5 +765,4 @@ Examples of usages of the diagram field:
 * `add q/Is this a class diagram? a/Yes d/image/classDiagramExample1.png`
 *  `edit 1 d/image/classDiagramExample1.png`
 
-Navigate back to [adding a flashcard](#add-a-flashcard--add)
-Navigate back to [editing a flashcard](#edit-a-flashcard---edit)
+Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to [editing a flashcard](#edit-a-flashcard---edit)
