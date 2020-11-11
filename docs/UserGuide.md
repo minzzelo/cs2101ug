@@ -92,11 +92,27 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
 
 ## Application Layout
 
-Here is how our application looks like.
+Before we begin, here is how the interface of our application looks like.
 
 ![filedirectory](images/ug/label1.png)
 
+* Command Box: Command Box is where you will input and execute commands
+* Result Display: Every time a command is executed in the command box, result display will update to show either a success or error message
+* Flashcard List: This is where your precious flashcards will be stored and displayed!
+* View Pane: This is an area to view the complete details of your flashcard!
+
+
+Here is an instance on how a flashcard looks like.
+
 ![filedirectory](images/ug/label2.png)
+
+Some terms to take note of:
+* Rating: Rating states the importance of the flashcard, from 1 to 5
+* Favourite: Favourite allows you to mark out flashcards that are important to you
+* Tag: Tags can be added to uniquely identify the flashcard (just like Twitter!)
+* Notes: Extra pointers that you would like to note down can be stored here
+
+
 
 <div style="page-break-after: always;"></div>
 
