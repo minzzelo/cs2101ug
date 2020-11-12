@@ -225,7 +225,7 @@ Format: `clear`
 
 ### Delete a flashcard  : `delete`
 
-Realised that a flashcard is now useless or irrelevant? You can simply remove it from your list using our delete command!
+Realised that a flashcard is now useless or irrelevant? You can simply remove it from your flashcard list using our delete command!
 
 Format: `delete INDEX`
 
@@ -258,9 +258,9 @@ Format: `edit INDEX [q/QUESTION] [a/ANSWER] [c/CATEGORY] [n/NOTE] [r/RATING] [d/
 
 Examples:
 
-* `edit 3 q/What does OOP stand for? c/Acronyms` edits the 1st flashcard’s question and category to be "What does OOP stand for?" and "Acronyms" respectively
-* `edit 3 a/Object Oriented Programming t/OOP` edits the 3rd flashcard’s answer to "Object Oriented Programmin" and tag to "OOP"
-* `edit 3 n/Important question!` edits the 3rd flashcard’s note
+* `edit 3 q/What does OOP stand for? c/Acronyms` edits the 1st flashcard’s question and category to be "What does OOP stand for?" and "Acronyms" respectively.
+* `edit 3 a/Object Oriented Programming t/OOP` edits the 3rd flashcard’s answer to "Object Oriented Programming" and tag to "OOP".
+* `edit 3 n/Important question!` edits the 3rd flashcard’s note.
 
 <div style="page-break-after: always;"></div>
 
@@ -269,6 +269,7 @@ Examples:
 **Step 1**: Locate the flashcard you wish to edit. In this example, we want to edit the first flashcard's question and category to "What does OOP stand for?" and "Acronyms" respectively. Type `edit 1 q/What does OOP stand for? c/Acronyms` into the command box and press Enter.
 
 ![filedirectory](images/ug/ug_edit_step1.png)
+
 <div style="page-break-after: always;"></div>
 
 **Step 2**: The result display will show a message that the flashcard has been edited successfully.
@@ -571,10 +572,10 @@ Format: `sort <success|quiz> <-a|-d>`
 * Specifying `-d` means sorting by the criteria in descending order.
 
 Examples: 
-* `sort success -a` sorts the flashcards according to success rate in ascending order
-* `sort success -d` sorts the flashcards according to success rate in descending order
-* `sort quiz -a` sorts the flashcards according to quiz frequency in ascending order
-* `sort quiz -d` sorts the flashcards according to quiz frequency in descending order
+* `sort success -a` sorts the flashcards according to success rate in ascending order.
+* `sort success -d` sorts the flashcards according to success rate in descending order.
+* `sort quiz -a` sorts the flashcards according to quiz frequency in ascending order.
+* `sort quiz -d` sorts the flashcards according to quiz frequency in descending order.
 
 <div markdown="span" class="alert alert-primary">
 
@@ -741,7 +742,7 @@ Action | Format, Examples
 **List** | `list`
 **Review** | `review`
 **Quiz** | `quiz`
-**Sort** | <code>sort <success&#124;reviewed> <-a&#124;-d></code> <br> eg. `sort success -a`
+**Sort** | <code>sort <success&#124;quiz> <-a&#124;-d></code> <br> eg. `sort success -a`
 **View** | `view INDEX [-a]` <br> eg. `view 1`
 **Stats** | `stats INDEX` <br> eg. `stats 3`
 **Exit** | `exit`
