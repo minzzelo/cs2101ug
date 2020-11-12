@@ -33,11 +33,14 @@ title: User Guide
         
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
+
 ## Introduction
 
 ![filedirectory](images/ug/logo_image.jpg)
 
-#### Welcome to SWEe! (Software Engineering Everyday)! 😊
+#### Welcome to SWEe! (Software Engineering Everyday!) 😊
 
 Thank you for downloading our application. We look forward to your continuous support and appreciate your feedback to help us improve our application. 
 
@@ -49,7 +52,7 @@ SWEe! is a desktop application with a command line interface (CLI) for CS2103 st
 
 * Organising key learning points from the textbook in CS2103 website  in a single platform
 * Testing your knowledge of the content taught with the help of SWEe!’s quiz mode
-* Tracking your progress and monitor which topics you are weak using SWEe!’s statistics functionality
+* Tracking your progress and monitor which topics you are weak in using SWEe!’s statistics functionality
 
 #### So, is SWEe! for you?
 
