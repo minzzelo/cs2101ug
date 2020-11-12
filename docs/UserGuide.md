@@ -169,7 +169,7 @@ Format: `add q/QUESTION a/ANSWER [c/CATEGORY] [r/RATING] [n/NOTE] [d/DIAGRAM] [t
 * Remember that the `QUESTION` and `ANSWER` fields are compulsory while adding a flashcard! The rest are optional.
 (Hint: You can always add in the remaining fields subsequently using our [edit command](#edit-a-flashcard---edit)!)
 * After a new flashcard is added, the flashcard list will update to include the new flashcard.
-* If you are having troubles understanding the format, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
+* If you are having troubles understanding the fields, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 * To understand how to add diagrams using relative file paths, refer to this [short tutorial](#finding-file-path-for-diagram-field).
 
 <div markdown="span" class="alert alert-primary">
@@ -291,7 +291,7 @@ Format: `filter [c/CATEGORY] [r/RATING] [f/<yes|no>] [t/TAG]...`
 * Supports filtering of one or more different fields. For example:
     - `filter c/SDLC r/5` will filter out flashcards belonging to the SDLC category with a rating of 5.
 * Although all fields are optional, a minimum of one field has to be given.
-* If you are having troubles understanding the format, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
+* If you are having troubles understanding the fields, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 
 <div markdown="span" class="alert alert-primary">:memo: Note:
 <code>filter r/</code> will filter for all unrated flashcards.</div>
