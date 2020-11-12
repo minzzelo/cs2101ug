@@ -162,7 +162,7 @@ Input Field | What is it & How to specify
 `c/CATEGORY`    | Category of the flashcard.<br>`CATEGORY` must be alphanumeric and can be multiple words.
 `r/RATING`      | Star rating of the flashcard.<br>`RATING` must be a number between 1 and 5 inclusive.
 `d/DIAGRAM`     | Diagram (image) of the flashcard.<br>`DIAGRAM` must be a valid path to a file. <br>eg. It can be a full file path such as `C:/users/tom/Desktop/image/diagram.png`<br> eg. It can be a relative file path (relative to swee.jar) such as `images/image.jpg`<br>Only supports the following image file types: jpg, png, jpeg, bmp
-`n/NOTE`        | Note on the flashcard.<br>`NOTE` has no character limit or restrictions so you can input anything you like.
+`n/NOTE`        | Notes on the flashcard.<br>`NOTE` has no character limit or restrictions so you can input anything you like.
 `t/TAG`         | These are tags of the flashcard. A flashcard can have more than one tag.<br>`TAG` must be alphanumeric and must be a single word.
 `INDEX`         | `INDEX` refers to the index number shown in the displayed flashcard list.<br>Every visible flashcard on the display list has an `INDEX`.<br>`INDEX` is always a positive integer greater than 0. eg. 1, 2, 3, …
 `KEYWORD`       | `KEYWORD` can be alphanumeric or punctuations. `KEYWORD` should not contain spaces.
@@ -274,7 +274,7 @@ Examples:
 
 * `edit 3 q/What does OOP stand for? c/Acronyms` edits the 1st flashcard’s question and category to be "What does OOP stand for?" and "Acronyms" respectively.
 * `edit 3 a/Object Oriented Programming t/OOP` edits the 3rd flashcard’s answer to "Object Oriented Programming" and tag to "OOP".
-* `edit 3 n/Important question!` edits the 3rd flashcard’s note.
+* `edit 3 n/Important question!` edits the 3rd flashcard’s notes.
 
 <div style="page-break-after: always;"></div>
 
@@ -606,6 +606,7 @@ Examples:
 :bulb: **Tip:** If you are confused about what quiz frequency and success rate mean, head over to our [FAQ](#faq) section to understand it more!
 </div> 
 
+<div style="page-break-after: always;"></div>
 
 **Steps for sorting flashcards**:
 
@@ -797,5 +798,7 @@ Examples of usages of the diagram field:
 *  `edit 1 d/image/classDiagramExample1.png`
 
 Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to [editing a flashcard](#edit-a-flashcard---edit)
+
+<div style="page-break-after: always;"></div>
 
 ### Contributions
