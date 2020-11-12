@@ -178,10 +178,14 @@ Now let's get started. The first thing you would do in SWEe! is to, of course, a
 Format: `add q/QUESTION a/ANSWER [c/CATEGORY] [r/RATING] [n/NOTE] [d/DIAGRAM] [t/TAG]...`
 
 * Remember that the `QUESTION` and `ANSWER` fields are compulsory while adding a flashcard! The rest are optional.
-(Hint: You can always add in the remaining fields subsequently using our [edit command](#edit-a-flashcard---edit)!)
 * After a new flashcard is added, the flashcard list will update to include the new flashcard.
 * If you are having troubles understanding the fields, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 * To understand how to add diagrams using relative file paths, refer to this [short tutorial](#finding-file-path-for-diagram-field).
+
+<div markdown="span" class="alert alert-primary">
+
+:bulb: **Tip:**  You can always add in the remaining fields subsequently using our [edit command](#edit-a-flashcard---edit)!
+</div> 
 
 <div markdown="span" class="alert alert-primary">
 
