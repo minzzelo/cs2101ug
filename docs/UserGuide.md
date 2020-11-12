@@ -374,13 +374,13 @@ Examples:
 
 **Steps for unfavouriting a flashcard**: 
 
-**Step 1**: Identify the flashcard you want to unfavourited! In this example, we want to unfavourite the 1st flashcard in the list. Type in `unfav 1` and press Enter. 
+**Step 1**: Identify the flashcard you want to unfavourite! In this example, we want to unfavourite the 1st flashcard in the list. Type in `unfav 1` and press Enter. 
 
 ![Unfav Step 1](images/ug/ug_unfav_step1.png)
 
 **Step 2**: The result display will display a message to let you know that the flashcard has been unfavourited!
 
-**Step 3**: The heart icon will no longer be visible on the flashcard
+**Step 3**: The heart icon will no longer be visible on the flashcard.
 
 ![Unfav Step 2 + 3](images/ug/ug_unfav_step23.png)
 
@@ -470,7 +470,7 @@ Format: `list`
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: The result display will display the message "Listed all flashcards" 
+**Step 2**: The result display will display the message "Listed all flashcards".
 
 **Step 3**: All the flashcards are now displayed in the scrollable flashcard list! Scroll down to see all of your flashcards!
 
