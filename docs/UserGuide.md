@@ -808,10 +808,11 @@ Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to
 ### Contributions
 
 #### Kimberly Ong
-- Quick Start
-- Fav Command
-- Unfav Command
-- Find Command
-- List Command 
-- Saving the data
+
+- [Quick Start](#quick-start)
+- [Find flashcards](#find-flashcards--find)
+- [Favourite a flashcard](#favourite-a-flashcard---fav)
+- [Unfavourite a flashcard](#unfavourite-a-flashcard---unfav)
+- [List all flashcards](#list-all-flashcards--list)
+- [Saving the data](#saving-the-data)
 - FAQ q1 & q2
