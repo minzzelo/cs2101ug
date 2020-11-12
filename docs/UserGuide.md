@@ -108,8 +108,8 @@ Before we begin, here is how the interface of our application looks like.
 ![filedirectory](images/ug/label1.png)
 
 * Command Box: Command box is where you will input and execute commands
-* Result Display: Every time a command is executed in the command box, result display will update to show either a success or error message
 * Flashcard List: This is where your precious flashcards will be stored and displayed!
+* Result Display: Every time a command is executed in the command box, result display will update to show either a success or error message
 * View Pane: This is an area to view the complete details of your flashcard!
 
 <div style="page-break-after: always;"></div>
@@ -119,12 +119,12 @@ Here is an instance on how a flashcard looks like.
 ![filedirectory](images/ug/label2.png)
 
 Some terms to take note of:
-* Rating: Rating states the importance of the flashcard, from 1 to 5. This star rating is intended to follow the [CS2103 website](https://nus-cs2103-ay2021s1.github.io/website/admin/moduleExpectations.html). 
-* Favourite: Favourite allows you to mark out flashcards that are important to you.
-* Tag: Tags can be added to uniquely identify the flashcard (just like Twitter! 😊).
-* Notes: Extra pointers that you would like to note down can be stored here. It will be together with the answer of the flashcard.
+* Category: Category allows you to group your flashcards according to your preferences.
 * Diagram: Diagram is just an image that you can add. It will be together with the question of the flashcard.
-
+* Favourite: Favourite allows you to mark out flashcards that are important to you.
+* Notes: Extra pointers that you would like to note down can be stored here. It will be together with the answer of the flashcard.
+* Rating: Rating states the importance of the flashcard, from 1 to 5. This star rating is intended to follow the [CS2103 website](https://nus-cs2103-ay2021s1.github.io/website/admin/moduleExpectations.html). 
+* Tag: Tags can be added to uniquely identify the flashcard (just like Twitter! 😊).
 
 <div style="page-break-after: always;"></div>
 
