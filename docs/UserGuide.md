@@ -30,6 +30,8 @@ title: SWEe! User Guide
     - [FAQ](#faq)
     - [Command summary](#command-summary)
     - [Appendix](#appendix)
+        - [Finding file path for Diagram field](#finding-file-path-for-diagram-field)
+        - [Contributions](#contributions)
         
 
 --------------------------------------------------------------------------------------------------------------------
@@ -773,3 +775,5 @@ Examples of usages of the diagram field:
 *  `edit 1 d/image/classDiagramExample1.png`
 
 Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to [editing a flashcard](#edit-a-flashcard---edit)
+
+### Contributions
