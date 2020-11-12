@@ -53,8 +53,8 @@ SWEe! is a desktop application with a command line interface (CLI) for CS2103 st
 
 #### So, is SWEe! for you?
 
-* Are you a busy CS2103T student who needs more time to focus on other modules such as CS2100 or CS2101?
-* Do you get frustrated navigating the CS2103T website?
+* Are you a busy CS2103 student who needs more time to focus on other modules such as CS2100 or CS2101?
+* Do you get frustrated navigating the CS2103 website?
 * Do you want to score well in your examinations?
 
 I’m sure you want to score in your examination 😊 so please proceed on to this user guide to discover the formula for scoring well in your exam. 
@@ -107,10 +107,11 @@ Here is an instance on how a flashcard looks like.
 ![filedirectory](images/ug/label2.png)
 
 Some terms to take note of:
-* Rating: Rating states the importance of the flashcard, from 1 to 5
-* Favourite: Favourite allows you to mark out flashcards that are important to you
-* Tag: Tags can be added to uniquely identify the flashcard (just like Twitter! 😊)
-* Notes: Extra pointers that you would like to note down can be stored here
+* Rating: Rating states the importance of the flashcard, from 1 to 5. This star rating is intended to follow the [CS2103 website](https://nus-cs2103-ay2021s1.github.io/website/admin/moduleExpectations.html). 
+* Favourite: Favourite allows you to mark out flashcards that are important to you.
+* Tag: Tags can be added to uniquely identify the flashcard (just like Twitter! 😊).
+* Notes: Extra pointers that you would like to note down can be stored here. It will be together with the answer of the flashcard.
+* Diagram: Diagram is just an image that you can add. It will be together with the question of the flashcard.
 
 
 
@@ -131,7 +132,7 @@ Format/Notation | Meaning
 
 <div markdown="span" class="alert alert-primary">
 
-:bulb: **Tip:** Parameters can be specified in any order. If the command specifies `q/QUESTION a/ANSWER`, you can specify it as `a/ANSWER q/QUESTION` as well 
+:bulb: **Tip:** Parameters can be specified in any order. If the command specifies `q/QUESTION a/ANSWER`, you can specify it as `a/ANSWER q/QUESTION` as well.
 </div> 
 
 <div style="page-break-after: always;"></div>
@@ -161,7 +162,7 @@ Input Field | What is it & How to specify
 
 ### Add a flashcard : `add`
 
-Now let's get started. The first thing you would do on SWEe is to, of course, add flashcards!
+Now let's get started. The first thing you would do in SWEe is to, of course, add flashcards!
 
 Format: `add q/QUESTION a/ANSWER [c/CATEGORY] [r/RATING] [n/NOTE] [d/DIAGRAM] [t/TAG]...`
 
@@ -198,7 +199,7 @@ To add a flashcard, type the command `add q/What does OOP stand for? a/Object Or
 
 **Step 2**: Success! The result display will display a message telling you that the flashcard is added to the flashcard list.
 
-**Step 3**: The list view will update to show the newly added flashcard at the end of the flashcard list
+**Step 3**: The list view will update to show the newly added flashcard at the end of the flashcard list.
 
 ![filedirectory](images/ug/ug_add_step2_3.png)
 
