@@ -806,3 +806,11 @@ Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to
 <div style="page-break-after: always;"></div>
 
 ### Contributions
+
+#### Kimberly Ong
+- Quick Start
+- Fav Command
+- Unfav Command
+- Find Command
+- List Command 
+- FAQ q1 & q2
