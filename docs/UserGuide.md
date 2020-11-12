@@ -813,4 +813,5 @@ Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to
 - Unfav Command
 - Find Command
 - List Command 
+- Saving the data
 - FAQ q1 & q2
