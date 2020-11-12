@@ -66,6 +66,7 @@ SWEe! is a desktop application with a command line interface (CLI) for CS2103 st
 
 I’m sure you want to score in your examination 😊 so please proceed on to this user guide to discover the formula for scoring well in your exam. 
 
+<div style="page-break-after: always;"></div>
 
 ## Quick Start
 
@@ -96,6 +97,7 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
 
 1. Refer to the [Features](#features) below for details of each command.
 
+<div style="page-break-after: always;"></div>
 
 ## Application Layout
 
@@ -121,7 +123,7 @@ Some terms to take note of:
 * Diagram: Diagram is just an image that you can add. It will be together with the question of the flashcard.
 
 
-
+<div style="page-break-after: always;"></div>
 
 ## Notes about the command format
 Feeling a little overwhelmed by the command format we use throughout the user guide? Fear not, as this section will guide you along the various command formats and notations we use throughout the user guide!
@@ -141,6 +143,7 @@ Format/Notation | Meaning
 :bulb: **Tip:** Parameters can be specified in any order. If the command specifies `q/QUESTION a/ANSWER`, you can specify it as `a/ANSWER q/QUESTION` as well.
 </div> 
 
+<div style="page-break-after: always;"></div>
 
 ## Common Input Fields
 
@@ -161,6 +164,7 @@ Input Field | What is it & How to specify
 `INDEX`         | `INDEX` refers to the index number shown in the displayed flashcard list.<br>Every visible flashcard on the display list has an `INDEX`.<br>`INDEX` is always a positive integer greater than 0. eg. 1, 2, 3, …
 `KEYWORD`       | `KEYWORD` can be alphanumeric or punctuations. `KEYWORD` should not contain spaces.
 
+<div style="page-break-after: always;"></div>
 
 ## Features
 
@@ -204,6 +208,7 @@ To add a flashcard, type the command `add q/What does OOP stand for? a/Object Or
 
 ![filedirectory](images/ug/ug_add_step2_3.png)
 
+<div style="page-break-after: always;"></div>
 
 ### Clear all flashcards : `clear` 
 
