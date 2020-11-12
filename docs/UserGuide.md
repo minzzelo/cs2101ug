@@ -1,6 +1,6 @@
 ---
 layout: page
-title: User Guide
+title: SWEe! User Guide
 ---
 
 * Table of Contents
@@ -30,6 +30,8 @@ title: User Guide
     - [FAQ](#faq)
     - [Command summary](#command-summary)
     - [Appendix](#appendix)
+        - [Finding file path for Diagram field](#finding-file-path-for-diagram-field)
+        - [Contributions](#contributions)
         
 
 --------------------------------------------------------------------------------------------------------------------
@@ -67,9 +69,9 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
 
 1. Grab your CS2103 notes before we get started.
 
-1. Ensure you have Java `11` or above installed in your Computer. But how? Well, follow the steps below to check your Java version. 
+1. Ensure you have Java 11 or above installed in your Computer. But how? Well, follow the steps below to check your Java version. 
    
-   Step 1: Open your terminal. Type in `java --version` and press *Enter*.
+   Step 1: Open your terminal. Type in `java --version` and press Enter.
 
    Step 2: You will now be able to check the Java version installed in your Computer!
 
@@ -87,7 +89,8 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
     ![Quick Start UI](images/QuickStartUi.png)
     <div style="page-break-after: always;"></div>
 <br>
-1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. eg. typing help and pressing Enter will open the help window.
+
+1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. eg. typing `help` and pressing Enter will open the help window.
 
 1. Refer to the [Features](#features) below for details of each command.
 
@@ -433,7 +436,7 @@ Examples:
 
 ### View help : `help`
 
-If you are unsure about some things in our app, you can use our help function which will direct you to our user guide.
+If you are unsure about some things in our app, you can use our help command which will direct you to our user guide.
 
 Format: `help`
 
@@ -447,7 +450,7 @@ Format: `help`
 
 ![Help step 2](images/ug/ug_help_step_2.png)
 
-**Step 3**: Simply press "Copy URL" then paste the link in your favourite browser, and you will be brought to our user guide website.
+**Step 3**: Simply click "Copy URL" then paste the link in your favourite browser, and you will be brought to our user guide website.
 
 
 
@@ -487,8 +490,8 @@ Want to study your flashcards? Our review mode lets you easily navigate freely b
 
 Format: `review`
 
-Typing `review` and pressing Enter will put you in review mode and allows you to review the current displayed flashcard list.
-<br><br>
+<br>
+
 So what is review mode? Upon entering review mode, you can no longer input commands to the command box. However, the following keyboard input will now be recognised:
 
 * `↓ key` shows the answer and notes of the current flashcard  
@@ -629,7 +632,7 @@ Examples:
 
 <div style="page-break-after: always;"></div>
 
-**Step 3**: Now lets say we also want to view the answer and notes of this flashcard. Type the command `view 3 -a` and press Enter.
+**Step 3**: Now let's say we also want to view the answer and notes of this flashcard. Type the command `view 3 -a` and press Enter.
 
 ![filedirectory](images/ug/ug_view_step3_edited.png)
 
@@ -654,7 +657,7 @@ Using the `stats` command will show the following information in the view pane:
 * Total quiz attempts. This numerical value represents the total number of attempts in quiz mode.
 * Correct attempts. This numerical value represents the total number of correct attempts in quiz mode.
 
-A labelled example is shown below.
+An example is shown below: 
 
 ![pie chart](images/ug/piechart_without_labels.PNG)
 
@@ -772,3 +775,5 @@ Examples of usages of the diagram field:
 *  `edit 1 d/image/classDiagramExample1.png`
 
 Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to [editing a flashcard](#edit-a-flashcard---edit)
+
+### Contributions
