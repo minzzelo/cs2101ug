@@ -268,7 +268,7 @@ Examples:
 
 **Step 1**: Locate the flashcard you wish to edit. In this example, we want to edit the first flashcard's question and category to "What does OOP stand for?" and "Acronyms" respectively. Type `edit 1 q/What does OOP stand for? c/Acronyms` into the command box and press Enter.
 
-![filedirectory](images/ug/ug_edit_step1.png)
+![filedirectory](images/ug/ug_edit_step1.PNG)
 
 <div style="page-break-after: always;"></div>
 
@@ -276,7 +276,7 @@ Examples:
 
 **Step 3**: The flashcard list will show the updated details of the flashcard after the edit.
 
-![filedirectory](images/ug/ug_edit_step2.png)
+![filedirectory](images/ug/ug_edit_step2.PNG)
 
 <div style="page-break-after: always;"></div>
 
