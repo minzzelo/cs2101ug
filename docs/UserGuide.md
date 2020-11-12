@@ -707,7 +707,7 @@ Worried that all the precious flashcards you have saved would be gone after clos
 
 * **Step 2:** Type in the command `java -jar swee.jar` and the app should start in a few seconds!
 
-**Q**: Why are there data which I did not include when I first start SWEe!?
+**Q**: Why are there data which I did not include when I first start SWEe!?<br>
 **A**: We understand that you are a new user! SWEe! therefore provides you with some sample data to experiment first before you start using SWEe! proper. Hope that you will enjoy using SWEe!.
 
 **Q**: What is the difference between review mode and quiz mode?<br>
