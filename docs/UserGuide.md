@@ -325,7 +325,7 @@ Examples:
 
 ### Favourite a flashcard  : `fav`
 
-Have you ever felt that some flashcards seem particularly important to you and want to flag them out? We understand your need! Simply bookmark those flashcards using our Fav command! 
+Have you ever felt that some flashcards seem particularly important to you and want to flag them out? We understand your need! Simply bookmark those flashcards using our fav command! 
 
 Format: `fav INDEX`
 
@@ -356,7 +356,7 @@ Examples:
 
 ### Unfavourite a flashcard  : `unfav`
 
-Oh no! Accidentally favourited the wrong flashcard? Or did you have a change in heart and decided one of the flashcards is no longer your favourite? Simply unfavourite the flashcard using our Unfav command!
+Oh no! Accidentally favourited the wrong flashcard? Or did you have a change in heart and decided one of the flashcards is no longer your favourite? Simply unfavourite the flashcard using our unfav command!
 
 Format: `unfav INDEX`
 
@@ -377,7 +377,7 @@ Examples:
 
 ![Unfav Step 1](images/ug/ug_unfav_step1.png)
 
-**Step 2**: The *Result Display* will display a message to let you know that the flashcard has been unfavourited!
+**Step 2**: The result display will display a message to let you know that the flashcard has been unfavourited!
 
 **Step 3**: The heart icon will no longer be visible on the flashcard
 
@@ -413,13 +413,13 @@ Examples:
 
 **Steps for finding flashcards**:
 
-**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the Command Box and press Enter.
+**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the command box and press Enter.
 
 ![Find Step 1](images/ug/ug_find_step1.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the Result Display, similar to number 2 in the picture below.
+**Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the result display, similar to number 2 in the picture below.
 
 **Step 3**: You can see the matching flashcards in the flashcard list, similar to number 3 in the picture below.
 
@@ -463,13 +463,13 @@ Format: `list`
 
 **Steps for listing flashcards**:
 
-**Step 1**: Type `list` in the Command Box and press Enter. 
+**Step 1**: Type `list` in the command box and press Enter. 
 
 ![List Step 1](images/ug/ug_list_step1.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: The Result Display will display the message "Listed all flashcards" 
+**Step 2**: The result display will display the message "Listed all flashcards" 
 
 **Step 3**: All the flashcards are now displayed in the scrollable flashcard list! Scroll down to see all of your flashcards!
 
