@@ -110,6 +110,7 @@ Before we begin, here is how the interface of our application looks like.
 * Flashcard List: This is where your precious flashcards will be stored and displayed!
 * View Pane: This is an area to view the complete details of your flashcard!
 
+<div style="page-break-after: always;"></div>
 
 Here is an instance on how a flashcard looks like.
 
@@ -192,9 +193,9 @@ Examples:
 * `add q/What does OOP stand for? a/Object Oriented Programming d/images/diagram.png` adds a flashcard containing a question, an answer and a diagram
 by specifying its file path.
 
+<div style="page-break-after: always;"></div>
 
 **Steps for adding a flashcard**:
-
 
 **Step 1**: In this case, we will use one of the add commands above as an example.
 To add a flashcard, type the command `add q/What does OOP stand for? a/Object Oriented Programming r/3 t/cool` and press Enter.
@@ -222,11 +223,15 @@ Format: `clear`
 
 ![filedirectory](images/ug/ug_clear_step1.png)
 
+<div style="page-break-after: always;"></div>
+
 **Step 2**: The result display will display a message telling you that all flashcards have been cleared.
 
 **Step 3**: The flashcard list will be emptied.
 
 ![filedirectory](images/ug/ug_clear_step2_3.png)
+
+<div style="page-break-after: always;"></div>
 
 ### Delete a flashcard  : `delete`
 
@@ -242,13 +247,15 @@ Example: `delete 3` deletes the 3rd flashcard in the flashcard list.
 
 ![filedirectory](images/ug/ug_delete_step1.png)
 
+<div style="page-break-after: always;"></div>
+
 **Step 2**: The result display will display a message telling you that the flashcard has been deleted.
 
 **Step 3**: The flashcard list will be updated with the specified flashcard removed.
 
 ![filedirectory](images/ug/ug_delete_step2.png)
 
-
+<div style="page-break-after: always;"></div>
 
 ### Edit a flashcard  : `edit`
 
@@ -273,6 +280,7 @@ Examples:
 
 ![filedirectory](images/ug/ug_edit_step1.PNG)
 
+<div style="page-break-after: always;"></div>
 
 **Step 2**: The result display will show a message that the flashcard has been edited successfully.
 
@@ -280,6 +288,7 @@ Examples:
 
 ![filedirectory](images/ug/ug_edit_step2.PNG)
 
+<div style="page-break-after: always;"></div>
 
 ### Filter for flashcards  : `filter`
 
@@ -316,12 +325,15 @@ Examples:
 
 ![filedirectory](images/ug/ug_filter_step1.PNG)
 
+<div style="page-break-after: always;"></div>
+
 **Step 2**: The result display will show the number of flashcards listed after applying the filter.
 
 **Step 3**: The flashcard list will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag.
 
 ![filedirectory](images/ug/ug_filter_step2.png)
 
+<div style="page-break-after: always;"></div>
 
 ### Favourite a flashcard  : `fav`
 
@@ -345,12 +357,15 @@ Examples:
 
 ![Fav Step 1](images/ug/ug_fav_step1.png)
 
+<div style="page-break-after: always;"></div>
+
 **Step 2**: The result display will display a message to let you know that the flashcard has been favourited!
 
 **Step 3**: Check out that cute heart icon in the flashcard you have favourited!
 
 ![Fav Step 2 + 3](images/ug/ug_fav_step23.png)
 
+<div style="page-break-after: always;"></div>
 
 ### Unfavourite a flashcard  : `unfav`
 
@@ -374,12 +389,15 @@ Examples:
 
 ![Unfav Step 1](images/ug/ug_unfav_step1.png)
 
+<div style="page-break-after: always;"></div>
+
 **Step 2**: The result display will display a message to let you know that the flashcard has been unfavourited!
 
 **Step 3**: The heart icon will no longer be visible on the flashcard.
 
 ![Unfav Step 2 + 3](images/ug/ug_unfav_step23.png)
 
+<div style="page-break-after: always;"></div>
 
 ### Find flashcards : `find`
 
@@ -412,6 +430,7 @@ Examples:
 
 ![Find Step 1](images/ug/ug_find_step1.png)
 
+<div style="page-break-after: always;"></div>
 
 **Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the result display, similar to number 2 in the picture below.
 
@@ -419,6 +438,7 @@ Examples:
 
 ![Find Step 2 & 3](images/ug/ug_find_step23.png)
 
+<div style="page-break-after: always;"></div>
 
 ### View help : `help`
 
@@ -432,13 +452,15 @@ Format: `help`
 
 ![Help step 1](images/ug/ug_help_step_1.png)
 
+<div style="page-break-after: always;"></div>
+
 **Step 2**: A new window will pop out with a link.
 
 ![Help step 2](images/ug/ug_help_step_2.png)
 
 **Step 3**: Simply click "Copy URL" then paste the link in your favourite browser, and you will be brought to our user guide website.
 
-
+<div style="page-break-after: always;"></div>
 
 ### List all flashcards : `list`
 
@@ -459,6 +481,7 @@ Format: `list`
 
 ![List Step 1](images/ug/ug_list_step1.png)
 
+<div style="page-break-after: always;"></div>
 
 **Step 2**: The result display will display the message "Listed all flashcards".
 
@@ -466,6 +489,7 @@ Format: `list`
 
 ![List Step 2 & 3](images/ug/ug_list_step23.png)
 
+<div style="page-break-after: always;"></div>
 
 ### Review flashcards: `review`
 
@@ -492,6 +516,8 @@ So what is review mode? Upon entering review mode, you can no longer input comma
 
 ![Review step 1](images/ug/ug_review_step1_edited.png)
 
+<div style="page-break-after: always;"></div>
+
 **Step 2**: We are brought into review mode. The instructions on how to navigate review mode will be shown at the top.
 
 ![Review step 2](images/ug/ug_review_step2_edited.png)
@@ -501,6 +527,8 @@ So what is review mode? Upon entering review mode, you can no longer input comma
 
 ![Review step 3](images/ug/ug_review_step3_edited.png)
 
+<div style="page-break-after: always;"></div>
+
 **Step 4**: Now, let's move onto the next flashcard. We just need to press the `→ key`
 
 ![Review step 4](images/ug/ug_review_step4.png)
@@ -509,6 +537,7 @@ So what is review mode? Upon entering review mode, you can no longer input comma
 
 To summarise, when you are in review mode, use the `↓ key` and `↑ key` to toggle showing the flashcard’s answer and notes. Use the `→ key` and `← key` to move between flashcards. Use the `q key` to quit review mode.
 
+<div style="page-break-after: always;"></div>
 
 ### Quiz flashcards: `quiz`
 
