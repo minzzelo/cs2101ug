@@ -1,12 +1,12 @@
 ---
 layout: page
-title: User Guide
+title: SWEe! User Guide
 ---
 
 * Table of Contents
     - [Introduction](#introduction)
-    - [Quick start](#quick-start)
-    - [Application layout](#application-layout)
+    - [Quick Start](#quick-start)
+    - [Application Layout](#application-layout)
     - [Notes about the command format](#notes-about-the-command-format)
     - [Common Input Fields](#common-input-fields)
     - [Features](#features)
@@ -25,19 +25,24 @@ title: User Guide
         - [Sort all flashcards](#sort-all-flashcards--sort): `sort`
         - [View a flashcard](#view-a-flashcard---view): `view`
         - [View the statistics of a flashcard](#view-the-statistics-of-flashcard--stats): `stats`
-        - [Exit the program](#exit-the-program--exit): `exit`
+        - [Exit the application](#exit-the-application--exit): `exit`
         - [Saving the data](#saving-the-data)
     - [FAQ](#faq)
-    - [Command summary](#command-summary)
+    - [Command Summary](#command-summary)
     - [Appendix](#appendix)
+        - [Finding file path for Diagram field](#finding-file-path-for-diagram-field)
+        - [Contributions](#contributions)
         
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
+
 ## Introduction
 
 ![filedirectory](images/ug/logo_image.jpg)
 
-#### Welcome to SWEe! (Software Engineering Everyday)! 😊
+#### Welcome to SWEe! (Software Engineering Everyday!) 😊
 
 Thank you for downloading our application. We look forward to your continuous support and appreciate your feedback to help us improve our application. 
 
@@ -51,7 +56,7 @@ SWEe! is a desktop application with a command line interface (CLI) for CS2103 st
 
 * Organising key learning points from the textbook in CS2103 website  in a single platform
 * Testing your knowledge of the content taught with the help of SWEe!’s quiz mode
-* Tracking your progress and monitor which topics you are weak using SWEe!’s statistics functionality
+* Tracking your progress and monitor which topics you are weak in using SWEe!’s statistics functionality
 
 #### So, is SWEe! for you?
 
@@ -67,9 +72,9 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
 
 1. Grab your CS2103 notes before we get started.
 
-1. Ensure you have Java `11` or above installed in your Computer. But how? Well, follow the steps below to check your Java version. 
+1. Ensure you have Java 11 or above installed in your Computer. But how? Well, follow the steps below to check your Java version. 
    
-   Step 1: Open your terminal. Type in `java --version` and press *Enter*.
+   Step 1: Open your terminal. Type in `java --version` and press Enter.
 
    Step 2: You will now be able to check the Java version installed in your Computer!
 
@@ -87,7 +92,8 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
     ![Quick Start UI](images/QuickStartUi.png)
 
 <br>
-1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. eg. typing help and pressing Enter will open the help window.
+
+1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. eg. typing `help` and pressing Enter will open the help window.
 
 1. Refer to the [Features](#features) below for details of each command.
 
@@ -99,7 +105,7 @@ Before we begin, here is how the interface of our application looks like.
 
 ![filedirectory](images/ug/label1.png)
 
-* Command Box: Command Box is where you will input and execute commands
+* Command Box: Command box is where you will input and execute commands
 * Result Display: Every time a command is executed in the command box, result display will update to show either a success or error message
 * Flashcard List: This is where your precious flashcards will be stored and displayed!
 * View Pane: This is an area to view the complete details of your flashcard!
@@ -165,14 +171,14 @@ Input Field | What is it & How to specify
 
 ### Add a flashcard : `add`
 
-Now let's get started. The first thing you would do in SWEe is to, of course, add flashcards!
+Now let's get started. The first thing you would do in SWEe! is to, of course, add flashcards!
 
 Format: `add q/QUESTION a/ANSWER [c/CATEGORY] [r/RATING] [n/NOTE] [d/DIAGRAM] [t/TAG]...`
 
 * Remember that the `QUESTION` and `ANSWER` fields are compulsory while adding a flashcard! The rest are optional.
 (Hint: You can always add in the remaining fields subsequently using our [edit command](#edit-a-flashcard---edit)!)
 * After a new flashcard is added, the flashcard list will update to include the new flashcard.
-* If you are having troubles understanding the format, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
+* If you are having troubles understanding the fields, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 * To understand how to add diagrams using relative file paths, refer to this [short tutorial](#finding-file-path-for-diagram-field).
 
 <div markdown="span" class="alert alert-primary">
@@ -199,7 +205,7 @@ To add a flashcard, type the command `add q/What does OOP stand for? a/Object Or
 
 **Step 2**: Success! The result display will display a message telling you that the flashcard is added to the flashcard list.
 
-**Step 3**: The list view will update to show the newly added flashcard at the end of the flashcard list.
+**Step 3**: The flashcard list will update to show the newly added flashcard.
 
 ![filedirectory](images/ug/ug_add_step2_3.png)
 
@@ -221,7 +227,7 @@ Format: `clear`
 
 **Step 2**: The result display will display a message telling you that all flashcards have been cleared.
 
-**Step 3**: The list view will update to show an empty flashcard list.
+**Step 3**: The flashcard list will be emptied.
 
 ![filedirectory](images/ug/ug_clear_step2_3.png)
 
@@ -296,7 +302,7 @@ Format: `filter [c/CATEGORY] [r/RATING] [f/<yes|no>] [t/TAG]...`
 * Supports filtering of one or more different fields. For example:
     - `filter c/SDLC r/5` will filter out flashcards belonging to the SDLC category with a rating of 5.
 * Although all fields are optional, a minimum of one field has to be given.
-* If you are having troubles understanding the format, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
+* If you are having troubles understanding the fields, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 
 <div markdown="span" class="alert alert-primary">:memo: Note:
 <code>filter r/</code> will filter for all unrated flashcards.</div>
@@ -323,7 +329,7 @@ Examples:
 
 **Step 2**: The result display will show the number of flashcards listed after applying the filter.
 
-**Step 3**: The list view will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag.
+**Step 3**: The flashcard list will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag.
 
 ![filedirectory](images/ug/ug_filter_step2.png)
 
@@ -331,7 +337,7 @@ Examples:
 
 ### Favourite a flashcard  : `fav`
 
-Have you ever felt that some flashcards seem particularly important to you and want to flag them out? We understand your need! Simply bookmark those flashcards using our Fav command! 
+Have you ever felt that some flashcards seem particularly important to you and want to flag them out? We understand your need! Simply bookmark those flashcards using our fav command! 
 
 Format: `fav INDEX`
 
@@ -353,7 +359,7 @@ Examples:
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: The Result Display will display a message to let you know that the flashcard has been favourited!
+**Step 2**: The result display will display a message to let you know that the flashcard has been favourited!
 
 **Step 3**: Check out that cute heart icon in the flashcard you have favourited!
 
@@ -363,7 +369,7 @@ Examples:
 
 ### Unfavourite a flashcard  : `unfav`
 
-Oh no! Accidentally favourited the wrong flashcard? Or did you have a change in heart and decided one of the flashcards is no longer your favourite? Simply unfavourite the flashcard using our Unfav command!
+Oh no! Accidentally favourited the wrong flashcard? Or did you have a change in heart and decided one of the flashcards is no longer your favourite? Simply unfavourite the flashcard using our unfav command!
 
 Format: `unfav INDEX`
 
@@ -379,15 +385,15 @@ Examples:
 
 **Steps for unfavouriting a flashcard**: 
 
-**Step 1**: Identify the flashcard you want to unfavourited! In this example, we want to unfavourite the 1st flashcard in the list. Type in `unfav 1` and press Enter. 
+**Step 1**: Identify the flashcard you want to unfavourite! In this example, we want to unfavourite the 1st flashcard in the list. Type in `unfav 1` and press Enter. 
 
 ![Unfav Step 1](images/ug/ug_unfav_step1.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: The *Result Display* will display a message to let you know that the flashcard has been unfavourited!
+**Step 2**: The result display will display a message to let you know that the flashcard has been unfavourited!
 
-**Step 3**: The heart icon will no longer be visible on the flashcard
+**Step 3**: The heart icon will no longer be visible on the flashcard.
 
 ![Unfav Step 2 + 3](images/ug/ug_unfav_step23.png)
 
@@ -420,13 +426,13 @@ Examples:
 
 **Steps for finding flashcards**:
 
-**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the Command Box and press Enter.
+**Step 1**: To find flashcards containing the keyword "SDLC", type `find SDLC` in the command box and press Enter.
 
 ![Find Step 1](images/ug/ug_find_step1.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the Result Display, similar to number 2 in the picture below.
+**Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the result display, similar to number 2 in the picture below.
 
 **Step 3**: You can see the matching flashcards in the flashcard list, similar to number 3 in the picture below.
 
@@ -436,7 +442,7 @@ Examples:
 
 ### View help : `help`
 
-If you are unsure about some things in our app, you can use our help function which will direct you to our user guide.
+If you are unsure about some things in our app, you can use our help command which will direct you to our user guide.
 
 Format: `help`
 
@@ -452,7 +458,7 @@ Format: `help`
 
 ![Help step 2](images/ug/ug_help_step_2.png)
 
-**Step 3**: Simply press "Copy URL" then paste the link in your favourite browser, and you will be brought to our user guide website.
+**Step 3**: Simply click "Copy URL" then paste the link in your favourite browser, and you will be brought to our user guide website.
 
 <div style="page-break-after: always;"></div>
 
@@ -471,13 +477,13 @@ Format: `list`
 
 **Steps for listing flashcards**:
 
-**Step 1**: Type `list` in the Command Box and press Enter. 
+**Step 1**: Type `list` in the command box and press Enter. 
 
 ![List Step 1](images/ug/ug_list_step1.png)
 
 <div style="page-break-after: always;"></div>
 
-**Step 2**: The Result Display will display the message "Listed all flashcards" 
+**Step 2**: The result display will display the message "Listed all flashcards".
 
 **Step 3**: All the flashcards are now displayed in the scrollable flashcard list! Scroll down to see all of your flashcards!
 
@@ -491,8 +497,8 @@ Want to study your flashcards? Our review mode lets you easily navigate freely b
 
 Format: `review`
 
-Typing `review` and pressing Enter will put you in review mode and allows you to review the current displayed flashcard list.
-<br><br>
+<br>
+
 So what is review mode? Upon entering review mode, you can no longer input commands to the command box. However, the following keyboard input will now be recognised:
 
 * `↓ key` shows the answer and notes of the current flashcard  
@@ -628,7 +634,7 @@ Examples:
 ![filedirectory](images/ug/ug_view_step2_edited.png)
 
 
-**Step 3**: Now lets say we also want to view the answer and notes of this flashcard. Type the command `view 3 -a` and press Enter.
+**Step 3**: Now let's say we also want to view the answer and notes of this flashcard. Type the command `view 3 -a` and press Enter.
 
 ![filedirectory](images/ug/ug_view_step3_edited.png)
 
@@ -652,7 +658,7 @@ Using the `stats` command will show the following information in the view pane:
 * Total quiz attempts. This numerical value represents the total number of attempts in quiz mode.
 * Correct attempts. This numerical value represents the total number of correct attempts in quiz mode.
 
-A labelled example is shown below.
+An example is shown below: 
 
 ![pie chart](images/ug/piechart_without_labels.PNG)
 
@@ -670,14 +676,14 @@ A labelled example is shown below.
 ![filedirectory](images/ug/ug_stats_step2.PNG)
 
 
-### Exit the program : `exit`
+### Exit the application : `exit`
 
 Need a coffee break? You can exit from SWEe! using the following command.
 
 Format: `exit`
 
 
-**Steps to use the exit function**:
+**Steps to exit the application**:
 
 **Step 1**: Type `exit` in the command box and press Enter. The application will close and we look forward to seeing you back 😊 .
 
@@ -721,7 +727,7 @@ Worried that all the precious flashcards you have saved would be gone after clos
 --------------------------------------------------------------------------------------------------------------------
 
 
-## Command summary
+## Command Summary
 
 Action | Format, Examples
 --------|------------------
@@ -764,3 +770,5 @@ Examples of usages of the diagram field:
 *  `edit 1 d/image/classDiagramExample1.png`
 
 Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to [editing a flashcard](#edit-a-flashcard---edit)
+
+### Contributions
