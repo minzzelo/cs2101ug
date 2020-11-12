@@ -182,7 +182,7 @@ Format: `add q/QUESTION a/ANSWER [c/CATEGORY] [r/RATING] [n/NOTE] [d/DIAGRAM] [t
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: Note: If the category is not specified, the flashcard  will be assigned to the <b>General</b> category by default.
+:memo: **Note**: If the category is not specified, the flashcard  will be assigned to the <b>General</b> category by default.
 
 </div>
 
@@ -295,8 +295,9 @@ Format: `filter [c/CATEGORY] [r/RATING] [f/<yes|no>] [t/TAG]...`
 * Although all fields are optional, a minimum of one field has to be given.
 * If you are having troubles understanding the fields, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 
-<div markdown="span" class="alert alert-primary">:memo: Note:
-<code>filter r/</code> will filter for all unrated flashcards.</div>
+<div markdown="span" class="alert alert-primary">
+
+:memo: **Note**: <code>filter r/</code> will filter for all unrated flashcards.</div>
 
 <div markdown="span" class="alert alert-primary">
 
@@ -391,7 +392,7 @@ Format: `find KEYWORD [KEYWORD]...`
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: Note: If you search for multiple keywords, flashcards containing either of the keywords will be returned. For example, "General OOP" will return flashcards containing either General or OOP. 
+:memo: **Note**: If you search for multiple keywords, flashcards containing either of the keywords will be returned. For example, "General OOP" will return flashcards containing either General or OOP. 
 
 </div>
 
