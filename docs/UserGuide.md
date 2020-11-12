@@ -5,8 +5,8 @@ title: SWEe! User Guide
 
 * Table of Contents
     - [Introduction](#introduction)
-    - [Quick start](#quick-start)
-    - [Application layout](#application-layout)
+    - [Quick Start](#quick-start)
+    - [Application Layout](#application-layout)
     - [Notes about the command format](#notes-about-the-command-format)
     - [Common Input Fields](#common-input-fields)
     - [Features](#features)
@@ -25,10 +25,10 @@ title: SWEe! User Guide
         - [Sort all flashcards](#sort-all-flashcards--sort): `sort`
         - [View a flashcard](#view-a-flashcard---view): `view`
         - [View the statistics of a flashcard](#view-the-statistics-of-flashcard--stats): `stats`
-        - [Exit the program](#exit-the-program--exit): `exit`
+        - [Exit the application](#exit-the-application--exit): `exit`
         - [Saving the data](#saving-the-data)
     - [FAQ](#faq)
-    - [Command summary](#command-summary)
+    - [Command Summary](#command-summary)
     - [Appendix](#appendix)
         - [Finding file path for Diagram field](#finding-file-path-for-diagram-field)
         - [Contributions](#contributions)
@@ -642,14 +642,14 @@ An example is shown below:
 ![filedirectory](images/ug/ug_stats_step2.PNG)
 
 
-### Exit the program : `exit`
+### Exit the application : `exit`
 
 Need a coffee break? You can exit from SWEe! using the following command.
 
 Format: `exit`
 
 
-**Steps to use the exit function**:
+**Steps to exit the application**:
 
 **Step 1**: Type `exit` in the command box and press Enter. The application will close and we look forward to seeing you back 😊 .
 
@@ -693,7 +693,7 @@ Worried that all the precious flashcards you have saved would be gone after clos
 --------------------------------------------------------------------------------------------------------------------
 
 
-## Command summary
+## Command Summary
 
 Action | Format, Examples
 --------|------------------
