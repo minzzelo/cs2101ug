@@ -5,8 +5,8 @@ title: SWEe! User Guide
 
 * Table of Contents
     - [Introduction](#introduction)
-    - [Quick start](#quick-start)
-    - [Application layout](#application-layout)
+    - [Quick Start](#quick-start)
+    - [Application Layout](#application-layout)
     - [Notes about the command format](#notes-about-the-command-format)
     - [Common Input Fields](#common-input-fields)
     - [Features](#features)
@@ -28,7 +28,7 @@ title: SWEe! User Guide
         - [Exit the program](#exit-the-program--exit): `exit`
         - [Saving the data](#saving-the-data)
     - [FAQ](#faq)
-    - [Command summary](#command-summary)
+    - [Command Summary](#command-summary)
     - [Appendix](#appendix)
         - [Finding file path for Diagram field](#finding-file-path-for-diagram-field)
         - [Contributions](#contributions)
@@ -693,7 +693,7 @@ Worried that all the precious flashcards you have saved would be gone after clos
 --------------------------------------------------------------------------------------------------------------------
 
 
-## Command summary
+## Command Summary
 
 Action | Format, Examples
 --------|------------------
