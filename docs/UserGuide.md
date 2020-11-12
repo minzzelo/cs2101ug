@@ -87,6 +87,8 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
 
 1. Copy the file to the folder you want to use as the _home folder_ for SWEe!.
 
+<div style="page-break-after: always;"></div>
+
 1. Double-click the file to start the app. The GUI similar to the image below should appear in a few seconds. Note how the app contains some sample data. <br>
 
     ![Quick Start UI](images/QuickStartUi.png)
@@ -202,6 +204,7 @@ To add a flashcard, type the command `add q/What does OOP stand for? a/Object Or
 
 ![filedirectory](images/ug/ug_add_step1.png)
 
+<div style="page-break-after: always;"></div>
 
 **Step 2**: Success! The result display will display a message telling you that the flashcard is added to the flashcard list.
 
@@ -273,6 +276,7 @@ Examples:
 * `edit 3 a/Object Oriented Programming t/OOP` edits the 3rd flashcard’s answer to "Object Oriented Programming" and tag to "OOP".
 * `edit 3 n/Important question!` edits the 3rd flashcard’s note.
 
+<div style="page-break-after: always;"></div>
 
 **Steps for editing a flashcard**:
 
@@ -319,6 +323,7 @@ Examples:
 *  `filter t/examinable t/study` filters and lists all flashcards that have both an “examinable” tag and a “study” tag.
 *  `filter r/3 f/yes` filters and lists all favourited flashcards that have a rating of 3.
 
+<div style="page-break-after: always;"></div>
 
 **Steps for filtering for a flashcard based on category and tag**:
 
@@ -424,6 +429,7 @@ Examples:
 * `find general` displays all flashcards containing the word general.
 * `find general important` displays all flashcards containing either the word general or important.
 
+<div style="page-break-after: always;"></div>
 
 **Steps for finding flashcards**:
 
@@ -561,6 +567,8 @@ Quiz attempts are recorded and information about your scores can be displayed us
 
 ![filedirectory](images/ug/ug_quiz_step1.PNG)
 
+<div style="page-break-after: always;"></div>
+
 **Step 2**: We are brought into quiz mode. The instructions on how to navigate quiz mode will be shown at the top.
 
 ![filedirectory](images/ug/ug_quiz_step2.PNG)
@@ -570,10 +578,13 @@ Quiz attempts are recorded and information about your scores can be displayed us
 
 ![filedirectory](images/ug/ug_quiz_step3.PNG)
 
+<div style="page-break-after: always;"></div>
+
 **Step 4**: We got this answer correct so we will press `y`. This will automatically bring us to the next flashcard.
 
 ![filedirectory](images/ug/ug_quiz_step4.PNG)
 
+<div style="page-break-after: always;"></div>
 
 ### Sort all flashcards : `sort`
 
@@ -602,12 +613,15 @@ Examples:
 
 ![filedirectory](images/ug/ug_sort_step1.png)
 
+<div style="page-break-after: always;"></div>
+
 **Step 2**: The result display will show a message telling you that the flashcards have been sorted according to success rate in ascending order.
 
 **Step 3**: The flashcard list will show the newly sorted list of flashcards according to the criteria.
 
 ![filedirectory](images/ug/ug_sort_step2.png)
 
+<div style="page-break-after: always;"></div>
 
 ### View a flashcard  : `view`
 
@@ -630,6 +644,8 @@ Examples:
 
 ![filedirectory](images/ug/ug_view_step1_edited.png)
 
+<div style="page-break-after: always;"></div>
+
 **Step 2**: We will be presented with a "snapshot" of the flashcard at index 3 in the view pane.
 
 ![filedirectory](images/ug/ug_view_step2_edited.png)
@@ -639,10 +655,13 @@ Examples:
 
 ![filedirectory](images/ug/ug_view_step3_edited.png)
 
+<div style="page-break-after: always;"></div>
+
 **Step 4**: The answer of the flashcard is displayed on the view pane as well.
 
 ![filedirectory](images/ug/ug_view_step4_edited.png)
 
+<div style="page-break-after: always;"></div>
 
 ### View the statistics of flashcard : `stats`
 
@@ -665,6 +684,7 @@ An example is shown below:
 
 <br>
 
+<div style="page-break-after: always;"></div>
 
 **Steps for viewing the statistics of a specific flashcard**:
 
@@ -676,6 +696,7 @@ An example is shown below:
 
 ![filedirectory](images/ug/ug_stats_step2.PNG)
 
+<div style="page-break-after: always;"></div>
 
 ### Exit the application : `exit`
 
@@ -690,6 +711,7 @@ Format: `exit`
 
 ![Exit step 1](images/ug/ug_exit_step1.png)
 
+<div style="page-break-after: always;"></div>
 
 ### Saving the data
 
@@ -697,6 +719,7 @@ Worried that all the precious flashcards you have saved would be gone after clos
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
 
 ## FAQ
 
@@ -727,6 +750,7 @@ Worried that all the precious flashcards you have saved would be gone after clos
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
 
 ## Command Summary
 
@@ -748,6 +772,8 @@ Action | Format, Examples
 **View** | `view INDEX [-a]` <br> eg. `view 1`
 **Stats** | `stats INDEX` <br> eg. `stats 3`
 **Exit** | `exit`
+
+<div style="page-break-after: always;"></div>
 
 ## Appendix
 
