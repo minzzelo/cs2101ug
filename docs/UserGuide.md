@@ -96,7 +96,7 @@ Before we begin, here is how the interface of our application looks like.
 
 ![filedirectory](images/ug/label1.png)
 
-* Command Box: Command Box is where you will input and execute commands
+* Command Box: Command box is where you will input and execute commands
 * Result Display: Every time a command is executed in the command box, result display will update to show either a success or error message
 * Flashcard List: This is where your precious flashcards will be stored and displayed!
 * View Pane: This is an area to view the complete details of your flashcard!
@@ -162,7 +162,7 @@ Input Field | What is it & How to specify
 
 ### Add a flashcard : `add`
 
-Now let's get started. The first thing you would do in SWEe is to, of course, add flashcards!
+Now let's get started. The first thing you would do in SWEe! is to, of course, add flashcards!
 
 Format: `add q/QUESTION a/ANSWER [c/CATEGORY] [r/RATING] [n/NOTE] [d/DIAGRAM] [t/TAG]...`
 
