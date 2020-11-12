@@ -96,7 +96,7 @@ Before we begin, here is how the interface of our application looks like.
 
 ![filedirectory](images/ug/label1.png)
 
-* Command Box: Command Box is where you will input and execute commands
+* Command Box: Command box is where you will input and execute commands
 * Result Display: Every time a command is executed in the command box, result display will update to show either a success or error message
 * Flashcard List: This is where your precious flashcards will be stored and displayed!
 * View Pane: This is an area to view the complete details of your flashcard!
@@ -162,14 +162,14 @@ Input Field | What is it & How to specify
 
 ### Add a flashcard : `add`
 
-Now let's get started. The first thing you would do in SWEe is to, of course, add flashcards!
+Now let's get started. The first thing you would do in SWEe! is to, of course, add flashcards!
 
 Format: `add q/QUESTION a/ANSWER [c/CATEGORY] [r/RATING] [n/NOTE] [d/DIAGRAM] [t/TAG]...`
 
 * Remember that the `QUESTION` and `ANSWER` fields are compulsory while adding a flashcard! The rest are optional.
 (Hint: You can always add in the remaining fields subsequently using our [edit command](#edit-a-flashcard---edit)!)
 * After a new flashcard is added, the flashcard list will update to include the new flashcard.
-* If you are having troubles understanding the format, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
+* If you are having troubles understanding the fields, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 * To understand how to add diagrams using relative file paths, refer to this [short tutorial](#finding-file-path-for-diagram-field).
 
 <div markdown="span" class="alert alert-primary">
@@ -199,7 +199,7 @@ To add a flashcard, type the command `add q/What does OOP stand for? a/Object Or
 
 **Step 2**: Success! The result display will display a message telling you that the flashcard is added to the flashcard list.
 
-**Step 3**: The list view will update to show the newly added flashcard at the end of the flashcard list.
+**Step 3**: The flashcard list will update to show the newly added flashcard at the end of the flashcard list.
 
 ![filedirectory](images/ug/ug_add_step2_3.png)
 
@@ -219,7 +219,7 @@ Format: `clear`
 
 **Step 2**: The result display will display a message telling you that all flashcards have been cleared.
 
-**Step 3**: The list view will update to show an empty flashcard list.
+**Step 3**: The flashcard list will update to show an empty flashcard list.
 
 ![filedirectory](images/ug/ug_clear_step2_3.png)
 
@@ -292,7 +292,7 @@ Format: `filter [c/CATEGORY] [r/RATING] [f/<yes|no>] [t/TAG]...`
 * Supports filtering of one or more different fields. For example:
     - `filter c/SDLC r/5` will filter out flashcards belonging to the SDLC category with a rating of 5.
 * Although all fields are optional, a minimum of one field has to be given.
-* If you are having troubles understanding the format, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
+* If you are having troubles understanding the fields, feel free to refer to [common input fields](#common-input-fields) on what the different fields are and how to specify them.
 
 <div markdown="span" class="alert alert-primary">:memo: Note:
 <code>filter r/</code> will filter for all unrated flashcards.</div>
@@ -318,7 +318,7 @@ Examples:
 
 **Step 2**: The result display will show the number of flashcards listed after applying the filter.
 
-**Step 3**: The list view will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag.
+**Step 3**: The flashcard list will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag.
 
 ![filedirectory](images/ug/ug_filter_step2.png)
 
