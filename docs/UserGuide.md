@@ -202,7 +202,7 @@ To add a flashcard, type the command `add q/What does OOP stand for? a/Object Or
 
 **Step 2**: Success! The result display will display a message telling you that the flashcard is added to the flashcard list.
 
-**Step 3**: The flashcard list will update to show the newly added flashcard at the end of the flashcard list.
+**Step 3**: The flashcard list will update to show the newly added flashcard.
 
 ![filedirectory](images/ug/ug_add_step2_3.png)
 
@@ -222,7 +222,7 @@ Format: `clear`
 
 **Step 2**: The result display will display a message telling you that all flashcards have been cleared.
 
-**Step 3**: The flashcard list will update to show an empty flashcard list.
+**Step 3**: The flashcard list will be emptied.
 
 ![filedirectory](images/ug/ug_clear_step2_3.png)
 
