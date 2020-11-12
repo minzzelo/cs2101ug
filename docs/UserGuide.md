@@ -45,6 +45,8 @@ Thank you for downloading our application. We look forward to your continuous su
 
 SWEe! is a desktop application with a command line interface (CLI) for CS2103 students to manage their learning progress through flashcards. With a CLI, you will be able to perform tasks and navigate to different functionalities of the application more quickly,  allowing you to save precious time for other tasks.
 
+<div style="page-break-after: always;"></div>
+
 #### SWEe! is perfect for:
 
 * Organising key learning points from the textbook in CS2103 website  in a single platform
@@ -58,7 +60,7 @@ SWEe! is a desktop application with a command line interface (CLI) for CS2103 st
 * Do you want to score well in your examinations?
 
 I’m sure you want to score in your examination 😊 so please proceed on to this user guide to discover the formula for scoring well in your exam. 
-<div style="page-break-after: always;"></div>
+
 
 ## Quick Start
 
@@ -82,13 +84,12 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
 1. Double-click the file to start the app. The GUI similar to the image below should appear in a few seconds. Note how the app contains some sample data. <br>
 
     ![Quick Start UI](images/QuickStartUi.png)
-    <div style="page-break-after: always;"></div>
+
 <br>
 1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. eg. typing help and pressing Enter will open the help window.
 
 1. Refer to the [Features](#features) below for details of each command.
 
-<div style="page-break-after: always;"></div>
 
 ## Application Layout
 
@@ -115,7 +116,6 @@ Some terms to take note of:
 
 
 
-<div style="page-break-after: always;"></div>
 
 ## Notes about the command format
 Feeling a little overwhelmed by the command format we use throughout the user guide? Fear not, as this section will guide you along the various command formats and notations we use throughout the user guide!
@@ -135,7 +135,6 @@ Format/Notation | Meaning
 :bulb: **Tip:** Parameters can be specified in any order. If the command specifies `q/QUESTION a/ANSWER`, you can specify it as `a/ANSWER q/QUESTION` as well.
 </div> 
 
-<div style="page-break-after: always;"></div>
 
 ## Common Input Fields
 
@@ -156,7 +155,6 @@ Input Field | What is it & How to specify
 `INDEX`         | `INDEX` refers to the index number shown in the displayed flashcard list.<br>Every visible flashcard on the display list has an `INDEX`.<br>`INDEX` is always a positive integer greater than 0. eg. 1, 2, 3, …
 `KEYWORD`       | `KEYWORD` can be alphanumeric or punctuations. `KEYWORD` should not contain spaces.
 
-<div style="page-break-after: always;"></div>
 
 ## Features
 
@@ -184,18 +182,15 @@ Examples:
 * `add q/What does OOP stand for? a/Object Oriented Programming d/images/diagram.png` adds a flashcard containing a question, an answer and a diagram
 by specifying its file path.
 
-<div style="page-break-after: always;"></div>
 
 **Steps for adding a flashcard**:
 
-<div style="page-break-after: always;"></div>
 
 **Step 1**: In this case, we will use one of the add commands above as an example.
 To add a flashcard, type the command `add q/What does OOP stand for? a/Object Oriented Programming r/3 t/cool` and press Enter.
 
 ![filedirectory](images/ug/ug_add_step1.png)
 
-<div style="page-break-after: always;"></div>
 
 **Step 2**: Success! The result display will display a message telling you that the flashcard is added to the flashcard list.
 
@@ -203,7 +198,6 @@ To add a flashcard, type the command `add q/What does OOP stand for? a/Object Or
 
 ![filedirectory](images/ug/ug_add_step2_3.png)
 
-<div style="page-break-after: always;"></div>
 
 ### Clear all flashcards : `clear` 
 
@@ -243,7 +237,6 @@ Example: `delete 3` deletes the 3rd flashcard in the flashcard list.
 
 ![filedirectory](images/ug/ug_delete_step2.png)
 
-<div style="page-break-after: always;"></div>
 
 
 ### Edit a flashcard  : `edit`
@@ -262,7 +255,6 @@ Examples:
 * `edit 3 a/Object Oriented Programming t/OOP` edits the 3rd flashcard’s answer to "Object Oriented Programming" and tag to "OOP".
 * `edit 3 n/Important question!` edits the 3rd flashcard’s note.
 
-<div style="page-break-after: always;"></div>
 
 **Steps for editing a flashcard**:
 
@@ -270,7 +262,6 @@ Examples:
 
 ![filedirectory](images/ug/ug_edit_step1.PNG)
 
-<div style="page-break-after: always;"></div>
 
 **Step 2**: The result display will show a message that the flashcard has been edited successfully.
 
@@ -278,7 +269,6 @@ Examples:
 
 ![filedirectory](images/ug/ug_edit_step2.PNG)
 
-<div style="page-break-after: always;"></div>
 
 ### Filter for flashcards  : `filter`
 
@@ -308,7 +298,6 @@ Examples:
 *  `filter t/examinable t/study` filters and lists all flashcards that have both an “examinable” tag and a “study” tag.
 *  `filter r/3 f/yes` filters and lists all favourited flashcards that have a rating of 3.
 
-<div style="page-break-after: always;"></div>
 
 **Steps for filtering for a flashcard based on category and tag**:
 
@@ -322,7 +311,6 @@ Examples:
 
 ![filedirectory](images/ug/ug_filter_step2.png)
 
-<div style="page-break-after: always;"></div>
 
 ### Favourite a flashcard  : `fav`
 
@@ -339,7 +327,6 @@ Examples:
 
 </div> 
 
-<div style="page-break-after: always;"></div>
 
 **Steps for favouriting a flashcard**: 
 
@@ -353,7 +340,6 @@ Examples:
 
 ![Fav Step 2 + 3](images/ug/ug_fav_step23.png)
 
-<div style="page-break-after: always;"></div>
 
 ### Unfavourite a flashcard  : `unfav`
 
@@ -370,7 +356,6 @@ Examples:
 
 </div> 
 
-<div style="page-break-after: always;"></div>
 
 **Steps for unfavouriting a flashcard**: 
 
@@ -384,7 +369,6 @@ Examples:
 
 ![Unfav Step 2 + 3](images/ug/ug_unfav_step23.png)
 
-<div style="page-break-after: always;"></div>
 
 ### Find flashcards : `find`
 
@@ -410,7 +394,6 @@ Examples:
 * `find general` displays all flashcards containing the word general.
 * `find general important` displays all flashcards containing either the word general or important.
 
-<div style="page-break-after: always;"></div>
 
 **Steps for finding flashcards**:
 
@@ -418,7 +401,6 @@ Examples:
 
 ![Find Step 1](images/ug/ug_find_step1.png)
 
-<div style="page-break-after: always;"></div>
 
 **Step 2**: SWEe! will let you know whether there were any flashcards matching the keyword(s) in the Result Display, similar to number 2 in the picture below.
 
@@ -426,7 +408,6 @@ Examples:
 
 ![Find Step 2 & 3](images/ug/ug_find_step23.png)
 
-<div style="page-break-after: always;"></div>
 
 ### View help : `help`
 
@@ -460,7 +441,6 @@ Want to see all of your flashcards? This is the command for you!
 
 Format: `list`
 
-<div style="page-break-after: always;"></div>
 
 **Steps for listing flashcards**:
 
@@ -468,7 +448,6 @@ Format: `list`
 
 ![List Step 1](images/ug/ug_list_step1.png)
 
-<div style="page-break-after: always;"></div>
 
 **Step 2**: The Result Display will display the message "Listed all flashcards" 
 
@@ -476,7 +455,6 @@ Format: `list`
 
 ![List Step 2 & 3](images/ug/ug_list_step23.png)
 
-<div style="page-break-after: always;"></div>
 
 ### Review flashcards: `review`
 
@@ -496,7 +474,6 @@ So what is review mode? Upon entering review mode, you can no longer input comma
 
 <br>
 
-<div style="page-break-after: always;"></div>
 
 **Steps for entering review mode**:
 
@@ -508,7 +485,6 @@ So what is review mode? Upon entering review mode, you can no longer input comma
 
 ![Review step 2](images/ug/ug_review_step2_edited.png)
 
-<div style="page-break-after: always;"></div>
 
 **Step 3**: In this example, we will demonstrate the behaviour of the `↓ key`. Upon pressing the `↓ key`, the answer of the flashcard is shown.
 
@@ -522,7 +498,6 @@ So what is review mode? Upon entering review mode, you can no longer input comma
 
 To summarise, when you are in review mode, use the `↓ key` and `↑ key` to toggle showing the flashcard’s answer and notes. Use the `→ key` and `← key` to move between flashcards. Use the `q key` to quit review mode.
 
-<div style="page-break-after: always;"></div>
 
 ### Quiz flashcards: `quiz`
 
@@ -538,7 +513,6 @@ So what is quiz mode? Upon entering quiz mode, you can no longer input commands 
 
 Quiz attempts are recorded and information about your scores can be displayed using the [stats](#view-the-statistics-of-flashcard--stats) command.
 
-<div style="page-break-after: always;"></div>
 
 **Steps for entering quiz mode**:
 
@@ -550,7 +524,6 @@ Quiz attempts are recorded and information about your scores can be displayed us
 
 ![filedirectory](images/ug/ug_quiz_step2.PNG)
 
-<div style="page-break-after: always;"></div>
 
 **Step 3**: In this example, we will demonstrate the behaviour of the `↓ key`. Upon pressing the `↓ key`, the answer of the flashcard will be shown and we will be prompted if we got the answer correct.
 
@@ -560,7 +533,6 @@ Quiz attempts are recorded and information about your scores can be displayed us
 
 ![filedirectory](images/ug/ug_quiz_step4.PNG)
 
-<div style="page-break-after: always;"></div>
 
 ### Sort all flashcards : `sort`
 
@@ -588,7 +560,6 @@ Examples:
 **Step 1**: In this example, we want to sort the flashcards according to success rate in an ascending order. Type `sort success -a` into the command box and press Enter.
 
 ![filedirectory](images/ug/ug_sort_step1.png)
-<div style="page-break-after: always;"></div>
 
 **Step 2**: The result display will show a message telling you that the flashcards have been sorted according to success rate in ascending order.
 
@@ -596,7 +567,6 @@ Examples:
 
 ![filedirectory](images/ug/ug_sort_step2.png)
 
-<div style="page-break-after: always;"></div>
 
 ### View a flashcard  : `view`
 
@@ -612,7 +582,6 @@ Examples:
 
 <br>
 
-<div style="page-break-after: always;"></div>
 
 **Steps for viewing a specific flashcard**:
 
@@ -624,7 +593,6 @@ Examples:
 
 ![filedirectory](images/ug/ug_view_step2_edited.png)
 
-<div style="page-break-after: always;"></div>
 
 **Step 3**: Now lets say we also want to view the answer and notes of this flashcard. Type the command `view 3 -a` and press Enter.
 
@@ -634,7 +602,6 @@ Examples:
 
 ![filedirectory](images/ug/ug_view_step4_edited.png)
 
-<div style="page-break-after: always;"></div>
 
 ### View the statistics of flashcard : `stats`
 
@@ -657,7 +624,6 @@ A labelled example is shown below.
 
 <br>
 
-<div style="page-break-after: always;"></div>
 
 **Steps for viewing the statistics of a specific flashcard**:
 
@@ -669,7 +635,6 @@ A labelled example is shown below.
 
 ![filedirectory](images/ug/ug_stats_step2.PNG)
 
-<div style="page-break-after: always;"></div>
 
 ### Exit the program : `exit`
 
@@ -677,7 +642,6 @@ Need a coffee break? You can exit from SWEe! using the following command.
 
 Format: `exit`
 
-<div style="page-break-after: always;"></div>
 
 **Steps to use the exit function**:
 
@@ -685,7 +649,6 @@ Format: `exit`
 
 ![Exit step 1](images/ug/ug_exit_step1.png)
 
-<div style="page-break-after: always;"></div>
 
 ### Saving the data
 
@@ -693,7 +656,6 @@ Worried that all the precious flashcards you have saved would be gone after clos
 
 --------------------------------------------------------------------------------------------------------------------
 
-<div style="page-break-after: always;"></div>
 
 ## FAQ
 
@@ -724,7 +686,6 @@ Worried that all the precious flashcards you have saved would be gone after clos
 
 --------------------------------------------------------------------------------------------------------------------
 
-<div style="page-break-after: always;"></div>
 
 ## Command summary
 
