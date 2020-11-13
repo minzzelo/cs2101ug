@@ -578,13 +578,14 @@ Quiz attempts are recorded and information about your scores can be displayed us
 ![filedirectory](images/ug/ug_quiz_step2.PNG)
 
 
-**Step 3**: In this example, we will demonstrate the behaviour of the `↓ key`. Upon pressing the `↓ key`, the answer of the flashcard will be shown and we will be prompted if we got the answer correct.
+**Step 3**: Once we have come up with an answer for our flashcard, we simply click the `↓ key`. This will reveal the correct solution to the flashcard. A prompt will also appear at the top to check if we have answered the question correctly or incorrectly.
+
 
 ![filedirectory](images/ug/ug_quiz_step3.PNG)
 
 <div style="page-break-after: always;"></div>
 
-**Step 4**: We got this answer correct so we will press `y`. This will automatically bring us to the next flashcard.
+**Step 4**: We have gotten the correct answer, so we will press `y`. This will automatically bring us to the next flashcard.
 
 ![filedirectory](images/ug/ug_quiz_step4.PNG)
 
