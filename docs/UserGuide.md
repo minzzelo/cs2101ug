@@ -32,6 +32,7 @@ title: SWEe! User Guide
     - [Appendix](#appendix)
         - [Finding file path for Diagram field](#finding-file-path-for-diagram-field)
         - [Contributions](#contributions)
+        - [Website Link](#website-link)
         
 
 --------------------------------------------------------------------------------------------------------------------
@@ -849,3 +850,7 @@ Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to
 - [Review flashcards](#review-flashcards-review)
 - [View a flashcard](#view-a-flashcard---view)
 - FAQ Q3, Q4, Q5, Q6
+
+### Website Link
+
+https://ay2021s1-cs2103t-t17-2.github.io/cs2101ug/UserGuide.html
