@@ -64,7 +64,7 @@ SWEe! is a desktop application with a command line interface (CLI) for CS2103 st
 * Do you get frustrated navigating the CS2103 website?
 * Do you want to score well in your examinations?
 
-I’m sure you want to score in your examination :smiley: so please proceed on to this user guide to discover the formula for scoring well in your exam. 
+I’m sure you want to score in your examination 😊 so please proceed on to this user guide to discover the formula for scoring well in your exam. 
 
 <div style="page-break-after: always;"></div>
 
@@ -670,7 +670,7 @@ Examples:
 
 ### View the statistics of flashcard : `stats`
 
-Want to view the results of your attempts in quiz mode? The stats command simplifies your life by providing visual representations of the result.
+Want to track your performance in quiz mode? The stats command simplifies your life by providing data visualisation of your results.
 
 Format: `stats INDEX`
 
@@ -829,6 +829,12 @@ Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to
 - [Sort all flashcards](#sort-all-flashcards--sort)
 - FAQ Q8
 
+#### Ong Yi Jie Melvin
+
+- [Introduction](#introduction)
+- [Quiz flashcards](#quiz-flashcards-quiz)
+- [View the statistics of a flashcard](#view-the-statistics-of-flashcard--stats)
+- [Exit the application](#exit-the-application--exit)
 
 #### Tan Zhuo Yao
 - [Application Layout](#application-layout)
