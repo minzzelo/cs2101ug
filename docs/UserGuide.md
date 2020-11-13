@@ -670,7 +670,7 @@ Examples:
 
 ### View the statistics of flashcard : `stats`
 
-Want to view the results of your attempts in quiz mode? The stats command simplifies your life by providing visual representations of the result.
+Want to track your performance in quiz mode? The stats command simplifies your life by providing data visualisation of your results.
 
 Format: `stats INDEX`
 
@@ -829,6 +829,12 @@ Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to
 - [Sort all flashcards](#sort-all-flashcards--sort)
 - FAQ Q8
 
+#### Ong Yi Jie Melvin
+
+- [Introduction](#introduction)
+- [Quiz flashcards](#quiz-flashcards-quiz)
+- [View the statistics of a flashcard](#view-the-statistics-of-flashcard--stats)
+- [Exit the application](#exit-the-application--exit)
 
 #### Tan Zhuo Yao
 - [Application Layout](#application-layout)
