@@ -830,7 +830,7 @@ Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to
 - FAQ Q8
 
 
-### Tan Zhuo Yao
+#### Tan Zhuo Yao
 - [Application Layout](#application-layout)
 - [Add a flashcard](#add-a-flashcard--add)
 - [Clear all flashcards](#clear-all-flashcards--clear)
