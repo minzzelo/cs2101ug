@@ -89,11 +89,10 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
 
     <div style="page-break-after: always;"></div>
     
-1. Double-click the file to start the app. The GUI similar to the image below should appear in a few seconds. Note how the app contains some sample data. <br>
+1. Double-click the file to start the app. The GUI similar to the image below should appear in a few seconds. Note how the app contains some sample data.<br>
 
     ![Quick Start UI](images/QuickStartUi.png)
 
-<br>
 
 1. At the top of the screen, type the command in the command box and press Enter on your keyboard to execute it. eg. typing `help` and pressing Enter will open the help window.
 
