@@ -753,6 +753,9 @@ Worried that all the precious flashcards you have saved would be gone after clos
 **Q**: How do I save my progress after executing commands?<br>
 **A**: SWEe! does an auto save every time you exit the app and automatically loads the latest state of flashcards when you relaunch the app. 
 
+**Q**: Is there a feedback channel for me to report bugs or provide any feedback? <br>
+**A**: You can send your feedback to our team via email at cs2103_swee@gmail.com. Any feedback is appreciated and we will use it to improve SWEe!. Thank you!
+
 --------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
@@ -816,3 +819,12 @@ Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to
 - [List all flashcards](#list-all-flashcards--list)
 - [Saving the data](#saving-the-data)
 - FAQ q1 & q2
+
+
+#### Ong Si Min
+
+- [Notes about the command format](#notes-about-the-command-format)
+- [Delete a flashcard](#delete-a-flashcard---delete)
+- [Edit a flashcard](#edit-a-flashcard---edit)
+- [Sort all flashcards](#sort-all-flashcards--sort)
+- FAQ q8
