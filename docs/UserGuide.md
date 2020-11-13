@@ -258,7 +258,7 @@ Example: `delete 3` deletes the 3rd flashcard in the flashcard list.
 
 **Step 2**: The result display will display a message telling you that the flashcard has been deleted.
 
-**Step 3**: The flashcard list will be updated with the specified flashcard removed.
+**Step 3**: The flashcard list will be updated after deleting the flashcard.
 
 ![filedirectory](images/ug/ug_delete_step2.png)
 
@@ -339,7 +339,7 @@ Examples:
 
 **Step 2**: The result display will show the number of flashcards listed after applying the filter.
 
-**Step 3**: The flashcard list will show the update list of flashcards belonging to the Trivial category with a "preloaded" tag.
+**Step 3**: The flashcard list will show the updated list of flashcards belonging to the Trivial category with a "preloaded" tag.
 
 ![filedirectory](images/ug/ug_filter_step2.png)
 
@@ -371,7 +371,7 @@ Examples:
 
 **Step 2**: The result display will display a message to let you know that the flashcard has been favourited!
 
-**Step 3**: Check out that cute heart icon in the flashcard you have favourited!
+**Step 3**: Check out that heart icon in the flashcard you have favourited!
 
 ![Fav Step 2 + 3](images/ug/ug_fav_step23.png)
 
@@ -736,7 +736,7 @@ Worried that all the precious flashcards you have saved would be gone after clos
 
 * **Step 2:** Type in the command `java -jar swee.jar` and the app should start in a few seconds!
 
-**Q**: Why are there data which I did not include when I first start SWEe!?<br>
+**Q**: Why is there data which I did not include when I first start SWEe!?<br>
 **A**: We understand that you are a new user! SWEe! therefore provides you with some sample data to experiment first before you start using SWEe! proper. Hope that you will enjoy using SWEe!.
 
 **Q**: What is the difference between review mode and quiz mode?<br>
