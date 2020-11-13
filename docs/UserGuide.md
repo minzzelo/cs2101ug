@@ -818,7 +818,7 @@ Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to
 - [Unfavourite a flashcard](#unfavourite-a-flashcard---unfav)
 - [List all flashcards](#list-all-flashcards--list)
 - [Saving the data](#saving-the-data)
-- FAQ q1 & q2
+- FAQ Q1 & Q2
 
 
 #### Ong Si Min
@@ -827,4 +827,13 @@ Navigate back to [adding a flashcard](#add-a-flashcard--add) or navigate back to
 - [Delete a flashcard](#delete-a-flashcard---delete)
 - [Edit a flashcard](#edit-a-flashcard---edit)
 - [Sort all flashcards](#sort-all-flashcards--sort)
-- FAQ q8
+- FAQ Q8
+
+
+### Tan Zhuo Yao
+- [Application Layout](#application-layout)
+- [Add a flashcard](#add-a-flashcard--add)
+- [Clear all flashcards](#clear-all-flashcards--clear)
+- [Filter for flashcards](#filter-for-flashcards---filter)
+- [Finding file path for Diagram field](#finding-file-path-for-diagram-field)
+- FAQ Q7
