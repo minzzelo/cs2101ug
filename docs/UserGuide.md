@@ -85,10 +85,10 @@ I’m sure you want to score in your examination 😊 so please proceed on to th
 
     ![Download Swee Jar](images/quick-start/downloadSweeJar.png)
 
-1. Copy the file to the folder you want to use as the _home folder_ for SWEe!.
+1. Copy the file to the folder you want to use as the _home folder_ for SWEe!. <br>
 
-<div style="page-break-after: always;"></div>
-
+    <div style="page-break-after: always;"></div>
+    
 1. Double-click the file to start the app. The GUI similar to the image below should appear in a few seconds. Note how the app contains some sample data. <br>
 
     ![Quick Start UI](images/QuickStartUi.png)
