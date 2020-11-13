@@ -129,7 +129,7 @@ Some terms to take note of:
 <div style="page-break-after: always;"></div>
 
 ## Notes about the command format
-Feeling a little overwhelmed by the command format we use throughout the user guide? Fear not, as this section will guide you along the various command formats and notations we use throughout the user guide!
+Feeling a little overwhelmed by the command format we use throughout the user guide? Fear not, as this section will guide you through the various command formats and notations we use throughout the user guide!
 
 
 Format/Notation | Meaning
